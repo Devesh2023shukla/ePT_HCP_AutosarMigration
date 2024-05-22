@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with SystemDesk 5.1.3.11821-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="7be7e4df-703c-4c5c-877d-15b638b73271">
+      <SHORT-NAME>STLASWCs</SHORT-NAME>
+      <ELEMENTS>
+        <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="a5384e5f-9468-409f-892e-ec855250bc66">
+          <SHORT-NAME>DiagcSrvMngt</SHORT-NAME>
+          <DESC>
+            <L-2 L="FOR-ALL">Diagnostic Service Managemnet Component - Interfaces with DCM and is responsible to handle ECU Reset request, Communication Control request and callouts for Read and Write Memory By Address.</L-2>
+          </DESC>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="1d8474d6-c732-458f-bacc-00911c1b7a0f">
+              <SHORT-NAME>DiagcSrvMngtCommCtrlPreCondMod</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">This a mode port used to determine if the preconditions are met or not met  to disable transmission for communication control service</L-2>
+              </DESC>
+              <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DcmCommunicationControl_Can_Network_CANFD_11</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="2c8791d9-8a1d-4ba0-b906-71341fdb61a5">
+              <SHORT-NAME>EngMtnMod</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">Engine motion modes for Comm Pre control conditions (1 - EngStopd, 0 - EngMovg)</L-2>
+              </DESC>
+              <REQUIRED-COM-SPECS>
+                <MODE-SWITCH-RECEIVER-COM-SPEC>
+                  <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFEngMtnMod/EngMtnMod</MODE-GROUP-REF>
+                </MODE-SWITCH-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFEngMtnMod</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="44f0fd26-968b-4bb2-9deb-f791a55cc7bf">
+              <SHORT-NAME>MdulPwrMod</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="7bcc0bb0-3951-459c-98de-9654d73b8001">
+              <SHORT-NAME>VeBATR_U_12VoltSys</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">Voltage for 12 Volt (Nominal) System, with filtering and plausibility checks needed for general usage  (Legacy Signal Name  -  BATTERY_VOLTAGE_FILTERED)</L-2>
+              </DESC>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePMDR_U_BF1_SysVolt</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="ee32c56d-9e25-432d-9369-1e3d8ce17690">
+              <SHORT-NAME>VeVSPR_v_VehSpd</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">Vehicle Speed Estimator</L-2>
+              </DESC>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeVSPR_v_VehSpd</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="03ae1d47-ad90-467b-aade-8cbac6c6bff1">
+              <SHORT-NAME>PlaFieldMode</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">Port to decide plant or field mode condition (1 - InPla, 0 - InFie)</L-2>
+              </DESC>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePLTR_b_InFieldMode</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="3dfac6be-7528-401b-983f-3dcd6d344092">
+              <SHORT-NAME>Rport_OperationCycle</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/OperationCycle</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="c97ce60d-91d5-4ef4-ab73-a5566d6c97b6">
+              <SHORT-NAME>Rport_VeHPMR_b_PropSysActv</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeHPMR_b_PropSysActv</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>RPort_VePLTR_b_WarmupAchieved</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePLTR_b_WarmupAchieved/Value</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <HANDLE-NEVER-RECEIVED>true</HANDLE-NEVER-RECEIVED>
+                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePLTR_b_WarmupAchieved</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="caddc389-171b-4bf3-9f6b-78e5e7eced20">
+              <SHORT-NAME>Rport_OperationCycle_WarmUp</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/OperationCycle</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="e49a5dc7-e26c-4148-942d-6f5acaf7d112">
+              <SHORT-NAME>IBDiagcSrvMngt</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/BswMDataMappingSet/BswMMappingSet</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmDiagnosticSessionControl</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmEcuReset</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmControlDTCSetting</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Pkg_MappingSets/DTS_EngMtnMods</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmCommunicationControl_Can_Network_CANFD_3</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmCommunicationControl_Can_Network_CANFD_11</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STLAAppDataDefinition/AdtToIdtMapping/ADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/FCADataDefinition/AdtToIdtMapping/ADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <TIMING-EVENT UUID="4369e586-e0f2-4004-87fa-a10eafd93324">
+                  <SHORT-NAME>MedTEA1</SHORT-NAME>
+                  <DISABLED-MODE-IREFS>
+                    <DISABLED-MODE-IREF>
+                      <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/MdulPwrMod</CONTEXT-PORT-REF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod/AppMode_MDGP_ESH_Mode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/ModeSwitchInterfaces/BswMEcuModes/POSTRUN</TARGET-MODE-DECLARATION-REF>
+                    </DISABLED-MODE-IREF>
+                    <DISABLED-MODE-IREF>
+                      <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/MdulPwrMod</CONTEXT-PORT-REF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod/AppMode_MDGP_ESH_Mode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/ModeSwitchInterfaces/BswMEcuModes/SHUTDOWN</TARGET-MODE-DECLARATION-REF>
+                    </DISABLED-MODE-IREF>
+                  </DISABLED-MODE-IREFS>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STLASWCs/DiagcSrvMngt/IBDiagcSrvMngt/CommCtrlCalcPreCond</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="7a0ace7b-5def-47c0-b292-20e81b5f2b0e">
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STLASWCs/DiagcSrvMngt/IBDiagcSrvMngt/RE_OperationCycle</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="244e4e54-9bb3-48dc-9633-ef64314f56e8">
+                  <SHORT-NAME>TimingEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STLASWCs/DiagcSrvMngt/IBDiagcSrvMngt/RE_DiagsrvMngt</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="3c6fb556-6fe7-4371-b70c-906c75efaa39">
+                  <SHORT-NAME>CommCtrlCalcPreCond</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Runnable tied to cyclic event which sets the mode based on precondition checks to disable transmission</L-2>
+                  </DESC>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="1b869bf9-de2e-4bb8-9896-349e3fee4a5c">
+                      <SHORT-NAME>DRP_VeVSPR_v_VehSpd_VeVSPR_v_VehSpd</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/VeVSPR_v_VehSpd</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeVSPR_v_VehSpd/VeVSPR_v_VehSpd</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <MODE-ACCESS-POINTS>
+                    <MODE-ACCESS-POINT>
+                      <IDENT UUID="a6471287-9e01-4e75-9058-3b9e360eb223">
+                        <SHORT-NAME>MAP_EngMtnMod_EngMtnMod</SHORT-NAME>
+                      </IDENT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/EngMtnMod</CONTEXT-R-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFEngMtnMod/EngMtnMod</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                    <MODE-ACCESS-POINT>
+                      <IDENT UUID="42f364fc-e3cc-42e5-98d9-29987bebf2fb">
+                        <SHORT-NAME>MAP_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode</SHORT-NAME>
+                      </IDENT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/MdulPwrMod</CONTEXT-R-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod/AppMode_MDGP_ESH_Mode</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                  </MODE-ACCESS-POINTS>
+                  <MODE-SWITCH-POINTS>
+                    <MODE-SWITCH-POINT UUID="228d86f6-a202-4c9e-8f70-c1ad59741f78">
+                      <SHORT-NAME>MSP_DiagcSrvMngtCommCtrlPreCondMod_MDGP_DcmCommunicationControl_ComMChannel_Can_Network_CANFD_3_Channel</SHORT-NAME>
+                      <MODE-GROUP-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/DiagcSrvMngtCommCtrlPreCondMod</CONTEXT-P-PORT-REF>
+                        <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/AUTOSAR_Dcm/PortInterfaces/DcmCommunicationControl_Can_Network_CANFD_11/MDGP_DcmCommunicationControl_Can_Network_CANFD_11</TARGET-MODE-GROUP-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-SWITCH-POINT>
+                  </MODE-SWITCH-POINTS>
+                  <SYMBOL>DiagcSrvMngt_CommCtrlCalcPreCond</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="a1db5b10-82da-4ee7-99b4-4f84cac0c1ed">
+                  <SHORT-NAME>RE_OperationCycle</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DataReceivePointByArguments_VariableAccess_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/RPort_VePLTR_b_WarmupAchieved</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePLTR_b_WarmupAchieved/Value</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="7bbb598e-c0f3-4bba-a1f8-6351498a3df1">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/Rport_OperationCycle</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/RestartOperationCycle</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="9bbd939c-c363-48f8-8368-bcc50b68bee6">
+                      <SHORT-NAME>SynchronousServerCallPoint_1</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/Rport_OperationCycle</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/GetCycleQualified</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="57c8176c-ec8a-49da-b6b7-f4d2a3c218ee">
+                      <SHORT-NAME>SynchronousServerCallPoint_2</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/Rport_OperationCycle</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/SetCycleQualified</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="f0dfeb7f-c6e4-4622-a266-9f2999776e66">
+                      <SHORT-NAME>SynchronousServerCallPoint_0_Copy</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/Rport_OperationCycle_WarmUp</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/RestartOperationCycle</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="9f736ffe-dabe-49cc-85a9-6d7e8fe10bd5">
+                      <SHORT-NAME>SynchronousServerCallPoint_2_Copy</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/Rport_OperationCycle_WarmUp</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/SetCycleQualified</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_OperationCycle_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="8bab2bde-7241-46f0-b603-b843eaff81ce">
+                  <SHORT-NAME>RE_DiagsrvMngt</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="610cf286-7ea6-4b33-9afb-12609f91321b">
+                      <SHORT-NAME>VeHPMR_PropSysActv</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/DiagcSrvMngt/Rport_VeHPMR_b_PropSysActv</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeHPMR_b_PropSysActv/Value</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <SYMBOL>RE_DiagsrvMngt_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

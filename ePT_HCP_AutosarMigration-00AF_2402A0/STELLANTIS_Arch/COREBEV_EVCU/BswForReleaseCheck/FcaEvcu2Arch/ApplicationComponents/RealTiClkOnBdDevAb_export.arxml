@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with SystemDesk 5.1.3.11821-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="d2f9c864-3cec-4b78-9ab1-7b01c14fc61b">
+      <SHORT-NAME>FCADataDefinition</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="edb2127c-c1c3-488b-a9b0-4d2bb897efaf">
+          <SHORT-NAME>AppDatatypes</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-RECORD-DATA-TYPE UUID="ad4cacac-f356-4253-ad66-e51437c05d36">
+              <SHORT-NAME>ADTRRTCSts</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <ELEMENTS>
+                <APPLICATION-RECORD-ELEMENT UUID="5a6ae773-7e0f-45ef-aff2-45e7a25ae213">
+                  <SHORT-NAME>e_e_time</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTRRTCTime</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="a696c333-6dcf-4654-943a-6d0422311484">
+                  <SHORT-NAME>e_e_wakeup_reason</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSRTCWakeup</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="34c7420a-71d3-49c5-bfd3-740abb8bc230">
+                  <SHORT-NAME>e_e_wakeup_config</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTRRTCWakeupConfig</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+              </ELEMENTS>
+            </APPLICATION-RECORD-DATA-TYPE>
+            <APPLICATION-RECORD-DATA-TYPE UUID="c8845404-2557-464c-9113-7f110628ab81">
+              <SHORT-NAME>ADTRRTCTime</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <ELEMENTS>
+                <APPLICATION-RECORD-ELEMENT UUID="f4c4ab09-0556-4cf3-b1ce-cf338452b750">
+                  <SHORT-NAME>e_e_year</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">0 – 255</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="35af6f31-6dc2-4902-b3f4-d8b8df2feabb">
+                  <SHORT-NAME>e_e_month</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">1 – 12</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="0cad0288-f346-42f1-8c2e-dcbbce41819d">
+                  <SHORT-NAME>e_e_day</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">1 - 31</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="adbdb9b7-d2bf-4027-865f-6421a2dcacd2">
+                  <SHORT-NAME>e_e_hour</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">0 - 23</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="9687b2e8-c8cb-4e4b-bfa4-e2573b71580d">
+                  <SHORT-NAME>e_e_minute</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">0 - 59</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="a22565b4-16be-4814-a53e-1aee8d55b1fd">
+                  <SHORT-NAME>e_e_second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">0 - 59</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+              </ELEMENTS>
+            </APPLICATION-RECORD-DATA-TYPE>
+            <APPLICATION-RECORD-DATA-TYPE UUID="de8f0390-f729-4838-b6f4-6d1c04ccba7d">
+              <SHORT-NAME>ADTRRTCWakeupConfig</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">Structure contains all the RTC configuration data</L-2>
+              </DESC>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <ELEMENTS>
+                <APPLICATION-RECORD-ELEMENT UUID="8ad2f3f1-d5ac-4f01-9387-62fdccb53e0d">
+                  <SHORT-NAME>e_e_enable_alarm</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">1 – enable; 0 - disable</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="87dcdb64-4a3f-4770-99fe-ec2dcf43f037">
+                  <SHORT-NAME>e_e_enable_timer</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">1 – enable; 0 - disable</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="4d5d62f7-b4fd-4c54-8867-111f8c92628d">
+                  <SHORT-NAME>e_e_timer_second</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">1 – 65535</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint16</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="b748f704-b378-4db9-ac7c-a450ed0ec3d6">
+                  <SHORT-NAME>e_e_alarm_weekday</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">0 – 6 or 0xFF</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSRTCWeekday</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="4e8e0deb-504b-4100-8b6c-ae68b81a8ba1">
+                  <SHORT-NAME>e_e_alarm_day</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">1 – 31 or 0xFF</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="9f860220-a7e4-4f56-814a-85853b038503">
+                  <SHORT-NAME>e_e_alarm_hour</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">0 – 23 or 0xFF</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+                <APPLICATION-RECORD-ELEMENT UUID="48126a57-67ae-4d59-9e69-923bd22bb62f">
+                  <SHORT-NAME>e_e_alarm_minute</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">0 – 59 or 0xFF</L-2>
+                  </DESC>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTSUint8</TYPE-TREF>
+                </APPLICATION-RECORD-ELEMENT>
+              </ELEMENTS>
+            </APPLICATION-RECORD-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="23b4cfbc-6e6c-4df7-a20d-9348f889c0b5">
+              <SHORT-NAME>ADTSRTCWakeup</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/FCADataDefinition/CompuMethods/HW_RTCWakeupType</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="2e0548bf-b7e2-4205-964a-27785159d60c">
+              <SHORT-NAME>ADTSRTCWeekday</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/FCADataDefinition/CompuMethods/HW_RTCWeekdayType</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="4c386da1-6318-4ddc-a8bb-1c570c504605">
+          <SHORT-NAME>CompuMethods</SHORT-NAME>
+          <ELEMENTS>
+            <COMPU-METHOD UUID="2a8d057e-0110-47bd-a827-c3b4f6a65ecb">
+              <SHORT-NAME>HW_RTCWakeupType</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">RTC Wakeup Types</L-2>
+              </DESC>
+              <CATEGORY>TEXTTABLE</CATEGORY>
+              <UNIT-REF DEST="UNIT">/FCADataDefinition/Units/Enum</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="AA">No RTC wakeup</L-2>
+                    </DESC>
+                    <LOWER-LIMIT>0</LOWER-LIMIT>
+                    <UPPER-LIMIT>0</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_NO_WAKEUP</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="AA">Wakeup due to RTC alarm only</L-2>
+                    </DESC>
+                    <LOWER-LIMIT>1</LOWER-LIMIT>
+                    <UPPER-LIMIT>1</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_ALARM_WAKEUP</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="AA">Wakeup due to RTC timer only</L-2>
+                    </DESC>
+                    <LOWER-LIMIT>2</LOWER-LIMIT>
+                    <UPPER-LIMIT>2</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_TIMER_WAKEUP</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <DESC>
+                      <L-2 L="AA">Wakeup due to both alarm and timer</L-2>
+                    </DESC>
+                    <LOWER-LIMIT>3</LOWER-LIMIT>
+                    <UPPER-LIMIT>3</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_ALARM_TIMER_WAKEUP</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+            <COMPU-METHOD UUID="2564e9e0-6f91-483f-87ca-8ead73f95225">
+              <SHORT-NAME>HW_RTCWeekdayType</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">RTC Type for Weekday</L-2>
+              </DESC>
+              <CATEGORY>TEXTTABLE</CATEGORY>
+              <UNIT-REF DEST="UNIT">/FCADataDefinition/Units/Enum</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT>0</LOWER-LIMIT>
+                    <UPPER-LIMIT>0</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_SUNDAY</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT>1</LOWER-LIMIT>
+                    <UPPER-LIMIT>1</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_MONDAY</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT>2</LOWER-LIMIT>
+                    <UPPER-LIMIT>2</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_TUESDAY</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT>3</LOWER-LIMIT>
+                    <UPPER-LIMIT>3</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_WEDNESDAY</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT>4</LOWER-LIMIT>
+                    <UPPER-LIMIT>4</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_THURSDAY</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT>5</LOWER-LIMIT>
+                    <UPPER-LIMIT>5</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_FRIDAY</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT>6</LOWER-LIMIT>
+                    <UPPER-LIMIT>6</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>RTC_SATURDAY</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="7be7e4df-703c-4c5c-877d-15b638b73271">
+      <SHORT-NAME>FCASWCs</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="2eb94b6a-a618-4aea-8c9d-5e93f61ff175">
+          <SHORT-NAME>OnBdDevAb</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="03eeb03b-7fc5-4a72-9359-841d81b34bcb">
+              <SHORT-NAME>Timers</SHORT-NAME>
+              <ELEMENTS>
+                <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="df7a4cf4-fc94-40d1-8679-777b9ba3fcd6">
+                  <SHORT-NAME>RealTiClkOnBdDevAb</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Real Time Clock On Board Device Abstraction (RTC)
+
+EVCU is required to wake up to perform scheduled functionality. The RTC interface provides a means of programming the current date/time, alarm and timer for RTC hardware.  It’s also used to obtain RTC information during initialization.  Supplier will be responsible for initialization of the RTC hardware.</L-2>
+                  </DESC>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="Master">
+                        <SD>true</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="ab5e9f0a-0c23-4f72-bf34-014fd947247b">
+                      <SHORT-NAME>ProgramRTCTime</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCTime</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f768151c-cb5f-4eb0-b0d8-577cebf0f53b">
+                      <SHORT-NAME>ProgramRTCWakeup</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCWakeup</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c943be52-d16e-4cee-930e-3e85dcf58bd5">
+                      <SHORT-NAME>ReadRTCTime</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ReadRTCTime</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="bbb0fce6-b904-4200-bf2b-865d5d31060d">
+                      <SHORT-NAME>InitRTCDriver</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/InitRTCDriver</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR>
+                      <SHORT-NAME>SwcInternalBehavior_RealTiClkOnBdDevAb</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/FCADataDefinition/AdtToIdtMapping/ADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <OPERATION-INVOKED-EVENT UUID="cb1f5a87-f45f-4a31-86ad-40b69efa17d8">
+                          <SHORT-NAME>OE_RealTiClkOnBdDevAb_ProgramRTCTime</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/SwcInternalBehavior_RealTiClkOnBdDevAb/RealTiClkOnBdDevAb_ProgramRTCTime</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/ProgramRTCTime</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCTime/ProgramRTCTime</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="3b72bb7c-6e30-4549-b197-f4dafa2963f4">
+                          <SHORT-NAME>OE_RealTiClkOnBdDevAb_ProgramRTCWakeup</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/SwcInternalBehavior_RealTiClkOnBdDevAb/RealTiClkOnBdDevAb_ProgramRTCWakeup</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/ProgramRTCWakeup</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCWakeup/ProgramRTCWakeup</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="c912eaa4-f037-4cfe-9e1c-e0a0e78f886d">
+                          <SHORT-NAME>OE_RealTiClkOnBdDevAb_ReadRTCTime</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/SwcInternalBehavior_RealTiClkOnBdDevAb/RealTiClkOnBdDevAb_ReadRTCTime</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/ReadRTCTime</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ReadRTCTime/ReadRTCTime</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="b3466469-f72d-470a-abb7-6d9b3822b835">
+                          <SHORT-NAME>OE_RealTiClkOnBdDevAb_InitRTCDriver</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/SwcInternalBehavior_RealTiClkOnBdDevAb/RealTiClkOnBdDevAb_InitRTCDriver</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/OnBdDevAb/Timers/RealTiClkOnBdDevAb/InitRTCDriver</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/InitRTCDriver/InitRTCDriver</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                      </EVENTS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="a61e3afc-b371-4bb2-a6b4-19b9ba2a2a29">
+                          <SHORT-NAME>RealTiClkOnBdDevAb_InitRTCDriver</SHORT-NAME>
+                          <SYMBOL>RealTiClkOnBdDevAb_InitRTCDriver_func</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="061186c6-48b5-43a6-9a81-80746fab2091">
+                          <SHORT-NAME>RealTiClkOnBdDevAb_ProgramRTCTime</SHORT-NAME>
+                          <SYMBOL>RealTiClkOnBdDevAb_ProgramRTCTime_func</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="fcb6ad71-cbf5-483d-be00-010ff9f763c3">
+                          <SHORT-NAME>RealTiClkOnBdDevAb_ProgramRTCWakeup</SHORT-NAME>
+                          <SYMBOL>RealTiClkOnBdDevAb_ProgramRTCWakeup_func</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="5e5f7c2b-9818-4d97-8f78-2e1aaa91718a">
+                          <SHORT-NAME>RealTiClkOnBdDevAb_ReadRTCTime</SHORT-NAME>
+                          <SYMBOL>RealTiClkOnBdDevAb_ReadRTCTime_func</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="19943149-9dcc-4d52-b9a2-ac13f979d7c0">
+      <SHORT-NAME>FCASharedInterfaces</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE T="2018-01-15T03:14:42-05:00" UUID="88889de6-c909-4373-a16e-27c70ab083f4">
+          <SHORT-NAME>IFCOEs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE T="2018-01-15T03:14:53-05:00" UUID="869e4812-eafe-4ddf-98da-b66269fd77c6">
+              <SHORT-NAME>IFPlatform_Srv</SHORT-NAME>
+              <ELEMENTS>
+                <CLIENT-SERVER-INTERFACE UUID="0733849b-29e3-445e-86d4-b0cd52b40b5f">
+                  <SHORT-NAME>InitRTCDriver</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Initialize the RTC driver, get wakeup info, and read current time</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="1ce7d8fb-8bc6-42d8-ba25-3dbe6c6f30a7">
+                      <SHORT-NAME>InitRTCDriver</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="c3ae9a6a-f095-423a-a516-f83b634e56f4">
+                          <SHORT-NAME>RTCStatus</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTRRTCSts</TYPE-TREF>
+                          <DIRECTION>INOUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <POSSIBLE-ERROR-REFS>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/InitRTCDriver/E_OK</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/InitRTCDriver/HW_E_FAILED</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/InitRTCDriver/HW_E_UNAVAILABLE</POSSIBLE-ERROR-REF>
+                      </POSSIBLE-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                  <POSSIBLE-ERRORS>
+                    <APPLICATION-ERROR UUID="046088a2-0171-4d55-912c-1945db1db8a2">
+                      <SHORT-NAME>E_OK</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Request accepted</L-2>
+                      </DESC>
+                      <ERROR-CODE>0</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="912ce676-08dd-49df-b162-0afc8f44052d">
+                      <SHORT-NAME>HW_E_FAILED</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Other Failure</L-2>
+                      </DESC>
+                      <ERROR-CODE>63</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="5035130e-2ecb-4b9b-8b36-571fdb6ad02f">
+                      <SHORT-NAME>HW_E_UNAVAILABLE</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">A required resource is persistently unavailable.  For example, use when a diagnosed hardware failure has disabled an output, or power on reset detected.</L-2>
+                      </DESC>
+                      <ERROR-CODE>9</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                  </POSSIBLE-ERRORS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="8cbbc52c-a316-416f-9403-592a3ff7da3d">
+                  <SHORT-NAME>ProgramRTCTime</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>ProgramRTCTime</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>NewTime</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTRRTCTime</TYPE-TREF>
+                          <DIRECTION>INOUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <POSSIBLE-ERROR-REFS>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCTime/E_OK</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCTime/HW_E_FAILED</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCTime/HW_E_UNAVAILABLE</POSSIBLE-ERROR-REF>
+                      </POSSIBLE-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                  <POSSIBLE-ERRORS>
+                    <APPLICATION-ERROR UUID="c6fff61a-e570-4f85-9a76-5dadc22a7529">
+                      <SHORT-NAME>E_OK</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Request Accepted</L-2>
+                      </DESC>
+                      <ERROR-CODE>0</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="b8b6819b-d4ab-4a8a-af8d-c83999ea9cbe">
+                      <SHORT-NAME>HW_E_FAILED</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Other Failure</L-2>
+                      </DESC>
+                      <ERROR-CODE>63</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="619f64f5-f1d5-4ea0-9b61-5d16283fa900">
+                      <SHORT-NAME>HW_E_UNAVAILABLE</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">A required resource is persistently unavailable.  For example, use when a diagnosed hardware failure has disabled an output, or power on reset detected.</L-2>
+                      </DESC>
+                      <ERROR-CODE>9</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                  </POSSIBLE-ERRORS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="7fd0cc2b-99c2-4e81-9d87-5fe947a750f5">
+                  <SHORT-NAME>ProgramRTCWakeup</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>ProgramRTCWakeup</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>WakeupConfig</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTRRTCWakeupConfig</TYPE-TREF>
+                          <DIRECTION>INOUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <POSSIBLE-ERROR-REFS>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCWakeup/E_OK</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCWakeup/HW_E_FAILED</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ProgramRTCWakeup/HW_E_UNAVAILABLE</POSSIBLE-ERROR-REF>
+                      </POSSIBLE-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                  <POSSIBLE-ERRORS>
+                    <APPLICATION-ERROR UUID="20dbf29c-9a6f-445a-b728-e94b7b4f3c18">
+                      <SHORT-NAME>E_OK</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Request Accepted</L-2>
+                      </DESC>
+                      <ERROR-CODE>0</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="96f0163b-bc76-4b39-8d53-9b60657390ef">
+                      <SHORT-NAME>HW_E_FAILED</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Other Failure</L-2>
+                      </DESC>
+                      <ERROR-CODE>63</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="c1f37dc7-cefd-4881-9af1-c6f882764ab8">
+                      <SHORT-NAME>HW_E_UNAVAILABLE</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">A required resource is persistently unavailable.  For example, use when a diagnosed hardware failure has disabled an output, or power on reset detected.</L-2>
+                      </DESC>
+                      <ERROR-CODE>9</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                  </POSSIBLE-ERRORS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="e679646a-1274-4a44-8ae7-293578363865">
+                  <SHORT-NAME>ReadRTCTime</SHORT-NAME>
+                  <DESC />
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION>
+                      <SHORT-NAME>ReadRTCTime</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE>
+                          <SHORT-NAME>CurrentTime</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/FCADataDefinition/AppDatatypes/ADTRRTCTime</TYPE-TREF>
+                          <DIRECTION>INOUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                      <POSSIBLE-ERROR-REFS>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ReadRTCTime/E_OK</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ReadRTCTime/HW_E_FAILED</POSSIBLE-ERROR-REF>
+                        <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/ReadRTCTime/HW_E_UNAVAILABLE</POSSIBLE-ERROR-REF>
+                      </POSSIBLE-ERROR-REFS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                  <POSSIBLE-ERRORS>
+                    <APPLICATION-ERROR UUID="774bba77-560a-4905-b552-bfb11c292044">
+                      <SHORT-NAME>E_OK</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Request Accepted</L-2>
+                      </DESC>
+                      <ERROR-CODE>0</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="556e5bfd-3886-43f6-91d1-d456892d1e0e">
+                      <SHORT-NAME>HW_E_FAILED</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Other Failure</L-2>
+                      </DESC>
+                      <ERROR-CODE>63</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                    <APPLICATION-ERROR UUID="931be928-ecbb-4e92-967c-a72c00f3089b">
+                      <SHORT-NAME>HW_E_UNAVAILABLE</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">A required resource is persistently unavailable.  For example, use when a diagnosed hardware failure has disabled an output, or power on reset detected.</L-2>
+                      </DESC>
+                      <ERROR-CODE>9</ERROR-CODE>
+                    </APPLICATION-ERROR>
+                  </POSSIBLE-ERRORS>
+                </CLIENT-SERVER-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>RTE</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES>
+          <SHORT-NAME>Rte</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR_Rte/EcucModuleDefs/Rte</DEFINITION-REF>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

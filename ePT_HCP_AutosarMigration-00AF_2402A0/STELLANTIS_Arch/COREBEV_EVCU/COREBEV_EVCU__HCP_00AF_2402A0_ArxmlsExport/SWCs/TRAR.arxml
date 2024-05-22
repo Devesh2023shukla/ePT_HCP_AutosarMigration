@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>STELLANTIS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EPT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ASWCs</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE S="5c721e6dc53246727fa1e4dbde5da1530adcec4b" UUID="f46f0a20-dce1-57b8-6b2d-59cb3629912c">
+                  <SHORT-NAME>TRAR</SHORT-NAME>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="7876692d-a27a-5ba9-91ce-eb53ce786465">
+                      <SHORT-NAME>VeTRAR_M_EngTorqCmndImmed</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_M_EngTorqCmndImmed</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_EngTorqCmndImmed/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_EngTorqCmndImmed</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="4124709b-2fd6-53b3-a4c1-4f28790e0403">
+                      <SHORT-NAME>VeTRAR_M_HybCmndEngTorqPrdtd</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_M_HybCmndEngTorqPrdtd</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_HybCmndEngTorqPrdtd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_HybCmndEngTorqPrdtd</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="18e84e6d-c6a8-5a6e-9672-631aafac81fc">
+                      <SHORT-NAME>VeTRAR_e_HybCmndEngTorqRespTyp</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_e_HybCmndEngTorqRespTyp</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_HybCmndEngTorqRespTyp/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeTRAR_e_HybCmndEngTorqRespTyp</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeTRAR_e_Inactive</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_HybCmndEngTorqRespTyp</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f71e6e80-55b9-52fd-0181-96e9114a2188">
+                      <SHORT-NAME>VeTRAR_b_EngCylDeacReq</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_b_EngCylDeacReq</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngCylDeacReq/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngCylDeacReq</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="26e8731f-e061-5c0b-341f-d0ba114d0e9c">
+                      <SHORT-NAME>VeTRAR_b_EngDFCOReq</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_b_EngDFCOReq</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngDFCOReq/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngDFCOReq</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="5964e1c4-af17-57f0-a7fd-c6d4c2d04dd7">
+                      <SHORT-NAME>VeTRAR_M_TeMax</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_M_TeMax</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_TeMax/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_TeMax</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="9a3a9e5b-6a5e-50e1-9c3b-84f08c17638e">
+                      <SHORT-NAME>VeTRAR_M_TeMin</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_M_TeMin</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_TeMin/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_TeMin</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c248d69e-c3e2-540d-d53c-63d69c0ef253">
+                      <SHORT-NAME>VeTRAR_e_EngCntrlMode</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_e_EngCntrlMode</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_EngCntrlMode/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeTRAR_e_EngCntrlMode</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeTRAR_e_TorqueMode</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_EngCntrlMode</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="fdea4a27-7aca-5e39-e2c3-7288cb5f3613">
+                      <SHORT-NAME>VeTRAR_M_EngReserveTrqCmnd</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_M_EngReserveTrqCmnd</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_EngReserveTrqCmnd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_EngReserveTrqCmnd</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="18a9f7de-1de4-5d94-f4cb-5307aa84b90b">
+                      <SHORT-NAME>VeTRAR_b_ThermSysStressed</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_b_ThermSysStressed</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_ThermSysStressed/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_ThermSysStressed</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="41fd6300-c7ea-54f3-9a67-045311592596">
+                      <SHORT-NAME>VeTRAR_b_EngageThermalLoad</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_b_EngageThermalLoad</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngageThermalLoad/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngageThermalLoad</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b8abc38b-2e4e-5165-9422-762592a06626">
+                      <SHORT-NAME>VeTRAR_b_ThermalDerateEnbld</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_b_ThermalDerateEnbld</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_ThermalDerateEnbld/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_ThermalDerateEnbld</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="e490e1c8-dc6f-5446-0a6f-ff9f1d20b418">
+                      <SHORT-NAME>VeTRAR_M_BCTiMargin</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRAR_M_BCTiMargin</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_BCTiMargin/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_BCTiMargin</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="81e0ff5a-d150-52a6-6bb1-b62a7780672f">
+                      <SHORT-NAME>IB_TRAR</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STELLANTIS/EPT/DataDefinitions/DataTypesMapping/msADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <INIT-EVENT UUID="8aac54cb-81dc-5d7b-4039-7cf27c97505f">
+                          <SHORT-NAME>Event_TRAR_ac_Init</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/TRAR/IB_TRAR/TRAR_ac_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="ce028b3a-c2e4-5ea1-e75a-1e85fdae9551">
+                          <SHORT-NAME>Event_PwrOn</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/TRAR/IB_TRAR/TRAR_PwrOn</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <INCLUDED-DATA-TYPE-SETS>
+                        <INCLUDED-DATA-TYPE-SET>
+                          <DATA-TYPE-REFS>
+                            <DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TeTRAR_e_EngArbState</DATA-TYPE-REF>
+                            <DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TeTRAR_e_EngState</DATA-TYPE-REF>
+                          </DATA-TYPE-REFS>
+                        </INCLUDED-DATA-TYPE-SET>
+                      </INCLUDED-DATA-TYPE-SETS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="4f6789bc-f595-59c3-5344-bc00248c961b">
+                          <SHORT-NAME>TRAR_ac_Init</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="61ba07a6-1485-53fd-0cc6-a9c2b85e176d">
+                              <SHORT-NAME>OUT_VeTRAR_e_HybCmndEngTorqRespTyp_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_e_HybCmndEngTorqRespTyp</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_HybCmndEngTorqRespTyp/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_e_HybCmndEngTorqRespTyp_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d622c305-0edf-51be-76e2-27cb344f883a">
+                              <SHORT-NAME>OUT_VeTRAR_e_EngCntrlMode_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_e_EngCntrlMode</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_EngCntrlMode/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_e_EngCntrlMode_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>TRAR_ac_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="6bb40265-3745-5230-bc14-0047058ee07d">
+                          <SHORT-NAME>TRAR_PwrOn</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="d8bde47e-5011-5d21-a4ab-962f67d0839b">
+                              <SHORT-NAME>OUT_VeTRAR_M_EngTorqCmndImmed_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_M_EngTorqCmndImmed</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_EngTorqCmndImmed/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_M_EngTorqCmndImmed_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="51409bdb-5a58-56c2-1dad-7f4c9c2a7df3">
+                              <SHORT-NAME>OUT_VeTRAR_M_HybCmndEngTorqPrdtd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_M_HybCmndEngTorqPrdtd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_HybCmndEngTorqPrdtd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_M_HybCmndEngTorqPrdtd_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c6c30e95-6a56-54ce-16bf-282f2cc102bc">
+                              <SHORT-NAME>OUT_VeTRAR_b_EngCylDeacReq_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_b_EngCylDeacReq</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngCylDeacReq/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_b_EngCylDeacReq_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="41b2033e-f53a-5d58-470c-4572dcb65651">
+                              <SHORT-NAME>OUT_VeTRAR_M_TeMax_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_M_TeMax</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_TeMax/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_M_TeMax_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7b84ecf8-7593-598d-999a-fc1bdeaf4162">
+                              <SHORT-NAME>OUT_VeTRAR_M_TeMin_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_M_TeMin</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_TeMin/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_M_TeMin_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="82c76a4f-0750-5f68-2c4f-a3448f75243f">
+                              <SHORT-NAME>OUT_VeTRAR_e_EngCntrlMode_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_e_EngCntrlMode</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_EngCntrlMode/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_e_EngCntrlMode_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2bda471e-2177-530e-3026-9123b76dfe3e">
+                              <SHORT-NAME>OUT_VeTRAR_b_ThermSysStressed_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_b_ThermSysStressed</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_ThermSysStressed/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_b_ThermSysStressed_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6d50ff6a-40aa-5238-35d8-dd827f2009ba">
+                              <SHORT-NAME>OUT_VeTRAR_b_EngageThermalLoad_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_b_EngageThermalLoad</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngageThermalLoad/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_b_EngageThermalLoad_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e9d12afb-036b-5b5b-e49e-0f28dc81bbcb">
+                              <SHORT-NAME>OUT_VeTRAR_b_ThermalDerateEnbld_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_b_ThermalDerateEnbld</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_ThermalDerateEnbld/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_b_ThermalDerateEnbld_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9aab4ee1-7e92-5d89-9a76-75c05f8eeb8e">
+                              <SHORT-NAME>OUT_VeTRAR_M_EngReserveTrqCmnd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_M_EngReserveTrqCmnd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_EngReserveTrqCmnd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_M_EngReserveTrqCmnd_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9bf01ea0-d7b6-5a60-49bb-03c4f20bcee1">
+                              <SHORT-NAME>OUT_VeTRAR_b_EngDFCOReq_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_b_EngDFCOReq</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_b_EngDFCOReq/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_b_EngDFCOReq_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7ee390c3-3d60-5c0e-ddae-7b6842c01817">
+                              <SHORT-NAME>OUT_VeTRAR_e_HybCmndEngTorqRespTyp_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_e_HybCmndEngTorqRespTyp</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_e_HybCmndEngTorqRespTyp/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_e_HybCmndEngTorqRespTyp_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c2043f53-4b5a-5d3e-a814-a23d3d896860">
+                              <SHORT-NAME>OUT_VeTRAR_M_BCTiMargin_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/TRAR/VeTRAR_M_BCTiMargin</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRAR_M_BCTiMargin/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTRAR_M_BCTiMargin_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>TRAR_PwrOn</SYMBOL>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpTRAR_PwrOn</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                      <VARIATION-POINT-PROXYS>
+                        <VARIATION-POINT-PROXY UUID="1a9ac44a-56eb-5a43-7c87-1ccd9b9d21c8">
+                          <SHORT-NAME>Variant_TRAR_1</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="46ab7677-1e03-5eba-faad-e54fb097dd43">
+                          <SHORT-NAME>Variant_TRAR_2</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="71b90feb-1216-5451-51d1-fac685a5d7d3">
+                          <SHORT-NAME>Variant_TRAR_BoostedConverter_Enable</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="53bef892-0c2f-5cfc-5021-826f40e47750">
+                          <SHORT-NAME>Variant_TRAR_DistrbtdSEMCntrlStrat_Enable</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                      </VARIATION-POINT-PROXYS>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

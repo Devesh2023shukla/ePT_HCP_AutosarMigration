@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>STELLANTIS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EPT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>SASWCs</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE S="3289d37c50ebdf7db91dd67dd5377887d0d213f1" UUID="10bffb81-93d6-501a-0fd7-848659a92f8a">
+                  <SHORT-NAME>TMIB</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="4ed9bda7-a2d5-57df-cff1-45ce67d73da6">
+                      <SHORT-NAME>VeDFIR_b_IsDiagGlobalConditionsValid</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDFIR_b_IsDiagGlobalConditionsValid</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_IsDiagGlobalConditionsValid/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_IsDiagGlobalConditionsValid</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="d93a9e66-7078-52a6-406b-a6ac78302637">
+                      <SHORT-NAME>VeDFIR_b_PostCodeClrDiagDsbl</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDFIR_b_PostCodeClrDiagDsbl</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_PostCodeClrDiagDsbl/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_PostCodeClrDiagDsbl</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="e3a8b2cf-5959-559f-14b3-44fdf783b61c">
+                      <SHORT-NAME>VeADFB_b_A2DFault</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeADFB_b_A2DFault</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeADFB_b_A2DFault/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeADFB_b_A2DFault</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="6bc8483c-0f49-5e91-cacf-569b8d7d7e69">
+                      <SHORT-NAME>VeADCR_U_Chtis</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeADCR_U_Chtis</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes/VsADCR_e_CnvnRes</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <RECORD-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_IDTRAdcInpResData</SHORT-LABEL>
+                              <FIELDS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </FIELDS>
+                            </RECORD-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="395bf5e2-591a-59c4-0890-a5fbc18b6bd1">
+                      <SHORT-NAME>VeADCR_U_Pectos</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeADCR_U_Pectos</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes/VsADCR_e_CnvnRes</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <RECORD-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_IDTRAdcInpResData</SHORT-LABEL>
+                              <FIELDS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </FIELDS>
+                            </RECORD-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="e703d0d5-f9bc-57a7-6578-300052f62a60">
+                      <SHORT-NAME>VeADCR_U_Ppctis</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeADCR_U_Ppctis</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes/VsADCR_e_CnvnRes</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <RECORD-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_IDTRAdcInpResData</SHORT-LABEL>
+                              <FIELDS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </FIELDS>
+                            </RECORD-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="1818a4f5-0387-5a21-f3ac-fd814371a283">
+                      <SHORT-NAME>VeDMAB_y_StatusByte_CT2_SnsrCktLo</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDMAB_y_StatusByte_CT2_SnsrCktLo</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT2_SnsrCktLo/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT2_SnsrCktLo</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="fabe1d07-7a6d-5e95-07c6-3559eda68d3a">
+                      <SHORT-NAME>VeDMAB_y_StatusByte_CT2_SnsrCktHi</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDMAB_y_StatusByte_CT2_SnsrCktHi</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT2_SnsrCktHi/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT2_SnsrCktHi</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="77b2c4fd-2fa9-5b8c-4814-6f66a36611bc">
+                      <SHORT-NAME>VeDMAB_y_StatusByte_CT_SnsrCktLo</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDMAB_y_StatusByte_CT_SnsrCktLo</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT_SnsrCktLo/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT_SnsrCktLo</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="c4ca9d64-1542-573a-5038-ee4edccfab0d">
+                      <SHORT-NAME>VeDMAB_y_StatusByte_CT_SnsrCktHi</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDMAB_y_StatusByte_CT_SnsrCktHi</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT_SnsrCktHi/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT_SnsrCktHi</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="4d573335-ec56-5e36-dcfe-c7b337922714">
+                      <SHORT-NAME>VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="9547b8ec-e386-5136-3397-b752e62a0308">
+                      <SHORT-NAME>VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="f3318be9-dcfb-5ec9-919f-27ee85ab27b3">
+                      <SHORT-NAME>VeDFIR_b_DsblDiagFailSafe</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDFIR_b_DsblDiagFailSafe</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DsblDiagFailSafe/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DsblDiagFailSafe</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="1a41d542-1f7c-5d36-500a-238df7c4b4cf">
+                      <SHORT-NAME>VeTMIB_T_ElecClntHtr_TmpIn</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_T_ElecClntHtr_TmpIn</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpIn/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpIn</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="4d66390d-301a-569d-6a06-66bb309c8d1d">
+                      <SHORT-NAME>VeTMIB_T_ElecClntHtr_TmpInRaw</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_T_ElecClntHtr_TmpInRaw</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpInRaw/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpInRaw</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="58451630-d836-5b44-9e7e-5c71bc9eb9dd">
+                      <SHORT-NAME>VeTMIB_b_ElecClntHtr_TmpIn_FA</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_b_ElecClntHtr_TmpIn_FA</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_ElecClntHtr_TmpIn_FA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_ElecClntHtr_TmpIn_FA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="337cdcd2-de9d-5477-6893-4d81ba5b6900">
+                      <SHORT-NAME>VeTMIB_T_OnBrdChrg_ClntTmpIn</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_T_OnBrdChrg_ClntTmpIn</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpIn/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpIn</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="4002eb56-526b-5268-a66a-0976145ff924">
+                      <SHORT-NAME>VeTMIB_T_OnBrdChrg_ClntTmpInRaw</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_T_OnBrdChrg_ClntTmpInRaw</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpInRaw/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpInRaw</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f820d92e-73cf-5042-dad2-19eddc552fab">
+                      <SHORT-NAME>VeTMIB_b_OnBrdChrg_ClntTmpIn_FA</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_b_OnBrdChrg_ClntTmpIn_FA</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_OnBrdChrg_ClntTmpIn_FA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_OnBrdChrg_ClntTmpIn_FA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b594dd8c-7c9f-5a92-a361-651c21ecc974">
+                      <SHORT-NAME>VeTMIB_T_PsvPmpClnt_TmpIn</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_T_PsvPmpClnt_TmpIn</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpIn/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpIn</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="be96e325-1db9-5867-064d-37abde4237a5">
+                      <SHORT-NAME>VeTMIB_T_PsvPmpClnt_TmpInRaw</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_T_PsvPmpClnt_TmpInRaw</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpInRaw/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpInRaw</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="11f094af-de1a-57fe-bf0b-b34454131dfd">
+                      <SHORT-NAME>VeTMIB_b_PsvPmpClnt_TmpIn_FA</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_b_PsvPmpClnt_TmpIn_FA</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_PsvPmpClnt_TmpIn_FA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_PsvPmpClnt_TmpIn_FA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="ea41ee8b-db85-5144-8815-b03c59f2f344">
+                      <SHORT-NAME>VeTMIB_e_FaultSts_CT2_SnsrCktHi</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_e_FaultSts_CT2_SnsrCktHi</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktHi/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeDFIB_e_FaultDebounceStatus</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeDFIB_e_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktHi</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="73b9041d-4f47-5131-6449-58913793f1be">
+                      <SHORT-NAME>VeTMIB_e_FaultSts_CT2_SnsrCktLo</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_e_FaultSts_CT2_SnsrCktLo</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktLo/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeDFIB_e_FaultDebounceStatus</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeDFIB_e_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktLo</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="cc3b8cd8-afa8-55d5-eb63-ef40538b2b39">
+                      <SHORT-NAME>VeTMIB_e_FaultSts_CT_SnsrCktHi</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_e_FaultSts_CT_SnsrCktHi</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktHi/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeDFIB_e_FaultDebounceStatus</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeDFIB_e_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktHi</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f2bbfc79-e545-5759-f14d-47ab4a3c1434">
+                      <SHORT-NAME>VeTMIB_e_FaultSts_CT_SnsrCktLo</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_e_FaultSts_CT_SnsrCktLo</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktLo/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeDFIB_e_FaultDebounceStatus</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeDFIB_e_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktLo</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c1fb7ce3-8e9c-5716-24ed-e871a5630e70">
+                      <SHORT-NAME>VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeDFIB_e_FaultDebounceStatus</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeDFIB_e_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="285f898f-199c-53b6-de6b-ddc7560dce94">
+                      <SHORT-NAME>VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeDFIB_e_FaultDebounceStatus</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeDFIB_e_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b3688e12-8916-59e0-121a-6755c8b59ebc">
+                      <SHORT-NAME>VeTMIB_b_OnBrdChrg_ClntTmpIn_FF</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTMIB_b_OnBrdChrg_ClntTmpIn_FF</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_OnBrdChrg_ClntTmpIn_FF/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_OnBrdChrg_ClntTmpIn_FF</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="18317ed5-fd21-54ba-c383-24db8e878be5">
+                      <SHORT-NAME>NeTMIB_Cnt_ECHTISSTG_MFOP_Rx</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNeTMIB_Cnt_ECHTISSTG_MFOP_Rx</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTG_MFOP/NeTMIB_Cnt_ECHTISSTG_MFOP</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTG_MFOP</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="7465ea26-ce2f-57bc-662e-0fa30dbdcc0e">
+                      <SHORT-NAME>NeTMIB_Cnt_ECHTISSTB_MFOP_Rx</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNeTMIB_Cnt_ECHTISSTB_MFOP_Rx</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTB_MFOP/NeTMIB_Cnt_ECHTISSTB_MFOP</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTB_MFOP</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="2d4962cb-feaa-5b7d-6632-eac2efe61c20">
+                      <SHORT-NAME>NeTMIB_Cnt_PECTOSSTG_MFOP_Rx</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNeTMIB_Cnt_PECTOSSTG_MFOP_Rx</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTG_MFOP/NeTMIB_Cnt_PECTOSSTG_MFOP</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTG_MFOP</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="b9219788-d438-5169-6e05-67371e6c162a">
+                      <SHORT-NAME>NeTMIB_Cnt_PECTOSSTB_MFOP_Rx</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNeTMIB_Cnt_PECTOSSTB_MFOP_Rx</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTB_MFOP/NeTMIB_Cnt_PECTOSSTB_MFOP</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTB_MFOP</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="72e3d032-d0c4-5a00-c2ae-02c5d20279fd">
+                      <SHORT-NAME>NeTMIB_Cnt_PPCTISSTG_MFOP_Rx</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNeTMIB_Cnt_PPCTISSTG_MFOP_Rx</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTG_MFOP/NeTMIB_Cnt_PPCTISSTG_MFOP</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTG_MFOP</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="229854df-7377-5653-e3fe-30bbd4f50b04">
+                      <SHORT-NAME>NeTMIB_Cnt_PPCTISSTB_MFOP_Rx</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNeTMIB_Cnt_PPCTISSTB_MFOP_Rx</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTB_MFOP/NeTMIB_Cnt_PPCTISSTB_MFOP</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTB_MFOP</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="0e8cab4c-e3b8-5931-fb2e-989e459cbcdf">
+                      <SHORT-NAME>NeTMIB_Cnt_ECHTISSTG_MFOP</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTG_MFOP/NeTMIB_Cnt_ECHTISSTG_MFOP</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTG_MFOP</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="d9a220b7-c4d4-542c-a71a-0cbc4384c6b4">
+                      <SHORT-NAME>NeTMIB_Cnt_ECHTISSTB_MFOP</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTB_MFOP/NeTMIB_Cnt_ECHTISSTB_MFOP</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTB_MFOP</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="9dc555b4-a74c-5740-1e8f-8789459b5bd1">
+                      <SHORT-NAME>NeTMIB_Cnt_PECTOSSTG_MFOP</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTG_MFOP/NeTMIB_Cnt_PECTOSSTG_MFOP</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTG_MFOP</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="142d7828-11e6-5ea3-2443-dc4d48be8608">
+                      <SHORT-NAME>NeTMIB_Cnt_PECTOSSTB_MFOP</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTB_MFOP/NeTMIB_Cnt_PECTOSSTB_MFOP</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTB_MFOP</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="ef00f2e7-7fbb-54e1-98f9-ca8da6b9a3e4">
+                      <SHORT-NAME>NeTMIB_Cnt_PPCTISSTG_MFOP</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTG_MFOP/NeTMIB_Cnt_PPCTISSTG_MFOP</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTG_MFOP</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="068d315f-eec3-5f93-3b97-37e7cc6c5c8c">
+                      <SHORT-NAME>NeTMIB_Cnt_PPCTISSTB_MFOP</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTB_MFOP/NeTMIB_Cnt_PPCTISSTB_MFOP</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTB_MFOP</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="664e6fcb-5629-5159-7c81-afc2cc892ea0">
+                      <SHORT-NAME>IB_TMIB</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STELLANTIS/EPT/DataDefinitions/DataTypesMapping/msADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/FCADataDefinition/AdtToIdtMapping/ADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="01b3e270-c776-5765-e05d-e5fd1428a96c">
+                          <SHORT-NAME>Event_MedTEH</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/SASWCs/TMIB/IB_TMIB/TMIB_MedTEH</START-ON-EVENT-REF>
+                          <PERIOD>0.1</PERIOD>
+                        </TIMING-EVENT>
+                        <INIT-EVENT UUID="633f722d-19f5-5e99-e889-9647369736ed">
+                          <SHORT-NAME>Event_TMIB_ac_Init</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/SASWCs/TMIB/IB_TMIB/TMIB_ac_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="b9b7e644-a04f-5847-317c-e9979dae7163">
+                          <SHORT-NAME>Event_PwrOff</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/SASWCs/TMIB/IB_TMIB/TMIB_PwrOff</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="8efcd29e-667a-54f0-bf46-861ec4075dc0">
+                          <SHORT-NAME>TMIB_ac_Init</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS UUID="68388a39-a29a-5bf3-9f6b-76ce6b0c64a6">
+                              <SHORT-NAME>IN_NeTMIB_Cnt_ECHTISSTB_MFOP_Rx_NeTMIB_Cnt_ECHTISSTB_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_ECHTISSTB_MFOP_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTB_MFOP/NeTMIB_Cnt_ECHTISSTB_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_NeTMIB_Cnt_ECHTISSTB_MFOP_Rx_NeTMIB_Cnt_ECHTISSTB_MFOP</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6695aaef-1475-52b0-0f93-f021d08b5e7e">
+                              <SHORT-NAME>IN_NeTMIB_Cnt_ECHTISSTG_MFOP_Rx_NeTMIB_Cnt_ECHTISSTG_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_ECHTISSTG_MFOP_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTG_MFOP/NeTMIB_Cnt_ECHTISSTG_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_NeTMIB_Cnt_ECHTISSTG_MFOP_Rx_NeTMIB_Cnt_ECHTISSTG_MFOP</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="822c57e8-41a1-57ec-ebbd-0a1424430e66">
+                              <SHORT-NAME>IN_NeTMIB_Cnt_PECTOSSTB_MFOP_Rx_NeTMIB_Cnt_PECTOSSTB_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PECTOSSTB_MFOP_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTB_MFOP/NeTMIB_Cnt_PECTOSSTB_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_NeTMIB_Cnt_PECTOSSTB_MFOP_Rx_NeTMIB_Cnt_PECTOSSTB_MFOP</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d5941db2-cdc1-51fc-525b-a09bdada57a7">
+                              <SHORT-NAME>IN_NeTMIB_Cnt_PECTOSSTG_MFOP_Rx_NeTMIB_Cnt_PECTOSSTG_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PECTOSSTG_MFOP_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTG_MFOP/NeTMIB_Cnt_PECTOSSTG_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_NeTMIB_Cnt_PECTOSSTG_MFOP_Rx_NeTMIB_Cnt_PECTOSSTG_MFOP</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="29e10298-c335-5c6e-9567-0e1a33c3d567">
+                              <SHORT-NAME>IN_NeTMIB_Cnt_PPCTISSTB_MFOP_Rx_NeTMIB_Cnt_PPCTISSTB_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PPCTISSTB_MFOP_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTB_MFOP/NeTMIB_Cnt_PPCTISSTB_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_NeTMIB_Cnt_PPCTISSTB_MFOP_Rx_NeTMIB_Cnt_PPCTISSTB_MFOP</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2500f6bc-c241-5ce7-e38d-835e341a0781">
+                              <SHORT-NAME>IN_NeTMIB_Cnt_PPCTISSTG_MFOP_Rx_NeTMIB_Cnt_PPCTISSTG_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PPCTISSTG_MFOP_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTG_MFOP/NeTMIB_Cnt_PPCTISSTG_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_NeTMIB_Cnt_PPCTISSTG_MFOP_Rx_NeTMIB_Cnt_PPCTISSTG_MFOP</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="6ede3162-e0bb-57cc-7c14-92bfc1db4e56">
+                              <SHORT-NAME>OUT_VeTMIB_T_ElecClntHtr_TmpInRaw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_ElecClntHtr_TmpInRaw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpInRaw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_ElecClntHtr_TmpInRaw_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="025b78e9-7707-548d-91e9-2c1918a9bfd6">
+                              <SHORT-NAME>OUT_VeTMIB_T_ElecClntHtr_TmpIn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_ElecClntHtr_TmpIn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpIn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_ElecClntHtr_TmpIn_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9dfd2ccd-c5a3-56e5-8812-240b8c26c2e5">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT2_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT2_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT2_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="50026fb9-fc5d-5b4f-2bc5-f0de974b4e21">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT2_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT2_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT2_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="349611c3-581a-5151-b04c-beca9cbd34ca">
+                              <SHORT-NAME>OUT_VeTMIB_T_OnBrdChrg_ClntTmpIn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_OnBrdChrg_ClntTmpIn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpIn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_OnBrdChrg_ClntTmpIn_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="8f4842cd-84c1-5f98-f9e9-912037c06b5f">
+                              <SHORT-NAME>OUT_VeTMIB_T_OnBrdChrg_ClntTmpInRaw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_OnBrdChrg_ClntTmpInRaw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpInRaw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_OnBrdChrg_ClntTmpInRaw_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7ca108d5-24f2-5756-1c1f-bb662533d4f9">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1c4489ab-a918-5595-806b-ddc942e0faee">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="83fe5f69-b26e-545c-8b41-8c69e34bc8ac">
+                              <SHORT-NAME>OUT_VeTMIB_T_PsvPmpClnt_TmpIn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_PsvPmpClnt_TmpIn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpIn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_PsvPmpClnt_TmpIn_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ccf91a16-9b4f-58dc-50f3-dac520b7b9eb">
+                              <SHORT-NAME>OUT_VeTMIB_T_PsvPmpClnt_TmpInRaw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_PsvPmpClnt_TmpInRaw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpInRaw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_PsvPmpClnt_TmpInRaw_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="28ef1508-b46a-5669-eb80-0d2ff0ae6f8e">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="97176803-481c-5e24-ced7-8839907503ad">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>TMIB_ac_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="5d33245f-afbe-5442-4214-361f67f8e1be">
+                          <SHORT-NAME>TMIB_MedTEH</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS UUID="3f967982-b24b-5f11-a131-87e930f2060f">
+                              <SHORT-NAME>IN_VeADCR_U_Chtis_VsADCR_e_CnvnRes</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeADCR_U_Chtis</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes/VsADCR_e_CnvnRes</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeADCR_U_Chtis_VsADCR_e_CnvnRes</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="38e2cb67-b1e7-59e6-f775-dda5d4f77488">
+                              <SHORT-NAME>IN_VeADCR_U_Pectos_VsADCR_e_CnvnRes</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeADCR_U_Pectos</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes/VsADCR_e_CnvnRes</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeADCR_U_Pectos_VsADCR_e_CnvnRes</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a0bd0b06-f600-552f-3ecc-71924a3c78b8">
+                              <SHORT-NAME>IN_VeADCR_U_Ppctis_VsADCR_e_CnvnRes</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeADCR_U_Ppctis</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFIoHwAb/VsADCR_e_CnvnRes/VsADCR_e_CnvnRes</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeADCR_U_Ppctis_VsADCR_e_CnvnRes</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="aaca7b6b-2073-53f9-416a-f1ef6b153aaf">
+                              <SHORT-NAME>IN_VeADFB_b_A2DFault_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeADFB_b_A2DFault</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeADFB_b_A2DFault/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeADFB_b_A2DFault_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d1334712-3686-5498-873d-425a1d91bc90">
+                              <SHORT-NAME>IN_VeDFIR_b_DsblDiagFailSafe_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDFIR_b_DsblDiagFailSafe</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DsblDiagFailSafe/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDFIR_b_DsblDiagFailSafe_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="45db7580-1a86-5d35-7157-71a922950172">
+                              <SHORT-NAME>IN_VeDFIR_b_IsDiagGlobalConditionsValid_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDFIR_b_IsDiagGlobalConditionsValid</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_IsDiagGlobalConditionsValid/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDFIR_b_IsDiagGlobalConditionsValid_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1b3ca2df-6fbb-5707-fdf2-9e7017495472">
+                              <SHORT-NAME>IN_VeDFIR_b_PostCodeClrDiagDsbl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDFIR_b_PostCodeClrDiagDsbl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_PostCodeClrDiagDsbl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDFIR_b_PostCodeClrDiagDsbl_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="37f2b85e-cf68-59e9-f3e7-649a2b09f610">
+                              <SHORT-NAME>IN_VeDMAB_y_StatusByte_CT2_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDMAB_y_StatusByte_CT2_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT2_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDMAB_y_StatusByte_CT2_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b8b1b16a-8e9e-5e54-83fe-3af98a1bcf5b">
+                              <SHORT-NAME>IN_VeDMAB_y_StatusByte_CT2_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDMAB_y_StatusByte_CT2_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT2_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDMAB_y_StatusByte_CT2_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d7bd29e1-a806-55d1-c7cd-4aa99ec6de45">
+                              <SHORT-NAME>IN_VeDMAB_y_StatusByte_CT_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDMAB_y_StatusByte_CT_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDMAB_y_StatusByte_CT_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="0627b428-6a93-5890-0324-b5c107789054">
+                              <SHORT-NAME>IN_VeDMAB_y_StatusByte_CT_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDMAB_y_StatusByte_CT_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_CT_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDMAB_y_StatusByte_CT_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="783987d1-ef8c-555c-f1e2-5857fc12a9ef">
+                              <SHORT-NAME>IN_VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="4d272433-5300-53b0-c357-243b8651b8d4">
+                              <SHORT-NAME>IN_VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDMAB_y_StatusByte_MtrElect_CT_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="8d28c052-d33f-5017-aedd-0b6d0fc2a29e">
+                              <SHORT-NAME>OUT_VeTMIB_b_ElecClntHtr_TmpIn_FA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_b_ElecClntHtr_TmpIn_FA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_ElecClntHtr_TmpIn_FA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_b_ElecClntHtr_TmpIn_FA_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d85841be-e933-51a5-689e-4806ba7cad25">
+                              <SHORT-NAME>OUT_VeTMIB_T_ElecClntHtr_TmpInRaw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_ElecClntHtr_TmpInRaw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpInRaw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_ElecClntHtr_TmpInRaw_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="8d51abaf-cf2e-502a-e446-0cd70370e7e1">
+                              <SHORT-NAME>OUT_VeTMIB_T_ElecClntHtr_TmpIn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_ElecClntHtr_TmpIn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_ElecClntHtr_TmpIn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_ElecClntHtr_TmpIn_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3c213695-d74f-5c68-873b-0965a5e5de63">
+                              <SHORT-NAME>OUT_VeTMIB_b_OnBrdChrg_ClntTmpIn_FA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_b_OnBrdChrg_ClntTmpIn_FA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_OnBrdChrg_ClntTmpIn_FA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_b_OnBrdChrg_ClntTmpIn_FA_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="00aecbe1-a90c-5d4b-caa4-9dad81157bb4">
+                              <SHORT-NAME>OUT_VeTMIB_T_OnBrdChrg_ClntTmpInRaw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_OnBrdChrg_ClntTmpInRaw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpInRaw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_OnBrdChrg_ClntTmpInRaw_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b2931b89-a4c2-58df-44fd-d43ea243c5bc">
+                              <SHORT-NAME>OUT_VeTMIB_T_OnBrdChrg_ClntTmpIn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_OnBrdChrg_ClntTmpIn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_OnBrdChrg_ClntTmpIn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_OnBrdChrg_ClntTmpIn_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="52d28e1a-889c-5a6d-1f85-e20aa20f09f8">
+                              <SHORT-NAME>OUT_VeTMIB_b_PsvPmpClnt_TmpIn_FA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_b_PsvPmpClnt_TmpIn_FA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_PsvPmpClnt_TmpIn_FA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_b_PsvPmpClnt_TmpIn_FA_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="38ab4ba9-8830-5934-d493-7219a7388117">
+                              <SHORT-NAME>OUT_VeTMIB_T_PsvPmpClnt_TmpInRaw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_PsvPmpClnt_TmpInRaw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpInRaw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_PsvPmpClnt_TmpInRaw_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a49958cf-0e30-5f83-d01e-cf9279c0e6a5">
+                              <SHORT-NAME>OUT_VeTMIB_T_PsvPmpClnt_TmpIn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_T_PsvPmpClnt_TmpIn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_T_PsvPmpClnt_TmpIn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_T_PsvPmpClnt_TmpIn_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="65a72cd0-de10-5ba9-9c3c-74fa363c1cdc">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT2_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT2_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT2_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1a7270b6-95ef-5530-ff90-e11304a7b27d">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT2_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT2_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT2_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT2_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6c04390f-e2d3-5e3a-14da-5f308426fb7d">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="669ecf99-813d-5fb1-8f3e-5a15ff62fc74">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_CT_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_CT_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_CT_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_CT_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a8e010c5-0a57-5178-bfb7-f7d20a20ecf6">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktHi_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="383284b0-389f-5e46-7470-d23e17c70825">
+                              <SHORT-NAME>OUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_e_FaultSts_MtrElect_CT_SnsrCktLo_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="cfe7786e-8e3e-5e33-e05c-9864a603e29c">
+                              <SHORT-NAME>OUT_VeTMIB_b_OnBrdChrg_ClntTmpIn_FF_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/VeTMIB_b_OnBrdChrg_ClntTmpIn_FF</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTMIB_b_OnBrdChrg_ClntTmpIn_FF/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_VeTMIB_b_OnBrdChrg_ClntTmpIn_FF_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>TMIB_MedTEH</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="02a96855-07d3-5319-5e3d-513364a1110c">
+                          <SHORT-NAME>TMIB_PwrOff</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="6916ebd9-d7d2-5e3a-7184-ab0bd5f393df">
+                              <SHORT-NAME>OUT_NeTMIB_Cnt_ECHTISSTG_MFOP_NeTMIB_Cnt_ECHTISSTG_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_ECHTISSTG_MFOP</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTG_MFOP/NeTMIB_Cnt_ECHTISSTG_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d5e88925-d476-55fc-70ff-d3d7399418c4">
+                              <SHORT-NAME>OUT_NeTMIB_Cnt_ECHTISSTB_MFOP_NeTMIB_Cnt_ECHTISSTB_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_ECHTISSTB_MFOP</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_ECHTISSTB_MFOP/NeTMIB_Cnt_ECHTISSTB_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b82f193d-2ea4-5f05-809b-09e241feecc3">
+                              <SHORT-NAME>OUT_NeTMIB_Cnt_PECTOSSTG_MFOP_NeTMIB_Cnt_PECTOSSTG_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PECTOSSTG_MFOP</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTG_MFOP/NeTMIB_Cnt_PECTOSSTG_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="28562ca9-09be-5fc4-f112-efb8d2560780">
+                              <SHORT-NAME>OUT_NeTMIB_Cnt_PECTOSSTB_MFOP_NeTMIB_Cnt_PECTOSSTB_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PECTOSSTB_MFOP</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PECTOSSTB_MFOP/NeTMIB_Cnt_PECTOSSTB_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ad516cd7-493c-5b1a-9e5d-938436377403">
+                              <SHORT-NAME>OUT_NeTMIB_Cnt_PPCTISSTG_MFOP_NeTMIB_Cnt_PPCTISSTG_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PPCTISSTG_MFOP</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTG_MFOP/NeTMIB_Cnt_PPCTISSTG_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="20424415-584c-5cf8-da43-db0514c789eb">
+                              <SHORT-NAME>OUT_NeTMIB_Cnt_PPCTISSTB_MFOP_NeTMIB_Cnt_PPCTISSTB_MFOP</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/SASWCs/TMIB/NeTMIB_Cnt_PPCTISSTB_MFOP</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeTMIB_Cnt_PPCTISSTB_MFOP/NeTMIB_Cnt_PPCTISSTB_MFOP</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>TMIB_PwrOff</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                      <VARIATION-POINT-PROXYS>
+                        <VARIATION-POINT-PROXY UUID="289e4d93-82c7-5a83-8bb5-2fe7f2a0c912">
+                          <SHORT-NAME>Variant_TMIB_ECHTIS_Presence</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="abad3b1d-757f-5c86-6c31-4884a3d6cc73">
+                          <SHORT-NAME>Variant_TMIB_PECTOS_Presence</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="cc584c8d-b6cf-5248-f54c-19cdb7dda5a0">
+                          <SHORT-NAME>Variant_TMIB_PPCTIS_Presence</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                      </VARIATION-POINT-PROXYS>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>STELLANTIS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EPT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ASWCs</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE S="87898a39b4bd986c6abddbc82e2966bcd8b87189" UUID="f10e717d-dde8-508d-5bcc-a2b822fbde10">
+                  <SHORT-NAME>STAR</SHORT-NAME>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="270a5ee4-4239-5498-2aa8-8c4d9dc8f368">
+                      <SHORT-NAME>VeSTAR_g_GenStrtStpReg</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_g_GenStrtStpReg/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_g_GenStrtStpReg</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="3f3183e9-7bc3-5adf-e483-7866fce7f874">
+                      <SHORT-NAME>VeSTAR_b_CmdEngOnFnl</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_CmdEngOnFnl/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_CmdEngOnFnl</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="a508ea7e-0fcf-53f8-661e-29ee4ecd00ef">
+                      <SHORT-NAME>VeSTAR_e_StrtTypArbFnl</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTypArbFnl/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeSTRR_e_EngStrtStopType</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeSTRR_e_NoAction</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTypArbFnl</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="60e16385-927d-559c-d324-a15cbf8e04c8">
+                      <SHORT-NAME>VeSTAR_b_EngOnAllwdSTGC</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOnAllwdSTGC/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOnAllwdSTGC</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="41646f1b-37d1-5d13-82a1-17fa829f210f">
+                      <SHORT-NAME>VeSTAR_b_RemedialStop</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemedialStop/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemedialStop</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="79afc31c-030b-5c14-a88a-c6d1507d07e8">
+                      <SHORT-NAME>VeSTAR_e_StrtTyp2TCM</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTyp2TCM/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeSTRR_e_EngStrtStopType</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeSTRR_e_NoAction</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTyp2TCM</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c514b88f-f416-5d7f-c26c-0a6fcff45671">
+                      <SHORT-NAME>VeSTAR_b_EngOffAllowed</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowed/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowed</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f592160c-1781-5031-7752-9636b57d186a">
+                      <SHORT-NAME>VeSTAR_b_EngOffAllowedECM</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowedECM/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowedECM</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="2bf0f2e0-281f-5f0c-b72c-407a4768d884">
+                      <SHORT-NAME>VeSTAR_b_MaxEngOff</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_MaxEngOff/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_MaxEngOff</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="d7aae0c1-29b2-512c-affc-7d305f2361fc">
+                      <SHORT-NAME>VeSTAR_b_StrtChkMdUp</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtChkMdUp/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtChkMdUp</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c2cafcfa-28ce-5e7d-189c-079a21480e5f">
+                      <SHORT-NAME>VeSTAR_b_StrtAllwd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtAllwd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtAllwd</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="72b3b0d1-4c55-5015-4f49-a5d6c72f8709">
+                      <SHORT-NAME>VeSTAR_b_RemStopESS</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemStopESS/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemStopESS</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="9c6c7ca3-9081-511b-3fc5-22d20cb2b834">
+                      <SHORT-NAME>VeSTAR_e_EssSTGCRsn</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_EssSTGCRsn/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeSTRR_e_EngOffRsnSTGC</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeSTRR_e_None</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_EssSTGCRsn</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="5c7ae8a9-20a8-57da-b14a-996e3f5f6505">
+                      <SHORT-NAME>IB_STAR</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STELLANTIS/EPT/DataDefinitions/DataTypesMapping/msADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="9feb7c09-0cf0-5610-ec54-bf0de306b16b">
+                          <SHORT-NAME>Event_MedTEB</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STAR/IB_STAR/STAR_MedTEB</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>
+                        <INIT-EVENT UUID="26542d40-1d52-5b0a-e4c9-c6dea95fb1aa">
+                          <SHORT-NAME>Event_STAR_ac_Init</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STAR/IB_STAR/STAR_ac_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="faa94f09-ca23-513b-1132-796ec711c2b6">
+                          <SHORT-NAME>Event_PwrOn</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STAR/IB_STAR/STAR_PwrOn</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="52a3e73e-513a-5420-cc01-3109bb8cb115">
+                          <SHORT-NAME>STAR_ac_Init</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="b4fb1fea-f41c-52db-7313-71f9160b6e29">
+                              <SHORT-NAME>OUT_VeSTAR_e_StrtTypArbFnl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_StrtTypArbFnl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTypArbFnl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d8f8ee3d-7657-5fba-d65b-5e3ad4e2a74c">
+                              <SHORT-NAME>OUT_VeSTAR_e_StrtTyp2TCM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_StrtTyp2TCM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTyp2TCM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="8072a4c6-39fa-512f-e880-fbb31ce8c25e">
+                              <SHORT-NAME>OUT_VeSTAR_e_EssSTGCRsn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_EssSTGCRsn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_EssSTGCRsn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STAR_ac_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="f474c0dd-8739-57a2-c96e-bfba1a8b1080">
+                          <SHORT-NAME>STAR_MedTEB</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="8fba7bf6-2521-5840-e94d-53767f85ef57">
+                              <SHORT-NAME>OUT_VeSTAR_b_EngOffAllowedECM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_EngOffAllowedECM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowedECM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="af56a858-85c6-5f98-a20c-928d481f270b">
+                              <SHORT-NAME>OUT_VeSTAR_b_MaxEngOff_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_MaxEngOff</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_MaxEngOff/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f09ff58b-9d00-5894-69b1-1851f8755a49">
+                              <SHORT-NAME>OUT_VeSTAR_b_StrtChkMdUp_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_StrtChkMdUp</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtChkMdUp/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9fd28c7c-07cc-5f40-b8f2-4fed87ecea81">
+                              <SHORT-NAME>OUT_VeSTAR_e_EssSTGCRsn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_EssSTGCRsn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_EssSTGCRsn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b8eea779-3378-5c09-0727-807e2a30dd2a">
+                              <SHORT-NAME>OUT_VeSTAR_e_StrtTypArbFnl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_StrtTypArbFnl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTypArbFnl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="601bbfd4-1b23-5b47-d513-fb25b7020235">
+                              <SHORT-NAME>OUT_VeSTAR_e_StrtTyp2TCM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_StrtTyp2TCM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTyp2TCM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="49ce0621-9b79-5942-3376-b727fc8eff43">
+                              <SHORT-NAME>OUT_VeSTAR_b_StrtAllwd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_StrtAllwd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtAllwd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6eec1309-ec60-56d1-32d7-82d241ed5488">
+                              <SHORT-NAME>OUT_VeSTAR_b_CmdEngOnFnl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_CmdEngOnFnl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_CmdEngOnFnl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="4724adcb-f172-5b23-fa46-94dc79eddd13">
+                              <SHORT-NAME>OUT_VeSTAR_b_EngOnAllwdSTGC_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_EngOnAllwdSTGC</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOnAllwdSTGC/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="dad6cca5-b7ea-5d0d-4ab1-e18c44c64b17">
+                              <SHORT-NAME>OUT_VeSTAR_b_RemedialStop_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_RemedialStop</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemedialStop/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a4b5e5b3-c4b4-5d8d-a195-5ff0753256ca">
+                              <SHORT-NAME>OUT_VeSTAR_b_EngOffAllowed_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_EngOffAllowed</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowed/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="268e7983-4bc2-5b5b-ec42-4f392c13fd9b">
+                              <SHORT-NAME>OUT_VeSTAR_b_RemStopESS_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_RemStopESS</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemStopESS/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="58a85714-76d4-5df4-a8e3-213533e35c69">
+                              <SHORT-NAME>OUT_VeSTAR_g_GenStrtStpReg_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_g_GenStrtStpReg</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_g_GenStrtStpReg/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STAR_MedTEB</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="dfe87fc8-f6b0-552f-5f22-d45ba82ed69c">
+                          <SHORT-NAME>STAR_PwrOn</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="4013e67b-504f-58a5-e112-7d9a5e9966f8">
+                              <SHORT-NAME>OUT_VeSTAR_g_GenStrtStpReg_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_g_GenStrtStpReg</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_g_GenStrtStpReg/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d98f973b-12eb-5c39-60c2-8754954ad46f">
+                              <SHORT-NAME>OUT_VeSTAR_b_CmdEngOnFnl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_CmdEngOnFnl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_CmdEngOnFnl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="26f7c9e2-d4a0-5a1d-56c5-c1c3c64f3983">
+                              <SHORT-NAME>OUT_VeSTAR_e_StrtTypArbFnl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_StrtTypArbFnl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTypArbFnl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="078d1c2b-23b0-5a9f-29af-2adc24b52708">
+                              <SHORT-NAME>OUT_VeSTAR_b_EngOnAllwdSTGC_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_EngOnAllwdSTGC</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOnAllwdSTGC/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="159eed6a-809e-5dbc-7686-539819cc9baf">
+                              <SHORT-NAME>OUT_VeSTAR_b_RemedialStop_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_RemedialStop</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemedialStop/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="108cfef5-ee35-5a18-c255-f80c490face9">
+                              <SHORT-NAME>OUT_VeSTAR_e_StrtTyp2TCM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_StrtTyp2TCM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_StrtTyp2TCM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="370418ea-c307-5c92-e3ab-cd2c5fdc923c">
+                              <SHORT-NAME>OUT_VeSTAR_b_EngOffAllowed_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_EngOffAllowed</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowed/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9f9f154e-970c-5d63-105f-7cea2f1481f4">
+                              <SHORT-NAME>OUT_VeSTAR_b_EngOffAllowedECM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_EngOffAllowedECM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_EngOffAllowedECM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="19428925-0df1-57df-aa29-cd33d8abf921">
+                              <SHORT-NAME>OUT_VeSTAR_b_MaxEngOff_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_MaxEngOff</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_MaxEngOff/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="dd8bf926-afeb-543f-af0e-38c1fec24b5b">
+                              <SHORT-NAME>OUT_VeSTAR_b_StrtChkMdUp_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_StrtChkMdUp</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtChkMdUp/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b47fdcf8-b013-54b3-f5ac-38141ced6e97">
+                              <SHORT-NAME>OUT_VeSTAR_b_StrtAllwd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_StrtAllwd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_StrtAllwd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2af6f43f-5798-5e93-2dad-d04d49c566e4">
+                              <SHORT-NAME>OUT_VeSTAR_b_RemStopESS_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_b_RemStopESS</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_b_RemStopESS/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="987e717f-3a08-5073-ba38-bdc25e8103aa">
+                              <SHORT-NAME>OUT_VeSTAR_e_EssSTGCRsn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STAR/VeSTAR_e_EssSTGCRsn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTAR_e_EssSTGCRsn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STAR_PwrOn</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                      <VARIATION-POINT-PROXYS>
+                        <VARIATION-POINT-PROXY UUID="393f130f-7550-5d77-73f2-57b189c61287">
+                          <SHORT-NAME>Variant_STAR_BEVVar</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="b2a087fa-1e66-585f-e2ef-3edb512589e0">
+                          <SHORT-NAME>Variant_STAR_StrtDvc2p5Eqpd</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                      </VARIATION-POINT-PROXYS>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

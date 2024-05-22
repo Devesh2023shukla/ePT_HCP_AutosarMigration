@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>STELLANTIS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EPT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ASWCs</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE S="f3932b11aeea200932b66ce3d576c4e4aef1369a" UUID="756b2763-db96-5118-72ac-c22a7e6c3bff">
+                  <SHORT-NAME>CTCR</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="31afc3d3-3d50-5e77-41b8-79f5ea12cdae">
+                      <SHORT-NAME>VeVTVR_M_LoadTorqFront_Min</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeVTVR_M_LoadTorqFront_Min</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeVTVR_M_LoadTorqFront_Min/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeVTVR_M_LoadTorqFront_Min</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f1142ee5-e4f5-55d0-eb7c-7c4b5fe33d19">
+                      <SHORT-NAME>VeCTCR_b_MinCreepWheelTrq_Enable</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreepWheelTrq_Enable/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreepWheelTrq_Enable</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c731d2c5-2bc1-57b4-0c86-1b9745091cf8">
+                      <SHORT-NAME>VeCTCR_M_WheelMin4ECM</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4ECM/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4ECM</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="2c0f2d66-3e2e-5390-4e10-b27709fd053c">
+                      <SHORT-NAME>VeCTCR_b_MinCreep_Enable</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="9fb93a8b-b8ce-5fcd-723f-88aab920edfe">
+                      <SHORT-NAME>VeCTCR_M_MinCreepWheelTrq</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepWheelTrq/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepWheelTrq</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="81ce849e-db9a-56d6-35a1-ffb67ad9e5c5">
+                      <SHORT-NAME>VeCTCR_M_MinCreepFWTrq</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrq/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrq</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="22574b41-3fca-5b99-4170-ca124a67ed5b">
+                      <SHORT-NAME>VeCTCR_M_MinCreep_ToCreepCL</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreep_ToCreepCL/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreep_ToCreepCL</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="87346160-0b7f-578a-d48f-187f1f048854">
+                      <SHORT-NAME>VeCTCR_r_MinCreepBlendingFactorBlended</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_r_MinCreepBlendingFactorBlended/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_r_MinCreepBlendingFactorBlended</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="a602fc6e-fa1d-51ef-fbe7-8571fee30c02">
+                      <SHORT-NAME>VeCTCR_M_WheelMin4Aecoast</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4Aecoast/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4Aecoast</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="6d2ad2bc-b67d-5a3c-05ce-f91c7c903f82">
+                      <SHORT-NAME>VeCTCR_b_MinCreepEnable_Stgc</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreepEnable_Stgc/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreepEnable_Stgc</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f7486fc5-98da-5ae1-ade9-576bbd78ab38">
+                      <SHORT-NAME>VeCTCR_M_SumTrqMinPwrTrn</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_SumTrqMinPwrTrn/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_SumTrqMinPwrTrn</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="4d5953c4-6bfa-5834-5e7a-12e2e1dd347d">
+                      <SHORT-NAME>VeCTCR_M_WheelTrqMinOverrev</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelTrqMinOverrev/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelTrqMinOverrev</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c4de82b3-ac71-56dc-dee5-120cb1b64c3d">
+                      <SHORT-NAME>VeCTCR_M_TransIntakeWhlTgt_Raw</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_TransIntakeWhlTgt_Raw/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_TransIntakeWhlTgt_Raw</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="bb30b2eb-67aa-5032-0765-9e5093609d1f">
+                      <SHORT-NAME>VeCTCR_b_MinCreep_Enable_ECM</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable_ECM/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable_ECM</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="851801a9-18ae-527d-efdd-e4b22f51301e">
+                      <SHORT-NAME>VeCTCR_M_MinCreepFWTrqTgt</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrqTgt/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrqTgt</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="aa46aed5-175b-55ee-248a-f95b7ec1fc22">
+                      <SHORT-NAME>VeCTCR_b_CreepReserveActive</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_CreepReserveActive/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_CreepReserveActive</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="4c0c19d1-f32e-54c4-ed29-0e539d891bd9">
+                      <SHORT-NAME>IB_CTCR</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STELLANTIS/EPT/DataDefinitions/DataTypesMapping/msADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="65ff8ebf-13ed-50f5-f5e6-18129cf678ac">
+                          <SHORT-NAME>Event_MedTEB2</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/CTCR_MedTEB2</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>
+                        <INIT-EVENT UUID="8bf32a0d-a17e-525e-0265-8f804219494f">
+                          <SHORT-NAME>Event_CTCR_ac_Init</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/CTCR_ac_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="c2b459b1-2298-5007-be73-e7f5882cb286">
+                          <SHORT-NAME>Event_PwrOn</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/CTCR_PwrOn</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                        <VARIABLE-DATA-PROTOTYPE UUID="74b748de-52f5-5ccb-2592-790e3aff8f33">
+                          <SHORT-NAME>VeCTCR_b_MinCreep_Enable_FUNC_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f9d9ce28-d2ea-545b-8cf2-7f58e063bc05">
+                          <SHORT-NAME>VeCTCR_M_MinCreepWheelTrqBlend_FUNC_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Float</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ad258655-d5b7-5893-6850-ec859edb2446">
+                          <SHORT-NAME>VeCTCR_M_MinCreepWheelTrq_FUNC_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Float</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a4bcfb12-80e4-5f61-4509-d4e6a91f5286">
+                          <SHORT-NAME>VeCTCR_b_MinCreep_Enable_ECM_FUNC_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c83197a2-7412-595b-b340-7d35ccf79496">
+                          <SHORT-NAME>VeCTCR_M_WheelMin4ECM_FUNC_IRV_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Float</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                      </EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="826025a1-e191-5f06-cbc8-4919c0b9c36b">
+                          <SHORT-NAME>CTCR_ac_Init</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>CTCR_ac_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="d498d67c-6ff8-58e0-2f02-57e76138d2a1">
+                          <SHORT-NAME>CTCR_PwrOn</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="4c98e26e-1f16-5e69-efb2-e807e07cc7ba">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreepWheelTrq_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreepWheelTrq</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepWheelTrq/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ad9baba5-d017-5011-90f8-399c1037af9f">
+                              <SHORT-NAME>OUT_VeCTCR_b_MinCreepWheelTrq_Enable_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_MinCreepWheelTrq_Enable</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreepWheelTrq_Enable/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="580bed0d-c41d-5e4f-c9e8-549c6ba2a680">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreepFWTrq_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreepFWTrq</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrq/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="be7395cb-e917-5507-0008-c896bfe4b5c4">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreep_ToCreepCL_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreep_ToCreepCL</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreep_ToCreepCL/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d23f6238-c33a-555a-d32b-0966671cbe5e">
+                              <SHORT-NAME>OUT_VeCTCR_M_WheelMin4ECM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_WheelMin4ECM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4ECM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9ec23bb9-eb75-5cae-3845-45b6e4bff6c7">
+                              <SHORT-NAME>OUT_VeCTCR_b_MinCreep_Enable_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_MinCreep_Enable</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2d1a8d7d-5770-5275-57bc-d0546d38a4b3">
+                              <SHORT-NAME>OUT_VeCTCR_r_MinCreepBlendingFactorBlended_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_r_MinCreepBlendingFactorBlended</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_r_MinCreepBlendingFactorBlended/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6cb010af-5390-561c-7b55-7e0d6e21ca1f">
+                              <SHORT-NAME>OUT_VeCTCR_M_WheelMin4Aecoast_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_WheelMin4Aecoast</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4Aecoast/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="95b450df-e0df-5e4b-8f71-e01bf3686a01">
+                              <SHORT-NAME>OUT_VeCTCR_b_MinCreepEnable_Stgc_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_MinCreepEnable_Stgc</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreepEnable_Stgc/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="fdc3849b-8e4b-5b59-3777-74d5094bd910">
+                              <SHORT-NAME>OUT_VeCTCR_M_SumTrqMinPwrTrn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_SumTrqMinPwrTrn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_SumTrqMinPwrTrn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="aadf2fad-5661-5ab9-0cf7-11837830c81c">
+                              <SHORT-NAME>OUT_VeCTCR_M_WheelTrqMinOverrev_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_WheelTrqMinOverrev</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelTrqMinOverrev/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="0e4f616a-9238-5e27-e3b8-54a8a968409f">
+                              <SHORT-NAME>OUT_VeCTCR_M_TransIntakeWhlTgt_Raw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_TransIntakeWhlTgt_Raw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_TransIntakeWhlTgt_Raw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="dca4335d-a3a6-51ec-1e4f-34c52aa2e1db">
+                              <SHORT-NAME>OUT_VeCTCR_b_MinCreep_Enable_ECM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_MinCreep_Enable_ECM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable_ECM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2d199635-af6f-5993-ecb5-935c9dd31574">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreepFWTrqTgt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreepFWTrqTgt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrqTgt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="acbe6e5e-5d7c-5b58-e9d5-378d8a7a809c">
+                              <SHORT-NAME>OUT_VeCTCR_b_CreepReserveActive_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_CreepReserveActive</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_CreepReserveActive/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>CTCR_PwrOn</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="ac86558d-1919-5597-5599-a68b8b250a60">
+                              <SHORT-NAME>WV_VeCTCR_M_MinCreepWheelTrqBlend_FUNC_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/VeCTCR_M_MinCreepWheelTrqBlend_FUNC_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7984978b-83c0-5744-19df-777c107f983a">
+                              <SHORT-NAME>WV_VeCTCR_M_WheelMin4ECM_FUNC_IRV_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/VeCTCR_M_WheelMin4ECM_FUNC_IRV_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a893ef4c-cbd6-5479-e20e-cc70ff8c0c77">
+                              <SHORT-NAME>WV_VeCTCR_b_MinCreep_Enable_ECM_FUNC_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/VeCTCR_b_MinCreep_Enable_ECM_FUNC_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="4292fbc9-4f8e-515e-b798-7cf8d2188bd7">
+                              <SHORT-NAME>WV_VeCTCR_M_MinCreepWheelTrq_FUNC_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/VeCTCR_M_MinCreepWheelTrq_FUNC_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c9c15ba1-1b67-5b63-65a8-6125d72e5dad">
+                              <SHORT-NAME>WV_VeCTCR_b_MinCreep_Enable_FUNC_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/IB_CTCR/VeCTCR_b_MinCreep_Enable_FUNC_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="84e49b8b-8223-5dd3-c194-ed6f842eab3f">
+                          <SHORT-NAME>CTCR_MedTEB2</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS UUID="7ef90a66-416e-549f-8e3e-7c82aea0814e">
+                              <SHORT-NAME>IN_VeVTVR_M_LoadTorqFront_Min_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeVTVR_M_LoadTorqFront_Min</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeVTVR_M_LoadTorqFront_Min/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeVTVR_M_LoadTorqFront_Min_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="27a34d9a-5216-58a6-c3a4-6218aa386e30">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreepWheelTrq_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreepWheelTrq</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepWheelTrq/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="8a5588b6-f9d9-59d4-5f12-0c80e4df031c">
+                              <SHORT-NAME>OUT_VeCTCR_b_MinCreep_Enable_ECM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_MinCreep_Enable_ECM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable_ECM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="42887f7a-5426-50cd-04c6-fbdaf0c6e7f4">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreepFWTrq_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreepFWTrq</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrq/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="5360327d-e0cf-5cf6-292c-ab06fcc02206">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreep_ToCreepCL_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreep_ToCreepCL</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreep_ToCreepCL/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e1d9f7db-c68c-5864-d7a4-f3c96eac3fa2">
+                              <SHORT-NAME>OUT_VeCTCR_M_WheelMin4ECM_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_WheelMin4ECM</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4ECM/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="8f3eef4a-e3a0-5f2a-0e37-43202cc1ca7f">
+                              <SHORT-NAME>OUT_VeCTCR_b_MinCreep_Enable_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_MinCreep_Enable</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreep_Enable/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f5222e4b-9127-594c-d1a6-3bc158882543">
+                              <SHORT-NAME>OUT_VeCTCR_r_MinCreepBlendingFactorBlended_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_r_MinCreepBlendingFactorBlended</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_r_MinCreepBlendingFactorBlended/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d4d3dd31-0909-53bc-9275-20476b40a728">
+                              <SHORT-NAME>OUT_VeCTCR_M_WheelMin4Aecoast_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_WheelMin4Aecoast</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelMin4Aecoast/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b8cb8710-5f2b-5a3e-9f5e-c1ddb5efeae0">
+                              <SHORT-NAME>OUT_VeCTCR_b_MinCreepEnable_Stgc_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_MinCreepEnable_Stgc</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_MinCreepEnable_Stgc/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="466174a4-69b6-565f-2b27-0586457d39fc">
+                              <SHORT-NAME>OUT_VeCTCR_M_SumTrqMinPwrTrn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_SumTrqMinPwrTrn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_SumTrqMinPwrTrn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d85dd999-0f1c-59ed-e907-fe14150b07ab">
+                              <SHORT-NAME>OUT_VeCTCR_M_WheelTrqMinOverrev_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_WheelTrqMinOverrev</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_WheelTrqMinOverrev/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3d785f6a-3eff-5c86-8051-ad31529f772e">
+                              <SHORT-NAME>OUT_VeCTCR_M_TransIntakeWhlTgt_Raw_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_TransIntakeWhlTgt_Raw</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_TransIntakeWhlTgt_Raw/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="555a101f-20ab-5f9b-1eb2-0f955a4c1a39">
+                              <SHORT-NAME>OUT_VeCTCR_M_MinCreepFWTrqTgt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_M_MinCreepFWTrqTgt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_M_MinCreepFWTrqTgt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9aa275f7-27d6-5b1e-882b-dc3039736d19">
+                              <SHORT-NAME>OUT_VeCTCR_b_CreepReserveActive_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/CTCR/VeCTCR_b_CreepReserveActive</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeCTCR_b_CreepReserveActive/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>CTCR_MedTEB2</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                      <VARIATION-POINT-PROXYS>
+                        <VARIATION-POINT-PROXY UUID="c6d00615-5d42-5e64-752d-111e8bbbcf29">
+                          <SHORT-NAME>Variant_CTCR_FUNC</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="6c12aa63-8499-5ca4-8b16-e1ad0153f8c6">
+                          <SHORT-NAME>Variant_CTCR_PxPy</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="7b82fa76-f2b4-5fb9-2671-6ab64287dd14">
+                          <SHORT-NAME>Variant_CTCR_RTC_Imp_On</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="424edac2-acda-5f20-63d7-5c128c47f79a">
+                          <SHORT-NAME>Variant_CTCR_RTC_Turb_On</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                      </VARIATION-POINT-PROXYS>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

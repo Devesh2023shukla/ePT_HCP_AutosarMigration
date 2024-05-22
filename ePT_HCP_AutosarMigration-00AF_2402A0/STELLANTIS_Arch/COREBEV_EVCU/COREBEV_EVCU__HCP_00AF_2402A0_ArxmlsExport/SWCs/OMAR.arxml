@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>STELLANTIS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EPT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ASWCs</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE S="61900d48beef352cb37c91b93191bfd073ad9018" UUID="6695954d-fc20-5b99-82cc-0410015008e7">
+                  <SHORT-NAME>OMAR</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="9b75b6b2-b458-5d88-710a-06e0e902f69d">
+                      <SHORT-NAME>VeOSMR_n_TransOutSpdRawSqncd</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeOSMR_n_TransOutSpdRawSqncd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeOSMR_n_TransOutSpdRawSqncd</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="3b83f01e-734e-5cf7-ce20-a5b8ce99d05f">
+                      <SHORT-NAME>VeOHSR_e_SGrDsrd</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeOHSR_e_SGrDsrd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeOHSR_e_OptGear_SG</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeOHSR_e_SG_Reverse</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeOHSR_e_SGrDsrd</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="7bf431e7-c78c-5fe2-6240-cf84a11e4250">
+                      <SHORT-NAME>VeTISR_n_InputSpeed</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTISR_n_InputSpeed/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTISR_n_InputSpeed</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="278f8702-6b90-5d73-cd54-57f1843dd6b7">
+                      <SHORT-NAME>VaOSMR_n_NtiMin_MA</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOSMR_n_NtiMin_MA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOSMR_n_NtiMin_MA</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="5a59e454-b929-5ec8-de92-ccafdd884758">
+                      <SHORT-NAME>VaOMAR_n_InputSpeedDsrdMA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_InputSpeedDsrdMA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_InputSpeedDsrdMA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="2f75d58b-a23f-5c3a-be07-ba407fb2b98b">
+                      <SHORT-NAME>VaOMAR_n_C2SlipSpdDsrdMA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C2SlipSpdDsrdMA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C2SlipSpdDsrdMA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="1160e725-3610-552b-6ac6-eb9d69a0ac5e">
+                      <SHORT-NAME>VaOMAR_n_C1SlipSpdDsrdMA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C1SlipSpdDsrdMA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C1SlipSpdDsrdMA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f74921dd-965e-5a1e-c4ac-1086b3b60af9">
+                      <SHORT-NAME>VaOMAR_M_ToMaxMaxMA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_ToMaxMaxMA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_ToMaxMaxMA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="05bb8909-4214-5c32-a0f7-1adb276cd3da">
+                      <SHORT-NAME>VeOMAR_n_IdleSpeedMA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeOMAR_n_IdleSpeedMA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeOMAR_n_IdleSpeedMA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="4cb42eba-98a8-5344-1c23-beb49a150573">
+                      <SHORT-NAME>VaOMAR_n_StgcNiMin_MA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_StgcNiMin_MA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_StgcNiMin_MA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b175cce6-e4ca-52d3-56a9-2c8fed1b7f74">
+                      <SHORT-NAME>VaOMAR_P_EngPwrLoss_MA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_P_EngPwrLoss_MA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_P_EngPwrLoss_MA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="95565ed1-1ee2-52ae-5fc6-22898002cc63">
+                      <SHORT-NAME>VaOMAR_M_OptInputTorqueMA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_OptInputTorqueMA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_OptInputTorqueMA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c927e7cc-88cd-5c3f-fc4e-fe43ae84dd1d">
+                      <SHORT-NAME>VaOMAR_PLossOptRaw_MA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_PLossOptRaw_MA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_PLossOptRaw_MA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="13f50855-b5e3-5393-a8a9-0b4fa58054c1">
+                      <SHORT-NAME>VaOMAR_OptBatPwrBrkRaw_MA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_OptBatPwrBrkRaw_MA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_OptBatPwrBrkRaw_MA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="574e3e68-ee80-53dd-fe2d-1296abaf8243">
+                      <SHORT-NAME>VaOMAR_M_PrevToFOpt_MA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToFOpt_MA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToFOpt_MA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b836c521-f601-5212-ba62-bec46e31af15">
+                      <SHORT-NAME>VaOMAR_M_PrevToROpt_MA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToROpt_MA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>DefaultInitValue_rt_Array_Float_9_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToROpt_MA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="9e1ab6ce-15f3-51cf-d316-fdc298a49347">
+                      <SHORT-NAME>CaOPTR_r_ZeroArray</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <PARAMETER-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/CaOPTR_r_ZeroArray/CaOPTR_r_ZeroArray</PARAMETER-REF>
+                        </PARAMETER-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/CaOPTR_r_ZeroArray</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="71dd562c-1a57-5e4a-2ea9-c9f91968cfea">
+                      <SHORT-NAME>HaOPTR_n_InitInputSpdDsrdMA</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <PARAMETER-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <ARRAY-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA</SHORT-LABEL>
+                              <ELEMENTS>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_1</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_2</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_3</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_4</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_5</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_6</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_7</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_8</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                  <SHORT-LABEL>HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA_rt_Array_Float_9_9</SHORT-LABEL>
+                                  <VALUE>500</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                              </ELEMENTS>
+                            </ARRAY-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/HaOPTR_n_InitInputSpdDsrdMA/HaOPTR_n_InitInputSpdDsrdMA</PARAMETER-REF>
+                        </PARAMETER-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/HaOPTR_n_InitInputSpdDsrdMA</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="71af542e-50bb-506b-0674-a014f5d20e2b">
+                      <SHORT-NAME>KeOPTR_P_DfltOptCost</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <PARAMETER-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>KeOPTR_P_DfltOptCost_KeOPTR_P_DfltOptCost</SHORT-LABEL>
+                              <VALUE>1000000</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/KeOPTR_P_DfltOptCost/KeOPTR_P_DfltOptCost</PARAMETER-REF>
+                        </PARAMETER-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="PARAMETER-INTERFACE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/KeOPTR_P_DfltOptCost</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="c16103d1-4afa-5405-2a17-217ce3050ec8">
+                      <SHORT-NAME>IB_OMAR</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STELLANTIS/EPT/DataDefinitions/DataTypesMapping/msADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="85a3664b-0533-54a6-c399-09f9e48f77d8">
+                          <SHORT-NAME>Event_MedTED</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/OMAR/IB_OMAR/OMAR_MedTED</START-ON-EVENT-REF>
+                          <PERIOD>0.02</PERIOD>
+                        </TIMING-EVENT>
+                        <INIT-EVENT UUID="cc1f1564-65be-5bcf-ab4f-4d275f637c6d">
+                          <SHORT-NAME>Event_OMAR_ac_Init</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/OMAR/IB_OMAR/OMAR_ac_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <INCLUDED-DATA-TYPE-SETS>
+                        <INCLUDED-DATA-TYPE-SET>
+                          <DATA-TYPE-REFS>
+                            <DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TeTSXR_e_PrfrdComb</DATA-TYPE-REF>
+                          </DATA-TYPE-REFS>
+                        </INCLUDED-DATA-TYPE-SET>
+                      </INCLUDED-DATA-TYPE-SETS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="1957e80f-3d23-5e61-0838-03210c9a2ae1">
+                          <SHORT-NAME>OMAR_ac_Init</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="bf054822-260c-57cd-ae07-bfb7f9130e24">
+                              <SHORT-NAME>OUT_VaOMAR_n_StgcNiMin_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_StgcNiMin_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_StgcNiMin_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="fe26590d-45e5-5fda-ecc5-46bc7f3c94ac">
+                              <SHORT-NAME>OUT_VaOMAR_n_C1SlipSpdDsrdMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_C1SlipSpdDsrdMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C1SlipSpdDsrdMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="0929ec1e-c723-53ca-d836-a4e7833e0d8d">
+                              <SHORT-NAME>OUT_VaOMAR_n_C2SlipSpdDsrdMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_C2SlipSpdDsrdMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C2SlipSpdDsrdMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="0b2aa692-8d83-5606-6b38-7353fa449989">
+                              <SHORT-NAME>OUT_VaOMAR_n_InputSpeedDsrdMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_InputSpeedDsrdMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_InputSpeedDsrdMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="259047c4-a2db-56cb-bebc-2d967b6f49ba">
+                              <SHORT-NAME>OUT_VeOMAR_n_IdleSpeedMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VeOMAR_n_IdleSpeedMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeOMAR_n_IdleSpeedMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="8770b31e-955e-523e-971a-fdaa551d5e47">
+                              <SHORT-NAME>OUT_VaOMAR_PLossOptRaw_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_PLossOptRaw_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_PLossOptRaw_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="85333972-1a11-50f3-98ad-7968e148cc14">
+                              <SHORT-NAME>OUT_VaOMAR_P_EngPwrLoss_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_P_EngPwrLoss_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_P_EngPwrLoss_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3698200e-d434-5038-7645-5b228693ca39">
+                              <SHORT-NAME>OUT_VaOMAR_M_ToMaxMaxMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_ToMaxMaxMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_ToMaxMaxMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c6f45656-07d9-556b-471d-75f2d837b29a">
+                              <SHORT-NAME>OUT_VaOMAR_M_OptInputTorqueMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_OptInputTorqueMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_OptInputTorqueMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c12a3551-e2e9-59b6-8211-d456a7d5cfac">
+                              <SHORT-NAME>OUT_VaOMAR_OptBatPwrBrkRaw_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_OptBatPwrBrkRaw_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_OptBatPwrBrkRaw_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6ca8f76d-2941-5856-52d7-adb1dcd24467">
+                              <SHORT-NAME>OUT_VaOMAR_M_PrevToFOpt_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_PrevToFOpt_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToFOpt_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f499f475-af64-548b-79de-f4439fef9800">
+                              <SHORT-NAME>OUT_VaOMAR_M_PrevToROpt_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_PrevToROpt_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToROpt_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <PARAMETER-ACCESSS>
+                            <PARAMETER-ACCESS UUID="ffef64db-d817-5e7f-28c1-97fc662b71eb">
+                              <SHORT-NAME>CALPRM_CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/CaOPTR_r_ZeroArray</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/CaOPTR_r_ZeroArray/CaOPTR_r_ZeroArray</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                            <PARAMETER-ACCESS UUID="be7fb4de-aac3-567c-9467-3fb51a01252a">
+                              <SHORT-NAME>CALPRM_HaOPTR_n_InitInputSpdDsrdMA_HaOPTR_n_InitInputSpdDsrdMA</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/HaOPTR_n_InitInputSpdDsrdMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/HaOPTR_n_InitInputSpdDsrdMA/HaOPTR_n_InitInputSpdDsrdMA</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                            <PARAMETER-ACCESS UUID="90efd511-9b2f-5f3f-105d-35588b65f38d">
+                              <SHORT-NAME>CALPRM_KeOPTR_P_DfltOptCost_KeOPTR_P_DfltOptCost</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/KeOPTR_P_DfltOptCost</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/KeOPTR_P_DfltOptCost/KeOPTR_P_DfltOptCost</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                          </PARAMETER-ACCESSS>
+                          <SYMBOL>OMAR_ac_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="0359a137-afa1-5896-a9fa-67a8655caf19">
+                          <SHORT-NAME>OMAR_MedTED</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS UUID="0692b84a-543a-5ecd-121d-a170901ce07b">
+                              <SHORT-NAME>IN_VaOSMR_n_NtiMin_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOSMR_n_NtiMin_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOSMR_n_NtiMin_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6e7ef8ee-269d-51e1-4174-7b6aea259ffc">
+                              <SHORT-NAME>IN_VeTISR_n_InputSpeed_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VeTISR_n_InputSpeed</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTISR_n_InputSpeed/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="a07a1789-e6dd-5857-11f8-ac1336d4916a">
+                              <SHORT-NAME>OUT_VaOMAR_n_InputSpeedDsrdMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_InputSpeedDsrdMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_InputSpeedDsrdMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="89b18bdb-5381-5a6b-67d3-2b013f7baf32">
+                              <SHORT-NAME>OUT_VaOMAR_n_C1SlipSpdDsrdMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_C1SlipSpdDsrdMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C1SlipSpdDsrdMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="afef88ce-4a26-5aae-cd8e-1f886d57e0ca">
+                              <SHORT-NAME>OUT_VaOMAR_n_C2SlipSpdDsrdMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_C2SlipSpdDsrdMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_C2SlipSpdDsrdMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="be82533f-00cd-5d13-a9a3-58b459a901a0">
+                              <SHORT-NAME>OUT_VaOMAR_M_ToMaxMaxMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_ToMaxMaxMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_ToMaxMaxMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1088db8e-c833-565a-05a7-4ed3abc83390">
+                              <SHORT-NAME>OUT_VeOMAR_n_IdleSpeedMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VeOMAR_n_IdleSpeedMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeOMAR_n_IdleSpeedMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7e0d9690-8b0b-56ec-23e3-14307ce91108">
+                              <SHORT-NAME>OUT_VaOMAR_n_StgcNiMin_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_n_StgcNiMin_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_n_StgcNiMin_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3b43bab6-fa59-5e2f-9eb6-69b872ee1f49">
+                              <SHORT-NAME>OUT_VaOMAR_P_EngPwrLoss_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_P_EngPwrLoss_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_P_EngPwrLoss_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="dafb662f-c75c-52fa-7632-7b911825b419">
+                              <SHORT-NAME>OUT_VaOMAR_M_OptInputTorqueMA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_OptInputTorqueMA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_OptInputTorqueMA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7d9735b1-263e-5e2a-0a25-6eb410f46aa2">
+                              <SHORT-NAME>OUT_VaOMAR_PLossOptRaw_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_PLossOptRaw_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_PLossOptRaw_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3fbaf1c0-ca5d-5bde-92a3-55c854accf8c">
+                              <SHORT-NAME>OUT_VaOMAR_OptBatPwrBrkRaw_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_OptBatPwrBrkRaw_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_OptBatPwrBrkRaw_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="bc8f1ee2-e8d9-551d-8ffa-69a71cc45991">
+                              <SHORT-NAME>OUT_VaOMAR_M_PrevToFOpt_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_PrevToFOpt_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToFOpt_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="751b28ca-e1d3-574e-9510-dd039225b4eb">
+                              <SHORT-NAME>OUT_VaOMAR_M_PrevToROpt_MA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/VaOMAR_M_PrevToROpt_MA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VaOMAR_M_PrevToROpt_MA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <PARAMETER-ACCESSS>
+                            <PARAMETER-ACCESS UUID="74f09a20-e6cb-5917-499f-97e01138a34f">
+                              <SHORT-NAME>CALPRM_CaOPTR_r_ZeroArray_CaOPTR_r_ZeroArray</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/CaOPTR_r_ZeroArray</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/CaOPTR_r_ZeroArray/CaOPTR_r_ZeroArray</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                            <PARAMETER-ACCESS UUID="9e83b07d-63bc-5a4e-ab20-bd645bc32d01">
+                              <SHORT-NAME>CALPRM_KeOPTR_P_DfltOptCost_KeOPTR_P_DfltOptCost</SHORT-NAME>
+                              <ACCESSED-PARAMETER>
+                                <AUTOSAR-PARAMETER-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/OMAR/KeOPTR_P_DfltOptCost</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="PARAMETER-DATA-PROTOTYPE">/STELLANTIS/EPT/SharedCalInterfaces/PRSWCs/KeOPTR_P_DfltOptCost/KeOPTR_P_DfltOptCost</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-PARAMETER-IREF>
+                              </ACCESSED-PARAMETER>
+                            </PARAMETER-ACCESS>
+                          </PARAMETER-ACCESSS>
+                          <SYMBOL>OMAR_MedTED</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                      <VARIATION-POINT-PROXYS>
+                        <VARIATION-POINT-PROXY UUID="dfa95075-cdb8-535d-d39a-9805f51f6bf1">
+                          <SHORT-NAME>Variant_HSCL_3Mot_Enbl</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="0716805e-07be-5ed4-dd75-e61aca56fb99">
+                          <SHORT-NAME>Variant_OMAR_EnblMA</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="dc149980-326d-5638-0b36-14a81699d5d9">
+                          <SHORT-NAME>Variant_OMAR_EnblMAIdl</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="da62b1a1-dc75-5abe-5ebd-6f678a8b9455">
+                          <SHORT-NAME>Variant_OPTR_Enbl3MtrSys</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="53fb0dc6-15da-5d7e-8f97-fda33015adb9">
+                          <SHORT-NAME>Variant_OPTR_EnblPwrPnlCnstr</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="6cea8629-5ac5-58f2-c99f-7d56a43e2dc2">
+                          <SHORT-NAME>Variant_OPTR_EnblTCCCalc</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="24dfc209-213b-5269-036f-15826c64dd76">
+                          <SHORT-NAME>Variant_OPTR_EnblWEDRsrv</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="dde8f227-f614-53ed-138f-f6645b10f88b">
+                          <SHORT-NAME>Variant_OPTR_HiResSrchNiPiLims</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="b8acc273-8414-5139-4b41-b1e9058c5740">
+                          <SHORT-NAME>Variant_OPTR_OptBatPwrBrkEnbl</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="b4d5c7d7-8c68-5ef8-1486-ffd478aff8ce">
+                          <SHORT-NAME>Variant_OPTR_ZrPdlToMinAtTeMin</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="74c9bdef-fcab-573f-53c2-72a5227ecdc8">
+                          <SHORT-NAME>Variant_SCOR_MtrxSelP1P2p5</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="393922a5-abb9-550f-7fc6-33633605ff66">
+                          <SHORT-NAME>Variant_TSXR_MtrALimToFSel</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="521c748c-ec1b-58cf-3b7e-29bc685e07c6">
+                          <SHORT-NAME>Variant_TSXR_MtrALimToRSel</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="1c8f1e7c-8d9e-58b7-23e5-a49024cc51cd">
+                          <SHORT-NAME>Variant_TSXR_MtrBLimToFSel</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="9cbe7b64-9784-5e3f-a697-7416209976ce">
+                          <SHORT-NAME>Variant_TSXR_MtrBLimToRSel</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="f1bd9cb6-7fc3-525c-5a3e-3f644c8e28da">
+                          <SHORT-NAME>Variant_TSXR_MtrCLimToFSel</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="bebe3be0-cbc2-5978-203c-53af075ddd91">
+                          <SHORT-NAME>Variant_TSXR_MtrCLimToRSel</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                      </VARIATION-POINT-PROXYS>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,2398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>STELLANTIS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EPT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ASWCs</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE S="e199aafdb771d02122cd166610491e7971cecf0b" UUID="b0918ebe-6707-535c-4c53-176eb2e70dcb">
+                  <SHORT-NAME>PPCR</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="ee5e2d64-ff9d-5902-a5bd-f5dfef442e50">
+                      <SHORT-NAME>VeTRGR_e_PPawlCmnd</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeTRGR_e_PPawlCmnd</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRGR_e_PPawlCmnd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeTRGR_e_PPawlCmnd</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeTRGR_e_PPawlIdle</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeTRGR_e_PPawlCmnd</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="2542af5d-d939-51ed-b3d7-d18bc8120f50">
+                      <SHORT-NAME>VeDFIR_b_DiagSystemDsbl</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDFIR_b_DiagSystemDsbl</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DiagSystemDsbl/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DiagSystemDsbl</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="1fa93fb8-bf36-5d0f-e1fd-e3b00a863245">
+                      <SHORT-NAME>VeDFIR_b_DsblDiagFailSafe</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDFIR_b_DsblDiagFailSafe</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DsblDiagFailSafe/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DsblDiagFailSafe</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="e083b80b-e579-5948-1cd2-6b0bdf59354e">
+                      <SHORT-NAME>VeDFIR_b_PostCodeClrDiagDsbl</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeDFIR_b_PostCodeClrDiagDsbl</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_PostCodeClrDiagDsbl/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_PostCodeClrDiagDsbl</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="2530e102-5400-5685-02b7-824ae26c225f">
+                      <SHORT-NAME>VeHPMR_b_CntrlrPwrHold</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVeHPMR_b_CntrlrPwrHold</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeHPMR_b_CntrlrPwrHold/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeHPMR_b_CntrlrPwrHold</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="f788f482-2c13-5375-d136-af971a051c3f">
+                      <SHORT-NAME>VePRXR_b_CanNodeMRGB</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpVePRXR_b_CanNodeMRGB</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NONQUEUED-RECEIVER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePRXR_b_CanNodeMRGB/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                          <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                          <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                          <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePRXR_b_CanNodeMRGB</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="df223280-dbb0-5c99-273a-f1b564148f8d">
+                      <SHORT-NAME>VePPCR_e_PPawlFdbck</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlFdbck/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PPawl_Fdbck</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_PPAWL_UNKNOWN_Position</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlFdbck</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="53b081d3-196d-5938-3fad-fbf6254604e4">
+                      <SHORT-NAME>VePPCR_e_PPawlRequest</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlRequest/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PPawl_Request</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_PPAWL_UNKNOWN_Request</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlRequest</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="9aac4c7f-c675-5564-18ab-2c84b4c62b59">
+                      <SHORT-NAME>VePPCR_b_PPawl_TXFlt</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_TXFlt/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_TXFlt</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="3001e0b1-9638-5a44-c5e0-b08f7dcb411f">
+                      <SHORT-NAME>VePPCR_b_PPawlFlt_UnknownPos</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_UnknownPos/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_UnknownPos</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="541fcdf7-7d0d-50e3-b498-277ba491f1bb">
+                      <SHORT-NAME>VePPCR_b_PPawlFlt_InhibitMtr</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_InhibitMtr/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_InhibitMtr</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="ec6a995b-fd49-56d3-62e4-ab361c63bf43">
+                      <SHORT-NAME>VePPCR_e_PPawl_HW_Request</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawl_HW_Request/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_PP_REQ</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_Req_No_Req</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawl_HW_Request</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b54380c0-8cdf-59a9-9fda-649f56cbd666">
+                      <SHORT-NAME>VePPCR_b_PPUnauthorizedMove</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPUnauthorizedMove/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPUnauthorizedMove</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="bc72cc7b-6ef3-58ee-b146-4dde431126ec">
+                      <SHORT-NAME>VePPCR_b_PPawl_PosSnsrFlt</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_PosSnsrFlt/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_PosSnsrFlt</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="e16e5311-cb05-5552-e7b8-74b7e79d47d7">
+                      <SHORT-NAME>VePPCR_b_PPawl_CurrSnsrFlt</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_CurrSnsrFlt/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_CurrSnsrFlt</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="186686f2-7541-50ab-df1e-396dde67991b">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_MPR_Pos_Sensor</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_MPR_Pos_Sensor/FsftPPCR_b_Prmry_MPR_Pos_Sensor</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_MPR_Pos_Sensor</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="8c753ded-3421-5f3d-d4ee-8d3a1738170f">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="5667f424-208a-541a-82ee-36b0289c32d4">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c662ab57-af56-5970-4f8f-08e4cabaf5ef">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_PP_Pos_Sensor</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Pos_Sensor/FsftPPCR_b_Prmry_PP_Pos_Sensor</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Pos_Sensor</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="f4926b72-8cb7-541c-139e-2877bf4161f2">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Pos_Sensor_Front/FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="194baeb9-4a24-5ec0-d3b7-405b5dfa2cdb">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_Stat</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_Stat/FsftPPCR_b_Prmry_Park_Pawl_Stat</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_Stat</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="d8eb4422-ff8c-558a-0b61-123ef752f1a8">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_Stat_Front/FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="8ecd9559-f9bb-55ba-84f2-292a4faadd90">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="29d6f130-d033-5c03-7b7f-09fa934a4dfb">
+                      <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</OPERATION-REF>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b731672e-5d49-5a9c-8177-1a2b67330e99">
+                      <SHORT-NAME>PokePPCR_e_Prmry_MPR_Pos_Sensor</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_MPR_Pos_Sensor/PokePPCR_e_Prmry_MPR_Pos_Sensor</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_MPR_Pos_Sensor</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="580266d0-a2d1-5956-dc55-c1148843832e">
+                      <SHORT-NAME>PokePPCR_e_Prmry_PP_Motor_Pos_Stat</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Motor_Pos_Stat/PokePPCR_e_Prmry_PP_Motor_Pos_Stat</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Motor_Pos_Stat</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="010610ff-a234-51c7-daa9-998543a119e5">
+                      <SHORT-NAME>PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front/PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="95b42724-0639-50ba-170b-33081ca160f2">
+                      <SHORT-NAME>PokePPCR_e_Prmry_PP_Pos_Sensor</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Pos_Sensor/PokePPCR_e_Prmry_PP_Pos_Sensor</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Pos_Sensor</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="3a21b783-dafe-5832-c164-16b65d3837e0">
+                      <SHORT-NAME>PokePPCR_e_Prmry_PP_Pos_Sensor_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Pos_Sensor_Front/PokePPCR_e_Prmry_PP_Pos_Sensor_Front</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Pos_Sensor_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c48ff747-d3ae-5054-4272-7da88afd5d80">
+                      <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_Stat</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_Stat/PokePPCR_e_Prmry_Park_Pawl_Stat</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_Stat</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="ce8338f2-fed6-536d-2912-917fb0472a22">
+                      <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_Stat_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_Stat_Front/PokePPCR_e_Prmry_Park_Pawl_Stat_Front</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_Stat_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="0694bd0d-4a34-5b07-7a95-759a38545753">
+                      <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_flt_Stat</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_flt_Stat/PokePPCR_e_Prmry_Park_Pawl_flt_Stat</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_flt_Stat</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="caa8ef04-2834-53dd-e9a1-ad7674611c50">
+                      <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front/PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="5cc2a9ee-c741-532c-446e-6a2dca39eb88">
+                      <SHORT-NAME>NePPCR_e_PrvCmdVal_Rx</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNePPCR_e_PrvCmdVal_Rx</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_PP_REQ</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_Req_Engage</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NePPCR_e_PrvCmdVal/NePPCR_e_PrvCmdVal</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NePPCR_e_PrvCmdVal</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="a12d8372-2831-5b4e-2148-240ce0318f2c">
+                      <SHORT-NAME>NePPCR_e_PrvCmdVal</SHORT-NAME>
+                      <VARIATION-POINT>
+                        <SHORT-LABEL>vpNePPCR_e_PrvCmdVal</SHORT-LABEL>
+                        <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                      </VARIATION-POINT>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_PP_REQ</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_Req_Engage</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NePPCR_e_PrvCmdVal/NePPCR_e_PrvCmdVal</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NePPCR_e_PrvCmdVal</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="1662ad23-7adb-50fb-4c8d-0f99762767b1">
+                      <SHORT-NAME>IB_PPCR</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STELLANTIS/EPT/DataDefinitions/DataTypesMapping/msADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="c82816d6-188d-59e1-de64-91de0d995fd0">
+                          <SHORT-NAME>Event_FastTEF</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PPCR_FastTEF</START-ON-EVENT-REF>
+                          <PERIOD>0.005</PERIOD>
+                        </TIMING-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="bf7338ce-8585-542b-c315-c802cd447019">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_MPR_Pos_Sensor</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_MPR_Pos_Sensor</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_MPR_Pos_Sensor</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_MPR_Pos_Sensor/FsftPPCR_b_Prmry_MPR_Pos_Sensor</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="62246edf-809c-58af-42ed-deda7820129f">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="e09f3990-8f85-5b40-a234-fbfdd98f4612">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front/FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="1464b7b9-c4eb-50f6-9360-20bd910a9aba">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_PP_Pos_Sensor</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_PP_Pos_Sensor</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_PP_Pos_Sensor</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Pos_Sensor/FsftPPCR_b_Prmry_PP_Pos_Sensor</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="a429da36-7757-554a-c13d-456130bad371">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_PP_Pos_Sensor_Front/FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="1713428c-5499-5552-0476-71209462d852">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_Park_Pawl_Stat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_Park_Pawl_Stat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_Park_Pawl_Stat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_Stat/FsftPPCR_b_Prmry_Park_Pawl_Stat</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="e2ffd8ef-417c-576f-eebf-4a464c3db99f">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_Stat_Front/FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="d84298d3-821a-571c-3567-24ce21724a4a">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="ecdec6fc-cafc-57d0-e8aa-09149f90cb66">
+                          <SHORT-NAME>Event_FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front/FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="9ff9bdfd-69d5-5852-a0a6-b40b50049643">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_MPR_Pos_Sensor</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_MPR_Pos_Sensor</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_MPR_Pos_Sensor</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_MPR_Pos_Sensor/PokePPCR_e_Prmry_MPR_Pos_Sensor</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="a204f85b-9da6-541d-cf9a-6e1f36d8cc4f">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_PP_Motor_Pos_Stat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_PP_Motor_Pos_Stat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_PP_Motor_Pos_Stat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Motor_Pos_Stat/PokePPCR_e_Prmry_PP_Motor_Pos_Stat</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="98e2bceb-3c7f-5843-f82b-164d19eb9e5e">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front/PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="83f8419b-fa79-585d-06d9-ab0663ea7815">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_PP_Pos_Sensor</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_PP_Pos_Sensor</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_PP_Pos_Sensor</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Pos_Sensor/PokePPCR_e_Prmry_PP_Pos_Sensor</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="3949ffce-3268-54ae-fe1b-d27ae5fc19f7">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_PP_Pos_Sensor_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_PP_Pos_Sensor_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_PP_Pos_Sensor_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_PP_Pos_Sensor_Front/PokePPCR_e_Prmry_PP_Pos_Sensor_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="f88bc250-180d-5f33-d643-38381a107d01">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_Park_Pawl_Stat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_Park_Pawl_Stat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_Park_Pawl_Stat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_Stat/PokePPCR_e_Prmry_Park_Pawl_Stat</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="5723b6d8-34d3-50da-3728-7896feeb6c85">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_Park_Pawl_Stat_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_Park_Pawl_Stat_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_Park_Pawl_Stat_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_Stat_Front/PokePPCR_e_Prmry_Park_Pawl_Stat_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="f933ddf1-b602-5be5-bba0-cb0caf5b1042">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_Park_Pawl_flt_Stat</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_Park_Pawl_flt_Stat</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_Park_Pawl_flt_Stat</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_flt_Stat/PokePPCR_e_Prmry_Park_Pawl_flt_Stat</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="80f9526c-ddf5-525c-02a7-30ce93618b83">
+                          <SHORT-NAME>Event_PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/STELLANTIS/EPT/Interfaces/PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front/PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <INIT-EVENT UUID="175cc844-ca54-523b-cc16-9eeb153cff83">
+                          <SHORT-NAME>Event_PPCR_ac_Init</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PPCR_ac_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="94eab3ab-fa5c-5476-c53c-16a7ea295a79">
+                          <SHORT-NAME>Event_PwrOn</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PPCR_PwrOn</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="7e1ce06b-d9a3-53c5-c7c1-77b5a38abcd5">
+                          <SHORT-NAME>Event_PwrOff</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PPCR_PwrOff</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a33ffe47-bb90-50cc-9fb4-37886cc1217e">
+                          <SHORT-NAME>Park_Pawl_Stat_Init_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_StateCode</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_StateCode</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_SC_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPark_Pawl_Stat_Init_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f01de1ba-df18-5e14-1469-cb36a5ab1f2c">
+                          <SHORT-NAME>VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b771d7c8-804c-5cb7-a4bb-6865207e4192">
+                          <SHORT-NAME>Park_Pawl_flt_Stat_Init_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_Flt_Stat</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_Flt_Stat</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_FS_No_Fault</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPark_Pawl_flt_Stat_Init_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="8e225490-a00b-53b9-2022-be60bcb80918">
+                          <SHORT-NAME>VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="71e23b04-cb31-5051-34d0-e98cabf0de8f">
+                          <SHORT-NAME>PP_MotorPos_Stat_Init_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_MtrPosStat</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_MtrPosStat</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_Mtr_Unknown</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPP_MotorPos_Stat_Init_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="66b0ee16-ca5a-5128-5ded-c1b5acf991be">
+                          <SHORT-NAME>VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a014ee49-c3b5-5687-88f4-021360e8e8a8">
+                          <SHORT-NAME>PP_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_PosSnsr</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_PosSnsr</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_PosSnsr_Unknown</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPP_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="cc97cdae-cd43-5132-dae2-c75778d273cd">
+                          <SHORT-NAME>VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="73e49c0a-24ff-577b-0fac-d95dd4acd088">
+                          <SHORT-NAME>MPR_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_MPR_Pos</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_MPR_Pos</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_MPR_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpMPR_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="302de9ed-43f0-56c2-0c65-bb42d552a09d">
+                          <SHORT-NAME>VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="349a983b-59f5-55b1-a1a7-4191153e73ac">
+                          <SHORT-NAME>VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="44b324af-0a64-55aa-4aa1-6816107c6b8a">
+                          <SHORT-NAME>VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="99fe7d68-2c73-51e7-ad5d-8ad89d7902e3">
+                          <SHORT-NAME>VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="6854bf24-057f-5e70-09a5-f8dd3759ca5d">
+                          <SHORT-NAME>VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpVePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="8e66cc53-20b6-5eef-12d0-19aecf8115ba">
+                          <SHORT-NAME>Park_Pawl_Stat_Init_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_StateCode</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_StateCode</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_SC_Init</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPark_Pawl_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="1c004a56-8bcd-5f17-f1a1-52a4a0336201">
+                          <SHORT-NAME>Park_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_Flt_Stat</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_Flt_Stat</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_FS_No_Fault</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPark_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="859c196e-837a-5daf-e809-201e952a630f">
+                          <SHORT-NAME>PP_MotorPos_Stat_Init_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_MtrPosStat</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_MtrPosStat</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_Mtr_Unknown</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPP_MotorPos_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7bc69cc5-281b-5df6-915d-c8fae48a6e88">
+                          <SHORT-NAME>PP_Pos_Sensor_Init_Front_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/AppDataTypes/TePPCR_e_PCUCtrl_PosSnsr</TYPE-TREF>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TePPCR_e_PCUCtrl_PosSnsr</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CePPCR_e_PosSnsr_Unknown</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPP_Pos_Sensor_Init_Front_write_IRV</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </VARIABLE-DATA-PROTOTYPE>
+                      </EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="3a191c94-cdac-5b8b-a348-b375bf9b7b3f">
+                          <SHORT-NAME>PPCR_ac_Init</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="91ef827c-cec3-57fc-9d18-be9b0c9789a6">
+                              <SHORT-NAME>OUT_VePPCR_b_PPUnauthorizedMove_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPUnauthorizedMove</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPUnauthorizedMove/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="fe7e5dd3-4f1c-5988-edfc-527042508883">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawl_PosSnsrFlt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawl_PosSnsrFlt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_PosSnsrFlt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9b6531e8-700a-58a4-d615-06c41e227343">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawl_CurrSnsrFlt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawl_CurrSnsrFlt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_CurrSnsrFlt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="90f2c7d7-be6b-5ea9-887e-e2c8728112a0">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawlFdbck_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawlFdbck</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlFdbck/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b359b938-a4a6-57f2-478f-0abe645cfb11">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawlRequest_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawlRequest</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlRequest/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="be532bda-72e2-5838-b891-1ff7790ccff4">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawl_HW_Request_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawl_HW_Request</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawl_HW_Request/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>PPCR_ac_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="c5099146-ab23-53d3-2536-a9aeafb62df2">
+                          <SHORT-NAME>PPCR_PwrOn</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS UUID="207d17f8-e321-555d-0a47-b7b935425c4b">
+                              <SHORT-NAME>IN_NePPCR_e_PrvCmdVal_Rx_NePPCR_e_PrvCmdVal</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/NePPCR_e_PrvCmdVal_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NePPCR_e_PrvCmdVal/NePPCR_e_PrvCmdVal</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_NePPCR_e_PrvCmdVal_Rx_NePPCR_e_PrvCmdVal</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="6f31d2c4-59c7-5dba-642d-d2f734eadadc">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawlFdbck_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawlFdbck</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlFdbck/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="0b2d11b3-371b-5bfc-4882-2f448bffb24e">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawlRequest_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawlRequest</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlRequest/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d15691f8-e243-5609-d8a2-bdf27c1694f6">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawl_TXFlt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawl_TXFlt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_TXFlt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="827cb3f7-07bf-5709-f1e8-3f560a4b0efe">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawlFlt_UnknownPos_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawlFlt_UnknownPos</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_UnknownPos/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7c1108dc-7a6c-5304-698b-cb930539707c">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawlFlt_InhibitMtr_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawlFlt_InhibitMtr</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_InhibitMtr/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="5e94f690-6bdf-5473-af71-6f69276bdce0">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawl_HW_Request_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawl_HW_Request</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawl_HW_Request/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ff690a4b-646b-5841-1447-b3bd70adebc1">
+                              <SHORT-NAME>OUT_VePPCR_b_PPUnauthorizedMove_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPUnauthorizedMove</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPUnauthorizedMove/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1c36ac4a-7850-5974-b233-86b36962352c">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawl_PosSnsrFlt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawl_PosSnsrFlt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_PosSnsrFlt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e7eed65c-6018-5f39-ddce-b690dff913ee">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawl_CurrSnsrFlt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawl_CurrSnsrFlt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_CurrSnsrFlt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>PPCR_PwrOn</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="5e95016a-ea4a-51af-d093-9b2d34cb7cca">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c37a616e-e555-55aa-f3dd-3e4596107b56">
+                              <SHORT-NAME>WV_MPR_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/MPR_Pos_Sensor_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_MPR_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ad64a7fe-257d-5ed0-3247-5f87dc8cc247">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c03d3076-829c-5858-6cd0-be0a8c2d0a8c">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a89f5c73-0024-5980-32ac-26c24d13f641">
+                              <SHORT-NAME>WV_PP_MotorPos_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_MotorPos_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_MotorPos_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="128462ae-8c89-576d-8ccf-8afa8dae775f">
+                              <SHORT-NAME>WV_PP_MotorPos_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_MotorPos_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_MotorPos_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="81fcaaa6-35ee-5927-184c-ead929ee38f2">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="912dcf7b-865f-532e-025f-a928227008ad">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f2170ead-5b89-524c-5973-480e1fecbfbf">
+                              <SHORT-NAME>WV_PP_Pos_Sensor_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_Pos_Sensor_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_Pos_Sensor_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2a622e15-5698-5cd2-ca95-d4258e5774d7">
+                              <SHORT-NAME>WV_PP_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_Pos_Sensor_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ff039f92-fb24-581f-1968-5e75cf01dd98">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b525de21-46c7-5bee-6dd4-b2e40b9f2d08">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9ecf2932-ae81-5378-855e-2a12b74a7807">
+                              <SHORT-NAME>WV_Park_Pawl_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="457f7aa3-ab2a-5b8f-eea2-fec6e1216895">
+                              <SHORT-NAME>WV_Park_Pawl_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e6e55d66-ad90-560e-d474-767e14beca6c">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="4ba5637e-5afc-57ff-f6dd-954f5fc03d9a">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e2ed167d-9411-5250-8a80-8d2bc9760ae5">
+                              <SHORT-NAME>WV_Park_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_flt_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f058b1dd-8f72-547f-f767-706bf1ef103c">
+                              <SHORT-NAME>WV_Park_Pawl_flt_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_flt_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_flt_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="5ac59361-3b80-5d15-8391-218a6df494f5">
+                          <SHORT-NAME>PPCR_FastTEF</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS UUID="e62563a7-b69a-5b5c-54a1-9b0e944702b6">
+                              <SHORT-NAME>IN_VeDFIR_b_DiagSystemDsbl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VeDFIR_b_DiagSystemDsbl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DiagSystemDsbl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDFIR_b_DiagSystemDsbl_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c6f9b805-a8c6-5f4e-daa5-e92addedf850">
+                              <SHORT-NAME>IN_VeDFIR_b_DsblDiagFailSafe_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VeDFIR_b_DsblDiagFailSafe</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_DsblDiagFailSafe/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDFIR_b_DsblDiagFailSafe_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="652e55b4-8396-5d62-c19d-d3a491a88fae">
+                              <SHORT-NAME>IN_VeDFIR_b_PostCodeClrDiagDsbl_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VeDFIR_b_PostCodeClrDiagDsbl</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeDFIR_b_PostCodeClrDiagDsbl/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeDFIR_b_PostCodeClrDiagDsbl_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="cc397ff6-51d7-580c-fb15-24a298b38ca9">
+                              <SHORT-NAME>IN_VeHPMR_b_CntrlrPwrHold_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VeHPMR_b_CntrlrPwrHold</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeHPMR_b_CntrlrPwrHold/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeHPMR_b_CntrlrPwrHold_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2f4008fa-2e08-5de6-ece9-11f081755902">
+                              <SHORT-NAME>IN_VePRXR_b_CanNodeMRGB_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePRXR_b_CanNodeMRGB</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePRXR_b_CanNodeMRGB/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VePRXR_b_CanNodeMRGB_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="edf39e68-edd1-58ab-2ae9-928b03c3671b">
+                              <SHORT-NAME>IN_VeTRGR_e_PPawlCmnd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VeTRGR_e_PPawlCmnd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeTRGR_e_PPawlCmnd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpIN_VeTRGR_e_PPawlCmnd_Value</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="04ee02d5-1c12-58b2-eae6-cd5540bc210b">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawl_HW_Request_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawl_HW_Request</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawl_HW_Request/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3fc2d2cc-06b5-56c6-f9f0-3c791e507b0b">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawlFdbck_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawlFdbck</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlFdbck/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="4062a37b-5019-5912-4043-d7b76a4b1ce6">
+                              <SHORT-NAME>OUT_VePPCR_e_PPawlRequest_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_e_PPawlRequest</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_e_PPawlRequest/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="0ddd03c6-6bf3-5a75-3e97-d6f617199820">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawl_TXFlt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawl_TXFlt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawl_TXFlt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="647baed7-b0ca-5125-5adf-6f56ea1c7c17">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawlFlt_UnknownPos_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawlFlt_UnknownPos</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_UnknownPos/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b6067dc0-24ba-5e12-0fc5-45ae93fd76c1">
+                              <SHORT-NAME>OUT_VePPCR_b_PPawlFlt_InhibitMtr_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/VePPCR_b_PPawlFlt_InhibitMtr</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VePPCR_b_PPawlFlt_InhibitMtr/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <READ-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="0d4c8f8a-083e-5122-f7e1-16b2cbaa22f7">
+                              <SHORT-NAME>RV_MPR_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/MPR_Pos_Sensor_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_MPR_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1234e887-1c9d-5e3a-63de-9a87f785bf62">
+                              <SHORT-NAME>RV_PP_MotorPos_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_MotorPos_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_PP_MotorPos_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f1ef63c7-a6b5-5093-fbd2-52e6b50ddbdc">
+                              <SHORT-NAME>RV_PP_MotorPos_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_MotorPos_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_PP_MotorPos_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="617c4bb4-0add-54a4-c1c2-14fd64ee0f64">
+                              <SHORT-NAME>RV_PP_Pos_Sensor_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_Pos_Sensor_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_PP_Pos_Sensor_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f9ed7710-31e3-58a1-7b5b-d75e7e3b8ca9">
+                              <SHORT-NAME>RV_PP_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_Pos_Sensor_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_PP_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="fef8c677-21a6-5ad5-fab7-7c1b8ebbd3ef">
+                              <SHORT-NAME>RV_Park_Pawl_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_Park_Pawl_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1eb1838e-969f-5fe5-50f0-7c62918ad868">
+                              <SHORT-NAME>RV_Park_Pawl_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_Park_Pawl_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="29c03ad5-0099-5bee-c1b1-68e493bc3e43">
+                              <SHORT-NAME>RV_Park_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_flt_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_Park_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="41a64290-ec0b-5154-12d5-cad3851dc96e">
+                              <SHORT-NAME>RV_Park_Pawl_flt_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_flt_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_Park_Pawl_flt_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3cbcd07b-8245-50d4-1cd0-d4a2a050e2b0">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f83f2d05-bad5-5600-7465-af7c8617c34f">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="83727ecd-a4b5-5b2c-5342-995f457e68ba">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="99ccc568-e9e1-5c9d-deb5-d92faf8a3715">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="af7a2619-52ee-5eea-9f57-52d56c8183cd">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="9d565066-16cf-58eb-188d-b0306d8fef90">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ce6392eb-775f-5988-111c-6052fc05aa4c">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3492a813-11cb-5e34-3083-0918267c2e9a">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="371f9229-96f3-555b-3f1b-74d98bf07da4">
+                              <SHORT-NAME>RV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpRV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </READ-LOCAL-VARIABLES>
+                          <SYMBOL>PPCR_FastTEF</SYMBOL>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPPCR_FastTEF</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="290b39d6-8a4c-5173-8b04-b02625fd98cf">
+                          <SHORT-NAME>PPCR_PwrOff</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="3874ea05-53d6-5f10-026a-27f98f6e2dce">
+                              <SHORT-NAME>OUT_NePPCR_e_PrvCmdVal_NePPCR_e_PrvCmdVal</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/NePPCR_e_PrvCmdVal</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NePPCR_e_PrvCmdVal/NePPCR_e_PrvCmdVal</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpOUT_NePPCR_e_PrvCmdVal_NePPCR_e_PrvCmdVal</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>PPCR_PwrOff</SYMBOL>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPPCR_PwrOff</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="80826dbc-2848-564e-eaae-408e676aa032">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_MPR_Pos_Sensor</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_MPR_Pos_Sensor</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="843fbe38-ffd2-5def-3aed-658a98d64012">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_MPR_Pos_Sensor</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="22c87f6c-59ff-5a72-e08c-572b3833628a">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_PP_Motor_Pos_Stat</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="1e48bf18-430d-5ab9-5ea0-db502dd0d4c4">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_PP_Motor_Pos_Stat</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="568f6913-774f-5356-5211-cba4cae649ce">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="6f682ed2-88a2-5bc8-9e10-7891ab7c8791">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_PP_Motor_Pos_Stat_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="8cc2ea8f-706a-5e04-353c-10c563801fda">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_PP_Pos_Sensor</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_PP_Pos_Sensor</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="cf84de59-a7be-56c8-3d48-b1f3d7f4a6ce">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_PP_Pos_Sensor</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="82749720-033f-5416-9146-c678e21a3644">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_PP_Pos_Sensor_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="82e25075-7dab-5d3d-ce9d-352175af9f2a">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_PP_Pos_Sensor_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="61911972-dd2d-5783-c5ab-8b50f2cac531">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_Stat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_Park_Pawl_Stat</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="2226f21a-79af-5110-f26d-6b9fcf4c6246">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_Park_Pawl_Stat</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="309f21ca-1876-59bf-cd01-10540f8d9235">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_Park_Pawl_Stat_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="e989dbac-b8fd-597e-339f-e1874b24ac63">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_Park_Pawl_Stat_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="5c21db92-3de0-51b0-5b24-fd4d595a9543">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_Park_Pawl_flt_Stat</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="aed1c5a4-37fd-591f-1cf3-b0ef180f4507">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_Park_Pawl_flt_Stat</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="962301c2-b2f7-56ae-b9a5-d0a4aa8ba473">
+                          <SHORT-NAME>FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>FsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="525bfa0c-ac93-5bae-0406-7246f20a0218">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpFsftPPCR_b_Prmry_Park_Pawl_flt_Stat_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="60be65ce-4ba6-5976-f0cc-e06c1e47676d">
+                          <SHORT-NAME>PokePPCR_e_Prmry_MPR_Pos_Sensor</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_MPR_Pos_Sensor</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="8e1ee5d6-7f3f-527b-3489-17762888ba49">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_MPR_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a4d7c180-40cc-5a97-f994-42d2d19b732e">
+                              <SHORT-NAME>WV_MPR_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/MPR_Pos_Sensor_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_MPR_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_MPR_Pos_Sensor</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="5cca661b-b15f-5d52-fcfb-a9a59e878caf">
+                          <SHORT-NAME>PokePPCR_e_Prmry_PP_Motor_Pos_Stat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_PP_Motor_Pos_Stat</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="9862d4de-2f1d-53b6-3c13-248b1e6e70ad">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="034393d6-26b5-5594-a0d4-4e81762ae3dd">
+                              <SHORT-NAME>WV_PP_MotorPos_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_MotorPos_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_MotorPos_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_PP_Motor_Pos_Stat</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="0002d3bb-cded-5c7a-487e-b38dd70ef161">
+                          <SHORT-NAME>PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="cdc52868-c0d7-5164-b703-eee0ef46a16d">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Motor_Pos_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="19bc01dd-4135-53cc-915a-279de75689dd">
+                              <SHORT-NAME>WV_PP_MotorPos_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_MotorPos_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_MotorPos_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_PP_Motor_Pos_Stat_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="ddb97759-edfe-5b59-b5fc-c7dc08d0c22e">
+                          <SHORT-NAME>PokePPCR_e_Prmry_PP_Pos_Sensor</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_PP_Pos_Sensor</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="e3b9b803-9d2d-517c-43d9-1c329b430774">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Pos_SensorFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f1edae97-7efa-57c3-2651-52278ac186e9">
+                              <SHORT-NAME>WV_PP_Pos_Sensor_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_Pos_Sensor_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_Pos_Sensor_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_PP_Pos_Sensor</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="0ddec7d4-e1ff-5541-efcc-e3371784f882">
+                          <SHORT-NAME>PokePPCR_e_Prmry_PP_Pos_Sensor_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_PP_Pos_Sensor_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="ce85ca5e-a724-5329-c0eb-6aba382f7e74">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_PP_Pos_SensorFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="374d47e5-450f-5894-045d-7cc3c485cdc4">
+                              <SHORT-NAME>WV_PP_Pos_Sensor_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/PP_Pos_Sensor_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_PP_Pos_Sensor_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_PP_Pos_Sensor_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="b5d48890-df04-5673-b879-7a94b7e198d5">
+                          <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_Stat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_Park_Pawl_Stat</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="3e40f688-dc81-5c4b-99a2-af93acac571d">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="390f7b28-d909-5bd6-4dc7-8c740ac27224">
+                              <SHORT-NAME>WV_Park_Pawl_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_Park_Pawl_Stat</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="26298e08-cdb4-5bb7-b9df-cddfeb3bf0df">
+                          <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_Stat_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_Park_Pawl_Stat_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="1775452f-9c39-578b-8eeb-e8417255d27e">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="fa5e602a-8b52-5179-b3e4-c7aba5245615">
+                              <SHORT-NAME>WV_Park_Pawl_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_Park_Pawl_Stat_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="d016bb4a-3a94-516e-fef5-48d9fcd47d3a">
+                          <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_flt_Stat</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_Park_Pawl_flt_Stat</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="b24f0d4b-24b7-5670-67bf-2456f2ff6aa3">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="91086f6a-04ba-591d-9ca4-a1bed41ef170">
+                              <SHORT-NAME>WV_Park_Pawl_flt_Stat_Init_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_flt_Stat_Init_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_flt_Stat_Init_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_Park_Pawl_flt_Stat</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="73f02009-9236-5870-33f2-9261ddd5c89f">
+                          <SHORT-NAME>PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>PokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="af8e79a0-24a6-5435-530a-ffad7d2c60ea">
+                              <SHORT-NAME>WV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_VePPCR_b_Prmry_Park_Pawl_flt_StatFA_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2ce8a54a-4c68-506a-e44a-624f6a1de567">
+                              <SHORT-NAME>WV_Park_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/PPCR/IB_PPCR/Park_Pawl_flt_Stat_Init_Front_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                              <VARIATION-POINT>
+                                <SHORT-LABEL>vpWV_Park_Pawl_flt_Stat_Init_Front_write_IRV</SHORT-LABEL>
+                                <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                              </VARIATION-POINT>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>vpPokePPCR_e_Prmry_Park_Pawl_flt_Stat_Front</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="PRE-COMPILE-TIME">1</SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                      <VARIATION-POINT-PROXYS>
+                        <VARIATION-POINT-PROXY UUID="dfea700c-3554-5b97-a57f-1e00df7db615">
+                          <SHORT-NAME>Variant_PPCR_FUNC_Enab</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                      </VARIATION-POINT-PROXYS>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

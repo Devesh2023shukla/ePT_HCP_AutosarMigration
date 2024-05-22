@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>STELLANTIS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EPT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ASWCs</SHORT-NAME>
+              <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE S="b57e2849974bbdd9c3bc0321ae23a3456def80be" UUID="f209bd39-5aeb-51d2-f2e6-8448f7566f7e">
+                  <SHORT-NAME>STFR</SHORT-NAME>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="bcc5a4c3-b409-55e6-a408-35fe74893229">
+                      <SHORT-NAME>VeSTFR_g_FltReg1</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg1/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b29c81d3-7b43-5eab-d03a-df3909f39627">
+                      <SHORT-NAME>VeSTFR_g_FltReg2</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg2/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg2</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="581c96d0-85a2-5548-6a72-dd5afbcc81e3">
+                      <SHORT-NAME>VeSTFR_e_StrtStpOvrrd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtStpOvrrd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeSTRR_e_AutoStopStartOvrrd</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeSTRR_e_NoOvrrd</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtStpOvrrd</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="de672386-8b03-5585-ab16-5abbbcf7d0d7">
+                      <SHORT-NAME>VeSTFR_b_BumpStrtChkEngOn</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BumpStrtChkEngOn/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BumpStrtChkEngOn</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="09143614-facf-57a2-ea26-e831c59abc61">
+                      <SHORT-NAME>VeSTFR_b_BackUpStrtChkEngOn</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BackUpStrtChkEngOn/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BackUpStrtChkEngOn</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="e85880d2-ff05-5205-eda0-065467b51a57">
+                      <SHORT-NAME>VeSTFR_b_BmpStrtInhbt</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BmpStrtInhbt/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BmpStrtInhbt</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="50b33df8-479d-5821-2ef8-30936a58b17b">
+                      <SHORT-NAME>VeSTFR_b_RsrvByPass</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_RsrvByPass/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_RsrvByPass</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="3c4365d6-cb26-5d55-2c41-1bafa16c76e9">
+                      <SHORT-NAME>VeSTFR_b_StrtAllwd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_StrtAllwd/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_StrtAllwd</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="3c3fecc8-aa89-5e70-db85-4ac3dddb358b">
+                      <SHORT-NAME>VeSTFR_b_P2p5HMIMsg</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_P2p5HMIMsg/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_P2p5HMIMsg</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="cf2e3ca8-f722-5545-8b6d-1d2b5d825752">
+                      <SHORT-NAME>VeSTFR_y_StrtDvcNA</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_y_StrtDvcNA/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_y_StrtDvcNA</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="16ddaeb4-3a89-5842-98b8-7985bac6dc55">
+                      <SHORT-NAME>VeSTFR_e_StrtType</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtType/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_TeSTRR_e_EngStrtStopType</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <SW-VALUES-PHYS>
+                                  <VT>CeSTRR_e_NoAction</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtType</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="ad341136-0014-524f-5ad1-cacc5d4dabf9">
+                      <SHORT-NAME>VeSTFR_b_CltchRsrvOK</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NONQUEUED-SENDER-COM-SPEC>
+                          <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_CltchRsrvOK/Value</DATA-ELEMENT-REF>
+                          <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                          <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </NONQUEUED-SENDER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_CltchRsrvOK</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="bfa619fc-373d-554a-3814-0493d8fdff7e">
+                      <SHORT-NAME>NeSTFR_b_FailedStrtPrevCycle_Rx</SHORT-NAME>
+                      <REQUIRED-COM-SPECS>
+                        <NV-REQUIRE-COM-SPEC>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeSTFR_b_FailedStrtPrevCycle/NeSTFR_b_FailedStrtPrevCycle</VARIABLE-REF>
+                        </NV-REQUIRE-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeSTFR_b_FailedStrtPrevCycle</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="fd0a26ff-e120-5289-5069-aedb20800d5c">
+                      <SHORT-NAME>NeSTFR_b_FailedStrtPrevCycle</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <NV-PROVIDE-COM-SPEC>
+                          <RAM-BLOCK-INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </RAM-BLOCK-INIT-VALUE>
+                          <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeSTFR_b_FailedStrtPrevCycle/NeSTFR_b_FailedStrtPrevCycle</VARIABLE-REF>
+                        </NV-PROVIDE-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/STELLANTIS/EPT/Interfaces/NeSTFR_b_FailedStrtPrevCycle</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="db6d2bb1-4679-57bd-24be-8ce57048d14e">
+                      <SHORT-NAME>IB_STFR</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STELLANTIS/EPT/DataDefinitions/DataTypesMapping/msADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="14787bda-4d0b-52b4-4c9b-58b45cfd5fb0">
+                          <SHORT-NAME>Event_MedTEB2</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/STFR_MedTEB2</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>
+                        <TIMING-EVENT UUID="5e9674ff-f05c-54d7-f55a-bd976eeb98fe">
+                          <SHORT-NAME>Event_MedTEB3</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/STFR_MedTEB3</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>
+                        <INIT-EVENT UUID="78aaed4d-f021-53aa-75b7-078821e1b42c">
+                          <SHORT-NAME>Event_STFR_ac_Init</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/STFR_ac_Init</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="c6fe63cf-507d-552b-63bc-7f7f61b511ac">
+                          <SHORT-NAME>Event_PwrOn</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/STFR_PwrOn</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                        <INIT-EVENT UUID="bda352cf-d2c7-53f6-87bb-4df600222e66">
+                          <SHORT-NAME>Event_PwrOff</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/STFR_PwrOff</START-ON-EVENT-REF>
+                        </INIT-EVENT>
+                      </EVENTS>
+                      <EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d5142137-94d5-5f56-ccdd-3c16dd995607">
+                          <SHORT-NAME>FltReg1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/UInt32</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="88f91037-9aa8-5d2c-a7ee-196b19a9b6ce">
+                          <SHORT-NAME>FltReg2_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/UInt32</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_UInt32</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="138aab86-2252-51c0-bf12-734cc1416e17">
+                          <SHORT-NAME>EssOFF1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="8dc6490b-8161-55c6-621e-1e58533392a3">
+                          <SHORT-NAME>EssCD1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ab6f0bec-ccb8-59eb-7a53-fa4c0758910d">
+                          <SHORT-NAME>EssFStp1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="cc12585e-ede0-592e-184e-ad8443531b2f">
+                          <SHORT-NAME>TCMHMIEnbl1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="064980e5-03ae-5004-4f22-666421902163">
+                          <SHORT-NAME>TCMCltchAvlbl1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="81fa38b8-d361-5802-26c7-61f14c2fa8ad">
+                          <SHORT-NAME>SRAREngOnRaw1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="0734f74f-77fb-5058-8578-3167fc3258ab">
+                          <SHORT-NAME>SRAREngOff1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b0d4aa97-e78e-5b88-9f93-1109c81f600f">
+                          <SHORT-NAME>ImpndInhbtESSOff1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="422fcef8-8ade-5c26-97c1-452c9b515a25">
+                          <SHORT-NAME>ImpndInhbtESSOn1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5324063a-5c4a-53c1-dd57-25fc2859b6fe">
+                          <SHORT-NAME>StallDtct1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="4888c7bc-900f-5f49-1664-52aa1c2e21e3">
+                          <SHORT-NAME>EFAFail1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="87eb75d3-ffef-5262-371a-5ffcd0400d11">
+                          <SHORT-NAME>STPA_EFAFail1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f4b7851e-2ff1-59cd-782d-180fec70c208">
+                          <SHORT-NAME>CltchStrtSpdMn1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ff516f1f-7c29-5960-2419-1a97372287d0">
+                          <SHORT-NAME>EngRun1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d50b4359-1314-5eae-a282-5f3c2f180300">
+                          <SHORT-NAME>EngOff1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="79940ae4-fb5b-5a4b-2966-9403687be87e">
+                          <SHORT-NAME>InhbtTCMCndEnbl1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7d4e6254-f0f5-5b97-14e0-71bfdcfc4856">
+                          <SHORT-NAME>InhbtBmpStEnbl1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="bf79a7ad-b317-5c94-07da-6fc7b797f1b1">
+                          <SHORT-NAME>BmpStrtGrThrsh1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d520c139-2a78-50d9-9e9f-46fd502b352c">
+                          <SHORT-NAME>TCMEMAvlbl1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="744e4de2-2588-5fcb-403c-8a5e10a7b09e">
+                          <SHORT-NAME>TCMIMAvlbl1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b8012547-886a-58b4-75dc-a639063c447a">
+                          <SHORT-NAME>EssRun1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="da8dbfb4-d203-5cff-f89a-2648006d2429">
+                          <SHORT-NAME>EssPFS1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="42ebfb02-5248-56ab-73d0-a3978c795fce">
+                          <SHORT-NAME>EssInitSpn1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                        <VARIABLE-DATA-PROTOTYPE UUID="cfe38c91-744c-5801-3b64-86c693b367d7">
+                          <SHORT-NAME>KeyOffSt1_write_IRV</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/Boolean</TYPE-TREF>
+                          <INIT-VALUE>
+                            <NUMERICAL-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>DefaultInitValue_Boolean</SHORT-LABEL>
+                              <VALUE>0</VALUE>
+                            </NUMERICAL-VALUE-SPECIFICATION>
+                          </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                      </EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="23b96336-968b-5e6f-0e58-24cfe73ef4d2">
+                          <SHORT-NAME>STFR_ac_Init</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="2a9f5ccf-2dcd-53cd-bc8a-bedfb5fb1c08">
+                              <SHORT-NAME>OUT_VeSTFR_e_StrtStpOvrrd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_e_StrtStpOvrrd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtStpOvrrd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3b2390fb-2e1b-55aa-9c35-59f6056e82b0">
+                              <SHORT-NAME>OUT_VeSTFR_e_StrtType_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_e_StrtType</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtType/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STFR_ac_Init</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="492fc7dc-88c0-5a17-fec9-81db63aab858">
+                          <SHORT-NAME>STFR_MedTEB2</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="c52db1c7-3a64-5764-97d0-e5e46513016e">
+                              <SHORT-NAME>OUT_VeSTFR_g_FltReg1_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_g_FltReg1</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg1/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b92559ae-1188-578b-df1d-790880b35172">
+                              <SHORT-NAME>OUT_VeSTFR_g_FltReg2_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_g_FltReg2</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg2/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STFR_MedTEB2</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="6c6fd36f-ccd8-5ac2-b568-9af2979625ab">
+                              <SHORT-NAME>WV_BmpStrtGrThrsh1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/BmpStrtGrThrsh1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a2b791cc-0bd2-544c-3442-314e93eed457">
+                              <SHORT-NAME>WV_CltchStrtSpdMn1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/CltchStrtSpdMn1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="8d735eb1-bb66-51a4-6390-8b7da49473b5">
+                              <SHORT-NAME>WV_EFAFail1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EFAFail1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="bc5e41ed-9194-5482-5b30-c474969b10be">
+                              <SHORT-NAME>WV_EngOff1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EngOff1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2294651c-c19f-5728-68b3-743d19c32d09">
+                              <SHORT-NAME>WV_EngRun1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EngRun1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2c23b7ef-4a22-5b1a-e58e-7e29621de281">
+                              <SHORT-NAME>WV_EssCD1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssCD1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e8ffa946-bba4-58b2-9beb-1e9763c47d25">
+                              <SHORT-NAME>WV_EssFStp1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssFStp1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ccaf5c4a-eef9-5245-afe9-1a5352f5bb59">
+                              <SHORT-NAME>WV_EssInitSpn1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssInitSpn1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="bdd647bf-9ddb-55aa-6c7b-ac660d97cbbb">
+                              <SHORT-NAME>WV_EssOFF1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssOFF1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="fa661cb5-3657-520e-6923-a390bedfcfb3">
+                              <SHORT-NAME>WV_EssPFS1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssPFS1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a6731d87-61da-5fc8-5b02-0bfefe761170">
+                              <SHORT-NAME>WV_EssRun1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssRun1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="87a7b453-cc18-57a6-be3f-5849f591a0af">
+                              <SHORT-NAME>WV_FltReg1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/FltReg1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="bcf09fbc-6fe7-52d5-e648-2ed79c016c5a">
+                              <SHORT-NAME>WV_FltReg2_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/FltReg2_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="68ea5b04-e015-5674-e923-05d0d9d1b44c">
+                              <SHORT-NAME>WV_ImpndInhbtESSOff1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/ImpndInhbtESSOff1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e9bd8c93-9797-5910-e508-8833aaddaea4">
+                              <SHORT-NAME>WV_ImpndInhbtESSOn1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/ImpndInhbtESSOn1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e40f634c-e8f6-5fb2-506c-174a5827eabc">
+                              <SHORT-NAME>WV_InhbtBmpStEnbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/InhbtBmpStEnbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="fe4c2d3d-76bd-55ee-f803-036a550cb500">
+                              <SHORT-NAME>WV_InhbtTCMCndEnbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/InhbtTCMCndEnbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6862209c-2e9b-5fc0-c7a0-87036b7e156b">
+                              <SHORT-NAME>WV_KeyOffSt1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/KeyOffSt1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="dfa72dba-eae1-58e7-67e6-328a508c2b79">
+                              <SHORT-NAME>WV_SRAREngOff1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/SRAREngOff1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="da582f7c-ebf5-5b88-7ca4-d6723b8717ca">
+                              <SHORT-NAME>WV_SRAREngOnRaw1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/SRAREngOnRaw1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3b72b0a5-5743-51ac-8223-38132fd61352">
+                              <SHORT-NAME>WV_STPA_EFAFail1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/STPA_EFAFail1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1aef6952-abda-5bcb-e6ed-1425db849aa1">
+                              <SHORT-NAME>WV_StallDtct1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/StallDtct1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="def81667-57fc-5178-9233-abf0bf965869">
+                              <SHORT-NAME>WV_TCMCltchAvlbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMCltchAvlbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="981dab90-b5ed-5da7-2d70-05e7dd340524">
+                              <SHORT-NAME>WV_TCMEMAvlbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMEMAvlbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="b50b45e6-9b7c-5623-838d-f1bab16b2dcf">
+                              <SHORT-NAME>WV_TCMHMIEnbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMHMIEnbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3e907992-efe9-5ea1-b4fc-c2a1c0243883">
+                              <SHORT-NAME>WV_TCMIMAvlbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMIMAvlbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="9d5fa894-12cb-53aa-edce-1be6ce332816">
+                          <SHORT-NAME>STFR_MedTEB3</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="103bab46-9fd0-51c1-e00c-5289b137cf30">
+                              <SHORT-NAME>OUT_VeSTFR_e_StrtStpOvrrd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_e_StrtStpOvrrd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtStpOvrrd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="740f8e4d-ae5b-57c9-395f-c5d61168236a">
+                              <SHORT-NAME>OUT_VeSTFR_b_BumpStrtChkEngOn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_BumpStrtChkEngOn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BumpStrtChkEngOn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a269c14d-bb7e-5c6a-3cfb-cdbc046a8ec2">
+                              <SHORT-NAME>OUT_VeSTFR_b_BackUpStrtChkEngOn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_BackUpStrtChkEngOn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BackUpStrtChkEngOn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="06b07a98-96e0-5c06-cd59-e5682ee9eb33">
+                              <SHORT-NAME>OUT_VeSTFR_b_BmpStrtInhbt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_BmpStrtInhbt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BmpStrtInhbt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c1d8e499-b476-5b33-3092-e90d31fe91ef">
+                              <SHORT-NAME>OUT_VeSTFR_b_RsrvByPass_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_RsrvByPass</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_RsrvByPass/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ba78c7e0-b0fb-5ec6-0fc1-83d6f60e7ba7">
+                              <SHORT-NAME>OUT_VeSTFR_b_StrtAllwd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_StrtAllwd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_StrtAllwd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="5aea8e8b-cadd-58fb-0c92-350f4e8c0ef1">
+                              <SHORT-NAME>OUT_VeSTFR_b_P2p5HMIMsg_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_P2p5HMIMsg</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_P2p5HMIMsg/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2f9adb14-4911-55dd-357a-e1090b5363ee">
+                              <SHORT-NAME>OUT_VeSTFR_y_StrtDvcNA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_y_StrtDvcNA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_y_StrtDvcNA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="50d2e390-251f-51b7-22bd-7e6ea854ed8c">
+                              <SHORT-NAME>OUT_VeSTFR_e_StrtType_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_e_StrtType</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtType/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="45479105-7911-59eb-74af-3ac57c4cadac">
+                              <SHORT-NAME>OUT_VeSTFR_b_CltchRsrvOK_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_CltchRsrvOK</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_CltchRsrvOK/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STFR_MedTEB3</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="28dcbc81-534c-53a3-5cdb-3ee1b5024625">
+                          <SHORT-NAME>STFR_PwrOn</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                            <VARIABLE-ACCESS UUID="6c04d459-5cd6-513e-d8b2-9b1d4eda17e7">
+                              <SHORT-NAME>IN_NeSTFR_b_FailedStrtPrevCycle_Rx_NeSTFR_b_FailedStrtPrevCycle</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/NeSTFR_b_FailedStrtPrevCycle_Rx</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeSTFR_b_FailedStrtPrevCycle/NeSTFR_b_FailedStrtPrevCycle</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="08c39ca1-f812-5fd6-90e0-e3d82177f187">
+                              <SHORT-NAME>OUT_VeSTFR_g_FltReg1_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_g_FltReg1</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg1/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="48ba73e1-308e-5b6d-42c8-95159216afcf">
+                              <SHORT-NAME>OUT_VeSTFR_g_FltReg2_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_g_FltReg2</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_g_FltReg2/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="d32d71f6-dcf1-533a-3833-b60e93fb7134">
+                              <SHORT-NAME>OUT_VeSTFR_e_StrtStpOvrrd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_e_StrtStpOvrrd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtStpOvrrd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="70f158ca-ac8d-5652-2460-792300dd8c6f">
+                              <SHORT-NAME>OUT_VeSTFR_b_BumpStrtChkEngOn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_BumpStrtChkEngOn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BumpStrtChkEngOn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="49a09ae0-2ccc-59a9-6910-5f728fefbb6b">
+                              <SHORT-NAME>OUT_VeSTFR_b_BackUpStrtChkEngOn_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_BackUpStrtChkEngOn</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BackUpStrtChkEngOn/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="534cf093-868d-5962-f830-c6cfbb7cdbe1">
+                              <SHORT-NAME>OUT_VeSTFR_b_BmpStrtInhbt_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_BmpStrtInhbt</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_BmpStrtInhbt/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="5bf81ce2-72bf-59c8-a6b0-769a8ccaa56b">
+                              <SHORT-NAME>OUT_VeSTFR_b_RsrvByPass_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_RsrvByPass</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_RsrvByPass/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f5e890e1-ec0c-538e-b34e-7a7a92d0f786">
+                              <SHORT-NAME>OUT_VeSTFR_b_StrtAllwd_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_StrtAllwd</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_StrtAllwd/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="26a95533-eb08-50c4-a861-b24f2d1fc5ed">
+                              <SHORT-NAME>OUT_VeSTFR_b_P2p5HMIMsg_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_P2p5HMIMsg</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_P2p5HMIMsg/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="7fb1f302-b548-55cb-84a0-2f916bd5fbcb">
+                              <SHORT-NAME>OUT_VeSTFR_y_StrtDvcNA_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_y_StrtDvcNA</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_y_StrtDvcNA/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="823dfc58-3268-534e-cd80-4c8736e48237">
+                              <SHORT-NAME>OUT_VeSTFR_e_StrtType_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_e_StrtType</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_e_StrtType/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="3e4a8a77-f6f5-5ce5-9d1e-9f4ed3edf051">
+                              <SHORT-NAME>OUT_VeSTFR_b_CltchRsrvOK_Value</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/VeSTFR_b_CltchRsrvOK</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/VeSTFR_b_CltchRsrvOK/Value</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STFR_PwrOn</SYMBOL>
+                          <WRITTEN-LOCAL-VARIABLES>
+                            <VARIABLE-ACCESS UUID="af94ded9-c9fc-5d2f-8a39-5b25ee5516ee">
+                              <SHORT-NAME>WV_BmpStrtGrThrsh1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/BmpStrtGrThrsh1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2908809b-610d-5293-9332-05b90cf9587c">
+                              <SHORT-NAME>WV_CltchStrtSpdMn1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/CltchStrtSpdMn1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="4a3c7435-79f1-522f-dca5-da673539a0e3">
+                              <SHORT-NAME>WV_EFAFail1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EFAFail1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="093570e8-78ca-52c8-e64d-503a2b4619f7">
+                              <SHORT-NAME>WV_EngOff1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EngOff1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="e7864fcc-9e56-530e-6140-d12467b66c0f">
+                              <SHORT-NAME>WV_EngRun1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EngRun1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="280cd65a-6c70-5022-a882-ebb0b37feb0a">
+                              <SHORT-NAME>WV_EssCD1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssCD1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="6685ca1b-1022-599c-017a-53f34f4a7802">
+                              <SHORT-NAME>WV_EssFStp1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssFStp1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f6e21cb7-2c81-55ba-33c0-cbeb33c01cff">
+                              <SHORT-NAME>WV_EssInitSpn1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssInitSpn1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="596020b5-91c3-5672-8c46-3ffde46d6b5c">
+                              <SHORT-NAME>WV_EssOFF1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssOFF1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="72604fff-50ca-5901-20d8-c9dcb0dad51b">
+                              <SHORT-NAME>WV_EssPFS1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssPFS1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="1de85508-d0a9-55c8-41de-b407f4b6c381">
+                              <SHORT-NAME>WV_EssRun1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/EssRun1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="86daa398-64b5-513d-5caa-6b33687213e1">
+                              <SHORT-NAME>WV_FltReg1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/FltReg1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="0b4ac61f-5143-5d94-c9a3-4f79240aa624">
+                              <SHORT-NAME>WV_FltReg2_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/FltReg2_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="4941ad5e-aa7c-5916-8b37-392cc7df5ff6">
+                              <SHORT-NAME>WV_ImpndInhbtESSOff1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/ImpndInhbtESSOff1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="2fbda4ce-2205-558e-795f-51a93fd597dc">
+                              <SHORT-NAME>WV_ImpndInhbtESSOn1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/ImpndInhbtESSOn1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="c2a4bdfe-9b34-5a50-f31e-24b2574fe5ae">
+                              <SHORT-NAME>WV_InhbtBmpStEnbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/InhbtBmpStEnbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="05181419-c94f-5b48-971c-15af8406ea4f">
+                              <SHORT-NAME>WV_InhbtTCMCndEnbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/InhbtTCMCndEnbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="f0527b34-2091-5d89-a90e-ad6f57ee62e8">
+                              <SHORT-NAME>WV_KeyOffSt1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/KeyOffSt1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="be06e30f-71bd-54d2-2677-2021f40cf315">
+                              <SHORT-NAME>WV_SRAREngOff1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/SRAREngOff1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="96832b44-2b49-5dfc-a2c6-6ead79ae80c2">
+                              <SHORT-NAME>WV_SRAREngOnRaw1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/SRAREngOnRaw1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="a781ec43-f60f-5740-1eeb-dc576764f486">
+                              <SHORT-NAME>WV_STPA_EFAFail1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/STPA_EFAFail1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="ffc8b534-f505-502c-cc0b-7ece78dc57e2">
+                              <SHORT-NAME>WV_StallDtct1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/StallDtct1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="93ebdf36-4624-5f1d-9c05-59131f02e6d5">
+                              <SHORT-NAME>WV_TCMCltchAvlbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMCltchAvlbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="acb241fd-64d7-5127-0eb2-6102b10726fc">
+                              <SHORT-NAME>WV_TCMEMAvlbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMEMAvlbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="5e554217-81ac-58a6-91ca-6aaba7f1f796">
+                              <SHORT-NAME>WV_TCMHMIEnbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMHMIEnbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                            <VARIABLE-ACCESS UUID="eaa5ca79-f78f-5d21-4b42-6cac2f719ead">
+                              <SHORT-NAME>WV_TCMIMAvlbl1_write_IRV</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/IB_STFR/TCMIMAvlbl1_write_IRV</LOCAL-VARIABLE-REF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </WRITTEN-LOCAL-VARIABLES>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="d8045830-8972-50bb-41e6-dae3a07f1248">
+                          <SHORT-NAME>STFR_PwrOff</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <DATA-SEND-POINTS>
+                            <VARIABLE-ACCESS UUID="1e9e1713-6582-5f6c-282e-cbbc23d08b84">
+                              <SHORT-NAME>OUT_NeSTFR_b_FailedStrtPrevCycle_NeSTFR_b_FailedStrtPrevCycle</SHORT-NAME>
+                              <ACCESSED-VARIABLE>
+                                <AUTOSAR-VARIABLE-IREF>
+                                  <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STELLANTIS/EPT/ASWCs/STFR/NeSTFR_b_FailedStrtPrevCycle</PORT-PROTOTYPE-REF>
+                                  <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STELLANTIS/EPT/Interfaces/NeSTFR_b_FailedStrtPrevCycle/NeSTFR_b_FailedStrtPrevCycle</TARGET-DATA-PROTOTYPE-REF>
+                                </AUTOSAR-VARIABLE-IREF>
+                              </ACCESSED-VARIABLE>
+                            </VARIABLE-ACCESS>
+                          </DATA-SEND-POINTS>
+                          <SYMBOL>STFR_PwrOff</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                      <VARIATION-POINT-PROXYS>
+                        <VARIATION-POINT-PROXY UUID="f83a42bc-038c-5444-edeb-eb2df6ac18b1">
+                          <SHORT-NAME>Variant_STFR_BckupstrtEquipd</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="6b034723-f484-5700-3684-4cdefcf3901d">
+                          <SHORT-NAME>Variant_STFR_DsblFcn</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">1</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="c3d1d33b-1352-5a5d-1a3b-08abd2f0c4fe">
+                          <SHORT-NAME>Variant_STFR_P2Equipd</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                        <VARIATION-POINT-PROXY UUID="a0277c1a-c327-549e-44e7-938e468c6b67">
+                          <SHORT-NAME>Variant_STFR_P2p5Equipd</SHORT-NAME>
+                          <CATEGORY>CONDITION</CATEGORY>
+                          <CONDITION-ACCESS BINDING-TIME="PRE-COMPILE-TIME">0</CONDITION-ACCESS>
+                        </VARIATION-POINT-PROXY>
+                      </VARIATION-POINT-PROXYS>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

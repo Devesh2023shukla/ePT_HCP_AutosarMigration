@@ -1,0 +1,3102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="19943149-9dcc-4d52-b9a2-ac13f979d7c0">
+      <SHORT-NAME>STLASharedInterfaces</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE T="2018-01-15T13:44:42+05:30" UUID="88889de6-c909-4373-a16e-27c70ab083f4">
+          <SHORT-NAME>IFCOEs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE T="2018-01-17T12:40:12+05:30" UUID="da94d34c-dd3a-4b5e-a7bd-b9149d016edd">
+              <SHORT-NAME>IFPlatform_Can</SHORT-NAME>
+              <ELEMENTS>
+                <CLIENT-SERVER-INTERFACE UUID="0e5a2396-b8d9-4ef9-80b1-b1382ea43e17">
+                  <SHORT-NAME>GetDMRR_g_EnblCondSts</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="cb42b4a7-a246-4548-a3df-59dc7ba411d9">
+                      <SHORT-NAME>GetDMRR_g_EnblCondSts</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="139b8fe0-484f-42d8-9998-62fe25a472ba">
+                          <SHORT-NAME>EnaCdnStates</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="c288fcf3-3e5c-4ace-b5ca-b64efe46fa79">
+                  <SHORT-NAME>KeCFGR_b_AGSM_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">AGSM equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="c8f496d0-122c-45e2-baa3-a486bc08dbd6">
+                      <SHORT-NAME>KeCFGR_b_AGSM_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">AGSM equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="e991eb9e-eeba-446d-afd4-b5beaf8b7dbb">
+                  <SHORT-NAME>KeCFGR_b_BCM_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">BCM equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="098cebb8-8847-43ac-b629-55e5dc47eb78">
+                      <SHORT-NAME>KeCFGR_b_BCM_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">BCM equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="49c28a0b-4564-41aa-8e68-8b83f8a29b61">
+                  <SHORT-NAME>KeCFGR_b_BPCM_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">BPCM equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="881f8c88-0103-42d6-a669-b216da8e28e2">
+                      <SHORT-NAME>KeCFGR_b_BPCM_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">BPCM equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="b4c87655-89d4-4920-8222-52b11c32594e">
+                  <SHORT-NAME>KeCFGR_b_BSM_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">BSM equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="7444d668-65f6-457d-afcf-50a0ba424046">
+                      <SHORT-NAME>KeCFGR_b_BSM_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">BSM equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="5e62cf7d-640b-4d4e-86ad-06baea7874a1">
+                  <SHORT-NAME>KeCFGR_b_EPS_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">EPS equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="d5acf4b4-9bf7-43a5-bf21-1c6e5a521677">
+                      <SHORT-NAME>KeCFGR_b_EPS_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">EPS equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="1f7d9398-fb52-421b-b63d-c108ec1a5bc1">
+                  <SHORT-NAME>KeCFGR_b_FD11_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">FD11 bus equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="6409811b-18bb-4256-a9cd-1682fd3564e4">
+                      <SHORT-NAME>KeCFGR_b_FD11_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Bit used to determine if vehicle is configured with FD11 bus</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="eda85fb8-0025-4851-8bf0-2a5bd320ee2f">
+                  <SHORT-NAME>KeCFGR_b_FD14_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">FD14 bus equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="59bfd885-5edd-4493-91c1-09b74960e673">
+                      <SHORT-NAME>KeCFGR_b_FD14_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Bit used to determine if vehicle is configured with FD14 bus</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="0691b5ba-6b9e-42a8-a7fc-0f7e1c3f5c39">
+                  <SHORT-NAME>KeCFGR_b_FD16_equid</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="0f2ebcf7-cb96-47fa-83f3-c9018290aa8c">
+                      <SHORT-NAME>KeCFGR_b_FD16_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Bit used to determine if vehicle is configured with FD16 bus</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="ecad64f8-1094-415e-a5b7-a8eaa326bf0a">
+                  <SHORT-NAME>KeCFGR_b_FD3_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">FD3 bus equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="9910da55-ac8a-4ada-8ca4-c7601921e4f3">
+                      <SHORT-NAME>KeCFGR_b_FD3_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Bit used to determine if vehicle is configured with FD3 bus</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="d3859343-39db-412f-99a0-3ae7613acfec">
+                  <SHORT-NAME>KeCFGR_b_FD5_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">FD5 bus equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="52f64d75-9d4e-472d-a3b2-84b72dd90046">
+                      <SHORT-NAME>KeCFGR_b_FD5_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Bit used to determine if vehicle is configured with FD5 bus</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="0ad7bfc4-6325-4a4f-9771-d8940dab90f2">
+                  <SHORT-NAME>KeCFGR_b_IDCM_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">IDCM equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="bfe721ac-e83b-4b41-a720-65114240ef39">
+                      <SHORT-NAME>KeCFGR_b_IDCM_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">IDCM equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="f01ffaba-f256-4ecc-bc70-b91849ac0e95">
+                  <SHORT-NAME>KeCFGR_b_MCPA_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">MPCA equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="7945a066-df92-4932-bfcc-7fc9fdab371c">
+                      <SHORT-NAME>KeCFGR_b_MCPA_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">MPCA equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <PARAMETER-INTERFACE UUID="f264b565-6ee4-464b-bd2e-3ea10081b85d">
+                  <SHORT-NAME>KeCFGR_b_MCPB_equid</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">MCPB equipped cal</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <PARAMETERS>
+                    <PARAMETER-DATA-PROTOTYPE UUID="4291b7dc-4276-4593-bcd4-27aa14e59368">
+                      <SHORT-NAME>KeCFGR_b_MCPB_equid</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">MCPB equipped cal. 1(TRUE) = equipped, 0(FALSE) = not equipped</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                    </PARAMETER-DATA-PROTOTYPE>
+                  </PARAMETERS>
+                </PARAMETER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="855a1a44-a3cd-4154-aca2-5ffde5bd0577">
+                  <SHORT-NAME>VeBATR_U_12VoltSys</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="f2bfaf6d-c235-40f7-b984-2a5cd990a280">
+                      <SHORT-NAME>VeBATR_U_12VoltSys</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSFloat32_Volts</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeBATR_U_12VoltSys/VeBATR_U_12VoltSys</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f33dde8f-8fab-4c54-a8ba-ea20ba9173df">
+                  <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD11</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">FD11 CAN bus off state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="8b09537a-cdad-41df-848d-e60ccf0e0c8f">
+                      <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD11</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current busoff state: Busoff = TRUE(1), not busoff = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6f9a4a76-54a4-4bc0-a351-3b7a84991ef4">
+                  <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD14</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD14 bus off state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="869c7685-4c83-446c-b785-6a80c51eac78">
+                      <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD14</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current busoff state: Busoff = TRUE(1), not busoff = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="11e49960-e0f9-41d8-b616-504f70b2c3f3">
+                  <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD16</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD16 bus off state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="c06298ae-fbd5-45fb-acf4-bea7a579241b">
+                      <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current busoff state: Busoff = TRUE(1), not busoff = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="1f5ec413-e259-469e-b2a9-bee143e216a7">
+                  <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD3 bus off state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="21875a0e-def7-47f6-bf30-1242c5350521">
+                      <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD3</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current busoff state: Busoff = TRUE(1), not busoff = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="71348bed-d572-43ac-b8b9-b8587baed085">
+                  <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD5</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">FD5 CAN bus off state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="a2b26fc7-ac56-4cfe-8f0b-49e2d76e747c">
+                      <SHORT-NAME>VeCANR_b_CurrBusOffSt_FD5</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current busoff state: Busoff = TRUE(1), not busoff = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2e4d3188-f032-4e57-a9ff-99dc41eaba54">
+                  <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD11</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD11 bus open state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="3204673d-125c-445e-bb1f-8bbf9a8cdaf3">
+                      <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD11</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current bus open state: Bus open = TRUE(1), not bus open = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="79a2cb3c-f9ae-43b0-be27-38e39829980f">
+                  <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD14</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD14 bus open state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="1c98a625-379e-4a57-97f1-a87d8367708a">
+                      <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD14</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current bus open state: Bus open = TRUE(1), not bus open = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="74cb8757-728a-4d9b-bcb5-709f9d67204a">
+                  <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD16</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD16 bus open state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="a7a4e931-9c90-4d5b-bee9-73196548d78a">
+                      <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current bus open state: Bus open = TRUE(1), not bus open = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f1f737cc-4541-417b-86e4-201f8af705fb">
+                  <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD3 bus open state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="6758234f-8774-47da-a35f-c957fa170bcf">
+                      <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD3</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current bus open state: Bus open = TRUE(1), not bus open = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2335d380-0b88-494b-bb3b-f10f412a1952">
+                  <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD5</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN FD5 bus open state</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="e7948e2d-5ad9-4a7c-b85a-88d3a8b4cfc4">
+                      <SHORT-NAME>VeCANR_b_CurrBusOpenSt_FD5</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Current bus open state: Bus open = TRUE(1), not bus open = FALSE(0)</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="1feeb0de-146e-490b-a65f-30da3cedd669">
+                  <SHORT-NAME>VeCANR_b_LOC_AAD</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="18b8dcfd-e842-4660-aae6-2e483d71952e">
+                      <SHORT-NAME>VeCANR_b_LOC_AAD</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_AAD/VeCANR_b_LOC_AAD</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="05ea7b48-16fd-4178-8311-1d304927b95b">
+                  <SHORT-NAME>VeCANR_b_LOC_AGS</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="43d6cad6-c1de-49c4-83b3-8e9c87f122a9">
+                      <SHORT-NAME>VeCANR_b_LOC_AGS</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_AGS/VeCANR_b_LOC_AGS</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5ffd8b8c-29fa-46a4-b58c-b8f6f67ad586">
+                  <SHORT-NAME>VeCANR_b_LOC_AGS2</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="466e6233-cf3e-44e8-8adf-f0951ec846d8">
+                      <SHORT-NAME>VeCANR_b_LOC_AGS2</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_AGS2/VeCANR_b_LOC_AGS2</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f0c9abd1-2d5a-4ed9-88b3-6bcef0fcea82">
+                  <SHORT-NAME>VeCANR_b_LOC_AGSM_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="0c27b12b-ccfc-438d-bfc2-ad6777fd1dfe">
+                      <SHORT-NAME>VeCANR_b_LOC_AGSM_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_AGSM_FD16Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_AGSM_FD16/VeCANR_b_LOC_AGSM_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b22208cd-9671-4b55-ba39-d886e5ed59e6">
+                  <SHORT-NAME>VeCANR_b_LOC_AGSM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="61e974f7-fa8d-4dcb-96d5-4d3e33d53441">
+                      <SHORT-NAME>VeCANR_b_LOC_AGSM_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_AGSM_FD3Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_AGSM_FD3/VeCANR_b_LOC_AGSM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4d5a065b-5aa7-453a-8bf1-63bd96b247bc">
+                  <SHORT-NAME>VeCANR_b_LOC_AHP</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="25353f69-4197-40e8-81a5-37be3901c6e1">
+                      <SHORT-NAME>VeCANR_b_LOC_AHP</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_AHP/VeCANR_b_LOC_AHP</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e8f1368a-ef47-4c5d-9800-da4ffa398879">
+                  <SHORT-NAME>VeCANR_b_LOC_BCM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="49110200-2023-438d-b4b3-6f4dbf0e01ab">
+                      <SHORT-NAME>VeCANR_b_LOC_BCM_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_BCM_FD3Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_BCM_FD3/VeCANR_b_LOC_BCM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="62191609-60ee-49af-a4cd-c087da3cd160">
+                  <SHORT-NAME>VeCANR_b_LOC_BCP</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="c047c073-ca5c-4065-8c71-6b96c4dc4f63">
+                      <SHORT-NAME>VeCANR_b_LOC_BCP</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_BCP/VeCANR_b_LOC_BCP</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4992d07b-0d8b-4158-a2b4-7a8beae1683d">
+                  <SHORT-NAME>VeCANR_b_LOC_BHV</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="5a2ca638-e9e7-4503-aad6-790a1daa7c15">
+                      <SHORT-NAME>VeCANR_b_LOC_BHV</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_BHV/VeCANR_b_LOC_BHV</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ae3c460e-35a5-4213-8401-9975afea5b88">
+                  <SHORT-NAME>VeCANR_b_LOC_BPCM_FD11</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="e627e913-385e-4cf8-bd64-5aea1646e094">
+                      <SHORT-NAME>VeCANR_b_LOC_BPCM_FD11</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_BPCM_FD11Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_BPCM_FD11/VeCANR_b_LOC_BPCM_FD11</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f31f15c6-1331-455c-8766-2e1ca35951de">
+                  <SHORT-NAME>VeCANR_b_LOC_BPCM_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="fcdec145-3c63-4192-9fdd-3f4c4c3d9b56">
+                      <SHORT-NAME>VeCANR_b_LOC_BPCM_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_BPCM_FD5Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_BPCM_FD5/VeCANR_b_LOC_BPCM_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="28773b70-382d-4c7c-a0c5-ffac89c8db22">
+                  <SHORT-NAME>VeCANR_b_LOC_BSM_FD14</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="66d7465e-8713-44cd-afb8-fd0200508f77">
+                      <SHORT-NAME>VeCANR_b_LOC_BSM_FD14</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_BSM_FD14Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_BSM_FD14/VeCANR_b_LOC_BSM_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="63c5deb6-b440-4411-8ea1-32a3b8c65f9d">
+                  <SHORT-NAME>VeCANR_b_LOC_BSM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="925ff939-c13d-4945-841f-111b53961b61">
+                      <SHORT-NAME>VeCANR_b_LOC_BSM_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_BSM_FD3Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_BSM_FD3/VeCANR_b_LOC_BSM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ad6e0f27-a428-4fa6-812e-9cf636a136c8">
+                  <SHORT-NAME>VeCANR_b_LOC_CADM_FD14</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="94359bdb-57e0-433e-9ca3-3bfc9f8d9d25">
+                      <SHORT-NAME>VeCANR_b_LOC_CADM_FD14</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_CADM_FD14/VeCANR_b_LOC_CADM_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="08b85234-dc43-404f-8994-7a6c351ea595">
+                  <SHORT-NAME>VeCANR_b_LOC_CEXV</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="7c234c3e-df42-4c54-85f3-6085f2662b0b">
+                      <SHORT-NAME>VeCANR_b_LOC_CEXV</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_CEXV/VeCANR_b_LOC_CEXV</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c662c40e-c5fb-4c4f-8ec6-f01144a68fa7">
+                  <SHORT-NAME>VeCANR_b_LOC_CPIM</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="91f829b9-7f9a-439b-a26b-a59af7556fe6">
+                      <SHORT-NAME>VeCANR_b_LOC_CPIM</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_CPIM/VeCANR_b_LOC_CPIM</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="68caec39-b567-491c-8890-3f969fb56a36">
+                  <SHORT-NAME>VeCANR_b_LOC_CPV</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="16246ccf-728a-4649-bd58-86840408e521">
+                      <SHORT-NAME>VeCANR_b_LOC_CPV</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_CPV/VeCANR_b_LOC_CPV</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ab226252-f7b4-4275-af85-c1f4abe1ed91">
+                  <SHORT-NAME>VeCANR_b_LOC_EAC</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="fef2f7b8-b0be-4f34-8b9a-bbe2929d45f9">
+                      <SHORT-NAME>VeCANR_b_LOC_EAC</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_EAC/VeCANR_b_LOC_EAC</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4b1379d8-5cac-4fad-9324-54a7d652f98f">
+                  <SHORT-NAME>VeCANR_b_LOC_EAH</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="5bd6e188-714a-4a5a-8e39-dca92c5db647">
+                      <SHORT-NAME>VeCANR_b_LOC_EAH</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_EAH/VeCANR_b_LOC_EAH</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="1e00fdc6-bc17-4a9b-957d-4cabcb1fc50a">
+                  <SHORT-NAME>VeCANR_b_LOC_ECH</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="679d91c6-c928-4b33-a440-375946a4b0d6">
+                      <SHORT-NAME>VeCANR_b_LOC_ECH</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_ECH/VeCANR_b_LOC_ECH</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="022068d5-f0c6-43a6-bc73-2dfead47feed">
+                  <SHORT-NAME>VeCANR_b_LOC_ECM_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="b6c91064-452f-4a79-b7f5-fc695ecddede">
+                      <SHORT-NAME>VeCANR_b_LOC_ECM_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_ECM_FD16Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_ECM_FD16/VeCANR_b_LOC_ECM_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2aa64795-417b-4e36-90b0-f3793710677e">
+                  <SHORT-NAME>VeCANR_b_LOC_ECM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="869e8dab-230c-409f-be1a-5f6957b471c7">
+                      <SHORT-NAME>VeCANR_b_LOC_ECM_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_ECM_FD3Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_ECM_FD3/VeCANR_b_LOC_ECM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="135dff38-add4-4e0c-aa6b-63f82bda620c">
+                  <SHORT-NAME>VeCANR_b_LOC_ECM_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="f73d7e97-e2a1-44b3-b797-47eef21e8223">
+                      <SHORT-NAME>VeCANR_b_LOC_ECM_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_ECM_FD5Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_ECM_FD5/VeCANR_b_LOC_ECM_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="04caa1ed-115b-48b8-a1e1-64d0bef9e08d">
+                  <SHORT-NAME>VeCANR_b_LOC_EOPA</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="522888b2-841d-47da-98b6-931739d6c0aa">
+                      <SHORT-NAME>VeCANR_b_LOC_EOPA</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_EOPA/VeCANR_b_LOC_EOPA</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6bb44758-3607-407d-9025-c8091e28256e">
+                  <SHORT-NAME>VeCANR_b_LOC_EOPB</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="66768a05-33ba-4268-ab69-600657a437f7">
+                      <SHORT-NAME>VeCANR_b_LOC_EOPB</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_EOPB/VeCANR_b_LOC_EOPB</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e96c4c3d-e8d5-4a77-b493-21ba0708dab0">
+                  <SHORT-NAME>VeCANR_b_LOC_EPS</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="15a1a3cf-baa5-4e3b-9fbb-40563d962d3f">
+                      <SHORT-NAME>VeCANR_b_LOC_EPS</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_EPSValue</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_EPS/VeCANR_b_LOC_EPS</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a5ee8704-11a8-41c6-9c99-0084d204bd58">
+                  <SHORT-NAME>VeCANR_b_LOC_ESBM</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="65dfcfc4-ef87-4c32-bc41-444abc5b437e">
+                      <SHORT-NAME>VeCANR_b_LOC_ESBM</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_ESBM/VeCANR_b_LOC_ESBM</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="eddae776-8bd6-4195-8c1c-1d3481717476">
+                  <SHORT-NAME>VeCANR_b_LOC_EXV</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="37070161-2fa1-44ec-8c3b-fb9d38280061">
+                      <SHORT-NAME>VeCANR_b_LOC_EXV</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_EXV/VeCANR_b_LOC_EXV</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="66d6d353-0236-41d8-a000-ea6e3196e199">
+                  <SHORT-NAME>VeCANR_b_LOC_EXVM</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="8a53df1b-d465-4afc-9f03-c1306b8c3c5b">
+                      <SHORT-NAME>VeCANR_b_LOC_EXVM</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_EXVM/VeCANR_b_LOC_EXVM</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b680c2f7-1631-42df-9334-7822880e375e">
+                  <SHORT-NAME>VeCANR_b_LOC_HTLBV</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="3e6961b0-ac66-4e4f-8f1f-0064de2127b9">
+                      <SHORT-NAME>VeCANR_b_LOC_HTLBV</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_HTLBV/VeCANR_b_LOC_HTLBV</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="cde1f9c6-f1a7-4650-914d-ae478d5d2b2c">
+                  <SHORT-NAME>VeCANR_b_LOC_IDCM_FD11</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="f6cfc0e0-85cb-4c9d-9550-e1c0998060ae">
+                      <SHORT-NAME>VeCANR_b_LOC_IDCM_FD11</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_IDCM_FD11Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_IDCM_FD11/VeCANR_b_LOC_IDCM_FD11</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0c4e2410-f0de-4311-971c-c6b460cd17fc">
+                  <SHORT-NAME>VeCANR_b_LOC_IDCM_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="5a2a4a57-e5d9-4d71-8a3f-c5a17766aba0">
+                      <SHORT-NAME>VeCANR_b_LOC_IDCM_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_IDCM_FD5Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_IDCM_FD5/VeCANR_b_LOC_IDCM_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="511f85e5-f9d9-46b1-8a5b-6acd772a0d7c">
+                  <SHORT-NAME>VeCANR_b_LOC_IPC_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="3939dd78-fbf3-4f7e-acd5-c50e9d3d406d">
+                      <SHORT-NAME>VeCANR_b_LOC_IPC_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_IPC_FD3Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_IPC_FD3/VeCANR_b_LOC_IPC_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0285036a-473a-4556-95b8-0ed80967f924">
+                  <SHORT-NAME>VeCANR_b_LOC_LTRBV</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="e6d7baaf-f3cd-427b-9778-459a1ee9c73b">
+                      <SHORT-NAME>VeCANR_b_LOC_LTRBV</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_LTRBV/VeCANR_b_LOC_LTRBV</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="51711843-62fe-4905-9bcd-6bcf58a728b3">
+                  <SHORT-NAME>VeCANR_b_LOC_MCPA_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="d14e476f-df7a-4644-bb15-074010931cdb">
+                      <SHORT-NAME>VeCANR_b_LOC_MCPA_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_MCPA_FD16Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_MCPA_FD16/VeCANR_b_LOC_MCPA_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3b3442ee-5cd7-4038-86fe-ac6bab64a8db">
+                  <SHORT-NAME>VeCANR_b_LOC_MCPA_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="a767666e-b98a-4a7b-8ac2-afbaa0d7d7ca">
+                      <SHORT-NAME>VeCANR_b_LOC_MCPA_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_MCPA_FD5Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_MCPA_FD5/VeCANR_b_LOC_MCPA_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="784b5051-a22f-4fb5-bcb4-6373b7db8db2">
+                  <SHORT-NAME>VeCANR_b_LOC_MCPB_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="104aabfd-13c1-4632-aca9-a757e36868f3">
+                      <SHORT-NAME>VeCANR_b_LOC_MCPB_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_MCPB_FD16Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_MCPB_FD16/VeCANR_b_LOC_MCPB_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="7025dc2b-d614-4c57-b0ec-0f9d1a7f2ed6">
+                  <SHORT-NAME>VeCANR_b_LOC_MCPB_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="d641b7d1-d8dc-4dbf-81a9-45f1b1d9d9fa">
+                      <SHORT-NAME>VeCANR_b_LOC_MCPB_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_MCPB_FD5Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_MCPB_FD5/VeCANR_b_LOC_MCPB_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5123d5a8-7334-433f-af87-882bb5559085">
+                  <SHORT-NAME>VeCANR_b_LOC_ORC</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="3ab2df4f-e84f-4dd5-bf2e-725aca656e8d">
+                      <SHORT-NAME>VeCANR_b_LOC_ORC</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_ORCValue</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_ORC/VeCANR_b_LOC_ORC</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="be5cee18-2396-4269-a027-1d6875499982">
+                  <SHORT-NAME>VeCANR_b_LOC_PECP</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="41581cf8-d3b0-43cd-9dfb-84ff381b9aac">
+                      <SHORT-NAME>VeCANR_b_LOC_PECP</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_PECP/VeCANR_b_LOC_PECP</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="46a86b1d-9995-46f7-9383-3e44896c3a2c">
+                  <SHORT-NAME>VeCANR_b_LOC_PECP2</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="7445f7f8-1bee-4e9f-b333-d01b010fae6b">
+                      <SHORT-NAME>VeCANR_b_LOC_PECP2</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_PECP2/VeCANR_b_LOC_PECP2</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b06153d9-330d-45d0-8fbd-4978fdf6a788">
+                  <SHORT-NAME>VeCANR_b_LOC_PPIM</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="bce8fb8e-9f6c-4649-ae35-ee330a86610c">
+                      <SHORT-NAME>VeCANR_b_LOC_PPIM</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_PPIMValue</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_PPIM/VeCANR_b_LOC_PPIM</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="582e9d00-e584-4e33-bc6a-fbedd50296ed">
+                  <SHORT-NAME>VeCANR_b_LOC_RFHM</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="b27d71c9-8002-4867-8be3-908314412730">
+                      <SHORT-NAME>VeCANR_b_LOC_RFHM</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_RFHMValue</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_RFHM/VeCANR_b_LOC_RFHM</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ce394f9d-002c-48cf-9963-122e0d4e15e5">
+                  <SHORT-NAME>VeCANR_b_LOC_SGCP_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="5d737fbe-fc4d-4f0a-bda1-5ef03871f54c">
+                      <SHORT-NAME>VeCANR_b_LOC_SGCP_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_SGCP_FD16Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_SGCP_FD16/VeCANR_b_LOC_SGCP_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a2100dbc-6079-4bb9-91f7-250edc6fb737">
+                  <SHORT-NAME>VeCANR_b_LOC_SGCP_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="64138786-c6fc-4e68-903d-420b5941aec5">
+                      <SHORT-NAME>VeCANR_b_LOC_SGCP_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_SGCP_FD5Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_SGCP_FD5/VeCANR_b_LOC_SGCP_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="1f41dc26-0959-4c1e-b504-19f0fe76b56d">
+                  <SHORT-NAME>VeCANR_b_LOC_SGW_FD11</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="85005e8f-2490-4fd6-8b4d-62eade7a2b08">
+                      <SHORT-NAME>VeCANR_b_LOC_SGW_FD11</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_SGW_FD11Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_SGW_FD11/VeCANR_b_LOC_SGW_FD11</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="df06b755-948c-4798-98b7-bb9238a990f5">
+                  <SHORT-NAME>VeCANR_b_LOC_SGW_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="6be6c49d-0474-48ab-aec5-aade504b53c7">
+                      <SHORT-NAME>VeCANR_b_LOC_SGW_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>VeCANR_b_LOC_SGW_FD3Value</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_SGW_FD3/VeCANR_b_LOC_SGW_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4662f08f-3264-439e-a8fd-30240c87e1a9">
+                  <SHORT-NAME>VeCANR_b_LOC_SPP</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="1953f092-1070-4a2c-bdfd-4d1113389a09">
+                      <SHORT-NAME>VeCANR_b_LOC_SPP</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_SPP/VeCANR_b_LOC_SPP</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3f8cc675-b655-4241-9ea1-67d07dcf23f9">
+                  <SHORT-NAME>VeCANR_b_LOC_SPP2</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="2574ce4e-6a44-47b9-8157-17a2e853d91b">
+                      <SHORT-NAME>VeCANR_b_LOC_SPP2</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_SPP2/VeCANR_b_LOC_SPP2</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0787b24d-2940-4c9c-a7fa-191c42d49868">
+                  <SHORT-NAME>VeCANR_e_CanLocEnblStatus</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN LoC Status</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="c03415c2-8f21-475e-8338-d4e9743ba23b">
+                      <SHORT-NAME>VeCANR_e_CanLocEnblStatus</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">CAN LoC Status</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STELLANTIS/EPT/DataDefinitions/ImpDataType/UInt8</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="409ec295-12c7-4d21-a1cf-80aaac55bece">
+                  <SHORT-NAME>VeCANR_e_ComPrsntMode_FD11</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">This interface provides the information about the present Communication mode for FD11 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="23ce0520-efb1-43ec-8852-7bc24786278f">
+                      <SHORT-NAME>VeCANR_e_ComPrsntMode_FD11</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">This Data Element provides the information about the present Communication mode for FD11 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_e_ComPrsntMode_FD11/VeCANR_e_ComPrsntMode_FD11</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e7a41a2b-d26e-4837-b003-72a9aa5b8b56">
+                  <SHORT-NAME>VeCANR_e_ComPrsntMode_FD16</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">This interface provides the information about the present Communication mode for FD16 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="51ba4e67-b0c1-43c8-9201-c43361caf0d2">
+                      <SHORT-NAME>VeCANR_e_ComPrsntMode_FD16</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">This interface provides the information about the present Communication mode for FD16 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_e_ComPrsntMode_FD16/VeCANR_e_ComPrsntMode_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="442d46b5-1d07-4c4a-a5a2-e34b2a5ae572">
+                  <SHORT-NAME>VeCANR_e_ComPrsntMode_FD3</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">This interface provides the information about the present Communication mode for FD3 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="1af8972a-6d9c-4d53-be75-3a6e7d6c6066">
+                      <SHORT-NAME>VeCANR_e_ComPrsntMode_FD3</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">This Data Element provides the information about the present Communication mode for FD3 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_e_ComPrsntMode_FD3/VeCANR_e_ComPrsntMode_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f0f74712-49e1-4416-9e6e-ae93f79a6b2e">
+                  <SHORT-NAME>VeCANR_e_ComPrsntMode_FD5</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">This interface provides the information about the present Communication mode for FD5 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="120c0956-33ed-49e4-9654-2673e755210d">
+                      <SHORT-NAME>VeCANR_e_ComPrsntMode_FD5</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">This interface provides the information about the present Communication mode for FD5 bus. 
+GPECx equivalent - COM_STATE
+Possible values:
+0 - COMM_NO_COMMUNICATION - Transmission and reception of CAN messages is switched off 
+2 - COMM_FULL_COMMUNICATION - Transmission and reception of CAN messages is switched On
+1 - COMM_SILENT_COMMUNICATION - Transmission of CAN messages is switched off, reception of CAN messages is switched On</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_e_ComPrsntMode_FD5/VeCANR_e_ComPrsntMode_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c2f3c3f9-9bfe-4128-8db9-38eaa9bda60f">
+                  <SHORT-NAME>VeKEYR_e_IgnSwSt</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="e0cbb1a8-cd1a-4f2f-94c2-8e148a56bea9">
+                      <SHORT-NAME>VeKEYR_e_IgnSwSt</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/FCASharedInterfaces/IFSWCs/IFIgnSwtStEstimr/ADTSIgnSwtStEnum</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e7fd870d-9ea8-42ff-aa77-a40846ac52e0">
+                  <SHORT-NAME>VeLRNR_b_AGSM_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="f99a4f3a-c761-40aa-a329-f0b8bb9cb2d4">
+                      <SHORT-NAME>VeLRNR_b_AGSM_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_AGSM_FD16/VeLRNR_b_AGSM_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d5a1e666-1d1f-4888-b67e-a1578a422a9d">
+                  <SHORT-NAME>VeLRNR_b_AGSM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="833dad74-6365-434c-9a87-bd9b51d19e36">
+                      <SHORT-NAME>VeLRNR_b_AGSM_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_AGSM_FD3/VeLRNR_b_AGSM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f1adc563-b125-491a-9a9f-98c7da9fe95a">
+                  <SHORT-NAME>VeLRNR_b_BCM</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="ba44256b-548f-4839-9fa9-af6d24495fb3">
+                      <SHORT-NAME>VeLRNR_b_BCM</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_BCM/VeLRNR_b_BCM</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0393b9e5-4319-470d-950d-f392218dbb8d">
+                  <SHORT-NAME>VeLRNR_b_BPCM_FD11</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="253c505f-049d-425a-8cef-a20440e9b23b">
+                      <SHORT-NAME>VeLRNR_b_BPCM_FD11</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_BPCM_FD11/VeLRNR_b_BPCM_FD11</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b7aecfd8-529b-4731-b181-be11eb629087">
+                  <SHORT-NAME>VeLRNR_b_BPCM_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="1cddd763-c80b-47dd-85ae-01e5b2d644e5">
+                      <SHORT-NAME>VeLRNR_b_BPCM_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_BPCM_FD5/VeLRNR_b_BPCM_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2f228bba-3c80-4103-a8f3-f11b509fb401">
+                  <SHORT-NAME>VeLRNR_b_BSM_FD14</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="3982949f-0ec0-4c01-966c-6e5cea0b5aa0">
+                      <SHORT-NAME>VeLRNR_b_BSM_FD14</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_BSM_FD14/VeLRNR_b_BSM_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a03cada5-9ea5-4254-91ba-b73dd7460ab6">
+                  <SHORT-NAME>VeLRNR_b_BSM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="e6f375e0-cb70-4199-b1b5-4b701d86b9f6">
+                      <SHORT-NAME>VeLRNR_b_BSM_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_BSM_FD3/VeLRNR_b_BSM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c21aa0de-8b24-4268-a9df-2e6a6799304f">
+                  <SHORT-NAME>VeLRNR_b_ECM_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="76ce7b00-09b6-43be-9e79-8258c27f7824">
+                      <SHORT-NAME>VeLRNR_b_ECM_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_ECM_FD16/VeLRNR_b_ECM_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="12b0390f-f6df-4e0b-ac37-106b9af189b4">
+                  <SHORT-NAME>VeLRNR_b_ECM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="d79b0a9d-1c9a-4162-808a-ff3a2e60318d">
+                      <SHORT-NAME>VeLRNR_b_ECM_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_ECM_FD3/VeLRNR_b_ECM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0bdd050c-fd5c-436c-af0f-1ddc41e08010">
+                  <SHORT-NAME>VeLRNR_b_EPS_FD14</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="017775d8-d81a-41fc-b446-8eabcb7aae02">
+                      <SHORT-NAME>VeLRNR_b_EPS_FD14</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_EPS_FD14/VeLRNR_b_EPS_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ba82d9de-8af3-4888-b28f-d6040c87bbfa">
+                  <SHORT-NAME>VeLRNR_b_IDCM_FD11</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="086956b6-3d1e-4d11-874a-ab5f3d890ccf">
+                      <SHORT-NAME>VeLRNR_b_IDCM_FD11</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_IDCM_FD11/VeLRNR_b_IDCM_FD11</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="8bc18f55-b9bc-494a-ac4a-609218348ec0">
+                  <SHORT-NAME>VeLRNR_b_IDCM_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="98b1ab18-80d2-4aa3-bbb7-494c32d1b268">
+                      <SHORT-NAME>VeLRNR_b_IDCM_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_IDCM_FD5/VeLRNR_b_IDCM_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d3798a3f-7ccc-4b62-9dba-e5eba1973a29">
+                  <SHORT-NAME>VeLRNR_b_IPC</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="aea387e2-d259-4cea-8dae-6abf41c63d5f">
+                      <SHORT-NAME>VeLRNR_b_IPC</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_IPC/VeLRNR_b_IPC</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="502b1b1b-75cf-40f3-b7bc-08dab96c7cb3">
+                  <SHORT-NAME>VeLRNR_b_MCPA_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="559c94cb-1705-49a8-8823-0e926ce8eaa6">
+                      <SHORT-NAME>VeLRNR_b_MCPA_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_MCPA_FD16/VeLRNR_b_MCPA_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a31c767c-b023-4286-8118-bb994f957f49">
+                  <SHORT-NAME>VeLRNR_b_MCPA_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="67b059f2-3b8c-4d7c-9869-1f635b750c10">
+                      <SHORT-NAME>VeLRNR_b_MCPA_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_MCPA_FD5/VeLRNR_b_MCPA_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a0d0ae0b-d915-4702-80fe-7aac8476ece7">
+                  <SHORT-NAME>VeLRNR_b_MCPB_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="af8a1da1-5b2b-4c46-806c-23ee8fc3668d">
+                      <SHORT-NAME>VeLRNR_b_MCPB_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_MCPB_FD16/VeLRNR_b_MCPB_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="fcfe12aa-6a50-4bfa-b691-08a6ff0f0394">
+                  <SHORT-NAME>VeLRNR_b_MCPB_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="47ebdf88-78f2-4ee3-91eb-9495ef26ca94">
+                      <SHORT-NAME>VeLRNR_b_MCPB_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_MCPB_FD5/VeLRNR_b_MCPB_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c0cbf854-bbba-43b6-8b34-dcc50e911866">
+                  <SHORT-NAME>VeLRNR_b_ORC_FD14</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="ed5d9f43-7060-4754-a858-ac6c363c255d">
+                      <SHORT-NAME>VeLRNR_b_ORC_FD14</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_ORC_FD14/VeLRNR_b_ORC_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f02b0cb6-9ab0-4123-8dc9-7700d7e60a43">
+                  <SHORT-NAME>VeLRNR_b_SGCP_FD16</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="9412a5ba-95bd-4d08-879e-a9ca92a5bb98">
+                      <SHORT-NAME>VeLRNR_b_SGCP_FD16</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_SGCP_FD16/VeLRNR_b_SGCP_FD16</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="13f1438a-ce7c-43d5-95f3-bfbca2296cdf">
+                  <SHORT-NAME>VeLRNR_b_SGCP_FD5</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="d65ca19d-f3d0-450b-9af5-9c34a3422638">
+                      <SHORT-NAME>VeLRNR_b_SGCP_FD5</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_SGCP_FD5/VeLRNR_b_SGCP_FD5</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b3d4c14a-3c65-4e21-a07e-41589bf978b8">
+                  <SHORT-NAME>VeLRNR_b_SGW_FD11</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="d88bf6c3-2320-4c12-8c0c-3976efad694b">
+                      <SHORT-NAME>VeLRNR_b_SGW_FD11</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_SGW_FD11/VeLRNR_b_SGW_FD11</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="7726242c-3bf2-4b72-9100-35876d776271">
+                  <SHORT-NAME>VeLRNR_b_SGW_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="aa699676-7257-43d6-bdb6-95861a927619">
+                      <SHORT-NAME>VeLRNR_b_SGW_FD3</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeLRNR_b_SGW_FD3/VeLRNR_b_SGW_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ae53546c-2efb-4889-af88-9bf5db0a729d">
+                  <SHORT-NAME>VeVSPR_v_VehSpd</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="c3e8b493-e7d2-431f-b970-3e39e56c27b6">
+                      <SHORT-NAME>VeVSPR_v_VehSpd</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Vehicle Speed Estimator</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSVehSpdKiloMtrPerHr</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>VeCANR_b_LOC_APM_FD14</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_b_LOC_APM_FD14</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>NumericalValueSpecification_0</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_APM_FD14/VeCANR_b_LOC_APM_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>VeCANR_b_LOC_RFHM_FD3</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_b_LOC_RFHM_FD3</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>NumericalValueSpecification_0</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeCANR_b_LOC_RFHM_FD3/VeCANR_b_LOC_RFHM_FD3</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

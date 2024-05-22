@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ARPackage_0</SHORT-NAME>
+      <ELEMENTS>
+        <IMPLEMENTATION-DATA-TYPE>
+          <SHORT-NAME>BswM_ESH_Mode</SHORT-NAME>
+          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE>
+          <SHORT-NAME>BswM_Rte_Mode</SHORT-NAME>
+          <CATEGORY>TYPE_REFERENCE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>BswMDataMappingSet</SHORT-NAME>
+      <ELEMENTS>
+        <DATA-TYPE-MAPPING-SET>
+          <SHORT-NAME>BswMMappingSet</SHORT-NAME>
+          <MODE-REQUEST-TYPE-MAPS>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ARPackage_0/BswM_Rte_Mode</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/BswMEcuModes</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/ARPackage_0/BswM_ESH_Mode</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/BswMEcuIntSts</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/DemInitSts</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/MDG_MdulInit</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/MSI_LinSMComMod/MDG_LinSMComMod</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/MDG_LinEquid/MDG_Lin1Equid</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/MDG_LinEquid/MDG_Lin2Equid</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/MDG_LinEquid/MDG_Lin3Equid</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+          </MODE-REQUEST-TYPE-MAPS>
+        </DATA-TYPE-MAPPING-SET>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="19943149-9dcc-4d52-b9a2-ac13f979d7c0">
+      <SHORT-NAME>FCASharedInterfaces</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="88889de6-c909-4373-a16e-27c70ab083f4">
+          <SHORT-NAME>IFCOEs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE T="2018-01-15T13:44:53+05:30" UUID="869e4812-eafe-4ddf-98da-b66269fd77c6">
+              <SHORT-NAME>IFPlatform_Srv</SHORT-NAME>
+              <ELEMENTS>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>CntrlrPwrHold_SR</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                </SENDER-RECEIVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:57:40+05:30" UUID="6e5bbe30-81ee-4dcd-b0e1-ab703a23acee">
+                  <SHORT-NAME>GetLLTR_b_FreeRunTiExpired</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Status of CPU free running counter time expired with reference to a start count</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:58:48+05:30" UUID="afa5d29c-7831-4f83-a94c-3359d4f54346">
+                      <SHORT-NAME>GetLLTR_b_FreeRunTiExpired</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">Has Free RunExpired</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Status of CPU free running counter time expired with reference to a start count</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="95679cfa-c1ff-4bf1-add9-7792c11ef5d4">
+                          <SHORT-NAME>StrtTi</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="ad13730a-9972-4098-85e0-f9e2cc44f5f4">
+                          <SHORT-NAME>MaxWaitCount</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+                          <DIRECTION>IN</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="6c9c9310-f01c-4258-9dc7-1eac13b7ab36">
+                          <SHORT-NAME>Result</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>INOUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:59:26+05:30" UUID="ced56a40-e891-41fd-a2a6-e795177175b8">
+                  <SHORT-NAME>GetLLTR_t_EngOffTiMins</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Total engine off time in minutes - Could include the engine off time from last key on.</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T14:00:06+05:30" UUID="91b20686-e844-441e-9389-6bb7fb8a1e90">
+                      <SHORT-NAME>GetLLTR_t_EngOffTiMins</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">Get Engine Off Time Minute</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Total engine off time in minutes - Could include the engine off time from last key on.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="290d9b8c-1c4d-47ce-b6c3-9de53c8dc9ab">
+                          <SHORT-NAME>EngOffTiMins</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:59:25+05:30" UUID="9eac4381-52f0-4f87-acc0-856ff4ee8aa6">
+                  <SHORT-NAME>GetLLTR_t_EngOffTiSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Total engine off time in seconds - Could include the engine off time from last key on.</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T14:00:06+05:30" UUID="32341205-cf41-45de-ab2e-0a9ac5258ff0">
+                      <SHORT-NAME>GetLLTR_t_EngOffTiSec</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">Get Engine Off TimeSecs</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Total engine off time in seconds - Could include the engine off time from last key on.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="b9c07f5e-0d62-481a-a6d4-6b9bd3017798">
+                          <SHORT-NAME>EngOffTiSecs</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:59:25+05:30" UUID="9fd462a4-8048-4bea-a7b9-83e26b4cec4c">
+                  <SHORT-NAME>GetLLTR_t_EngStlTmr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Engine stall time since key on in 10ms per bit</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T14:00:05+05:30" UUID="7d50ed0e-34b2-427b-b330-651425f4fdda">
+                      <SHORT-NAME>GetLLTR_t_EngStlTmr</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">Get EngineStall Timer</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Engine stall time since key on in 10ms per bit</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="6721599c-c144-4c79-af55-fd7db2d9284b">
+                          <SHORT-NAME>EngStallTmr</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Engine stall time in 10ms per bit</L-2>
+                          </DESC>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:57:40+05:30" UUID="3259aefb-764e-4a70-abb4-91add3e4090a">
+                  <SHORT-NAME>GetLLTR_t_FreeRunTmr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CPU free running counter value in system clock - 1/240MHz per bit.</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:58:48+05:30" UUID="8a891875-49d1-46d2-af08-7fb31b75b307">
+                      <SHORT-NAME>GetLLTR_t_FreeRunTmr</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">Get Free Run Timer</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">CPU free running counter value in system clock - 1/240MHz per bit.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="4a5897f7-ecf2-4a10-bcea-567127224765">
+                          <SHORT-NAME>FreeRunTmr</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">CPU free running counter value in system clock - 1/240MHz per bit.</L-2>
+                          </DESC>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="c2323562-73e7-4bb3-87fc-8e23b649e392">
+                  <SHORT-NAME>GetLLTR_t_KeyOffToKeyOnSec</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Time from ignition key off to key on in seconds</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="24058767-d61b-49a0-b42d-defd886bf3df">
+                      <SHORT-NAME>GetLLTR_t_KeyOffToKeyOnSec</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="db02ba85-fc63-49ea-a15a-6a419cee6bbe">
+                          <SHORT-NAME>KeyOffToKeyOnSec</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:59:25+05:30" UUID="e1a17840-92c4-4439-9592-e879f870117c">
+                  <SHORT-NAME>GetLLTR_t_SysUpTmr</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">System timer in 1ms resolution counting since module is up.</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T14:00:05+05:30" UUID="dbad3f7d-0235-48ff-9298-d1ed62bcab1a">
+                      <SHORT-NAME>GetLLTR_t_SysUpTmr</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">Get System Up Timer</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">System timer in 1ms resolution counting since module is up.</L-2>
+                      </DESC>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="5b9e5e59-8be1-4f41-b7b8-bce66730efa8">
+                          <SHORT-NAME>SysUpTmr</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:58:48+05:30" UUID="909bede2-fc9a-4555-a488-824690c084b4">
+                  <SHORT-NAME>GetMODR_b_InPostRunMode</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:59:37+05:30" UUID="95cc5236-8f33-46f6-85b4-0f37d4761d0c">
+                      <SHORT-NAME>GetMODR_b_InPostRunMode</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">In Post Run</L-4>
+                      </LONG-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="cc8cc201-beb3-4787-899c-43506eecf8b8">
+                          <SHORT-NAME>InPostRun</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:58:48+05:30" UUID="5430ff99-c0aa-4087-9f53-7ced2d7326f9">
+                  <SHORT-NAME>GetMODR_b_InRunMode</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:59:37+05:30" UUID="36fbfc9b-a438-45c3-b6df-69bd18ebe91a">
+                      <SHORT-NAME>GetMODR_b_InRunMode</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">In Run</L-4>
+                      </LONG-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="33f8db5b-5a9b-47fd-b0fc-d98038e4f9b6">
+                          <SHORT-NAME>InRun</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:58:48+05:30" UUID="f55e1b1a-a32e-4894-ac11-6f6ceca54c5f">
+                  <SHORT-NAME>GetMODR_b_InShtDwnMode</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:59:37+05:30" UUID="af9ca27f-82a6-4c9f-bb97-093485b30ff5">
+                      <SHORT-NAME>GetMODR_b_InShtDwnMode</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">In Shut</L-4>
+                      </LONG-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="2e63cdb1-6160-48f3-b510-69d15811396e">
+                          <SHORT-NAME>InShutDown</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:58:48+05:30" UUID="e786466a-4042-4450-bfa1-304bd846fe1e">
+                  <SHORT-NAME>GetMODR_b_InStrtUpMode</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:59:36+05:30" UUID="430e9863-413d-4ac0-a126-c7ae71c484b3">
+                      <SHORT-NAME>GetMODR_b_InStrtUpMode</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">In Up</L-4>
+                      </LONG-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="96cb1fe8-89ba-49b9-b979-db783fdc002c">
+                          <SHORT-NAME>InStartUp</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:58:48+05:30" UUID="bfa78671-4f4c-494d-a602-e65f16b0757e">
+                  <SHORT-NAME>GetMODR_b_InWakeUpMode</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:59:37+05:30" UUID="3fa49d89-b62f-448a-8e26-492e7ddba0ac">
+                      <SHORT-NAME>GetMODR_b_InWakeUpMode</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">In Wake Up</L-4>
+                      </LONG-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="8cddaf6e-5029-424e-bb96-b98d0e779c39">
+                          <SHORT-NAME>InWakeUp</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE T="2018-01-16T06:58:48+05:30" UUID="039c6dfe-7f77-4405-acbb-3587d624b109">
+                  <SHORT-NAME>GetMODR_e_CurrRTE_Mode</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">None</L-4>
+                  </LONG-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION T="2018-01-15T13:59:36+05:30" UUID="2e7b163b-d69d-4b92-b1b2-3c10f5a6ce6a">
+                      <SHORT-NAME>GetMODR_e_CurrRTE_Mode</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">GetCurrent RTE</L-4>
+                      </LONG-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="b906fde6-0082-41e9-aadd-3ee0c495079b">
+                          <SHORT-NAME>CurrentMode</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="FOR-ALL">None</L-4>
+                          </LONG-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/ARPackage_0/BswM_Rte_Mode</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="8df60116-301c-402e-8eb2-bbba248a83d9">
+                  <SHORT-NAME>GetPRTR_Cnt_NrOfVlvPerCyl</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="52655832-c273-433d-b14f-d72f1316f61a">
+                      <SHORT-NAME>GetPRTR_Cnt_NrOfVlvPerCyl</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="20450e6a-7a13-47d8-8826-369178b94ffd">
+                          <SHORT-NAME>GetPRTR_Cnt_NrOfVlvPerCyl</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="7f2efdea-58c4-4c81-b051-24501d6331b5">
+                  <SHORT-NAME>GetPRTR_b_ETC_Prsnt</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="3e626ca2-b7ac-4b39-bc59-1ee93870e2d4">
+                      <SHORT-NAME>GetPRTR_b_ETC_Prsnt</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="8802fa02-5238-4870-8198-b750cdb6bfc7">
+                          <SHORT-NAME>GetPRTR_b_ETC_Prsnt</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="38599909-0564-49d4-af3e-88a48efe1515">
+                  <SHORT-NAME>GetPRTR_b_TransTyp</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="d58bb726-4fb5-4cf8-9107-e38be236be64">
+                      <SHORT-NAME>GetPRTR_b_TransTyp</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="e1ef64b3-ba55-4cf4-8a89-e90892dda1ce">
+                          <SHORT-NAME>GetPRTR_b_TransTyp</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="c0c37e5d-8a23-4901-94fe-9f1370030f47">
+                  <SHORT-NAME>GetPRTR_y_EngAspirationMethod</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="797c388a-1e17-41fe-9fab-1bbb7babab0c">
+                      <SHORT-NAME>GetPRTR_y_EngAspirationMethod</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="56505b7b-50a2-422b-8487-dc6c9bdd0a6a">
+                          <SHORT-NAME>GetPRTR_y_EngAspirationMethod</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="c9b214fc-ffa9-48cc-a7fc-af8bc393ac8b">
+                  <SHORT-NAME>GetPRTR_y_EngMfr</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="2b4d04f8-d45c-404e-ba65-dde64be5faf0">
+                      <SHORT-NAME>GetPRTR_y_EngMfr</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="5967e6fd-76ee-4104-91aa-a12b52067d98">
+                          <SHORT-NAME>GetPRTR_y_EngMfr</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="3c1b1a96-27c6-452a-8999-fa3a804f663e">
+                  <SHORT-NAME>GetPRTR_y_EngOutpVer</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="e4458d1c-8973-4471-a668-1de48d940529">
+                      <SHORT-NAME>GetPRTR_y_EngOutpVer</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="85e4de13-61ec-416d-8e74-47226f5e3da5">
+                          <SHORT-NAME>GetPRTR_y_EngOutpVer</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="68ea3824-05c8-438a-b1c0-fbc4ebefea53">
+                  <SHORT-NAME>GetPRTR_y_FuTyp</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="a1c6680d-f47f-43bf-ba8a-ae06e31db88c">
+                      <SHORT-NAME>GetPRTR_y_FuTyp</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="1250ddbe-81ef-429c-bb6f-028a51b2653e">
+                          <SHORT-NAME>GetPRTR_y_FuTyp</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <PORT-INTERFACE-MAPPING-SET UUID="4c1694df-2b36-497d-b41c-bcda890e3ef5">
+                  <SHORT-NAME>RteModeToGetCurrentRteModeIfMap</SHORT-NAME>
+                  <PORT-INTERFACE-MAPPINGS>
+                    <CLIENT-SERVER-INTERFACE-MAPPING UUID="d5675842-4524-4c72-aac6-d5a2518010d6">
+                      <SHORT-NAME>RteModeToGetCurrentRteModeIfMap</SHORT-NAME>
+                      <OPERATION-MAPPINGS>
+                        <CLIENT-SERVER-OPERATION-MAPPING>
+                          <FIRST-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/GetMODR_e_CurrRTE_Mode/GetMODR_e_CurrRTE_Mode</FIRST-OPERATION-REF>
+                          <SECOND-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_e_CurrRTE_Mode</SECOND-OPERATION-REF>
+                        </CLIENT-SERVER-OPERATION-MAPPING>
+                      </OPERATION-MAPPINGS>
+                    </CLIENT-SERVER-INTERFACE-MAPPING>
+                  </PORT-INTERFACE-MAPPINGS>
+                </PORT-INTERFACE-MAPPING-SET>
+                <PORT-INTERFACE-MAPPING-SET UUID="7bab1b8d-4506-4330-9429-621e32b2a3f4">
+                  <SHORT-NAME>RteModeToInPostRunModeIfMap</SHORT-NAME>
+                  <PORT-INTERFACE-MAPPINGS>
+                    <CLIENT-SERVER-INTERFACE-MAPPING UUID="a4eb06d8-65f6-42e2-a568-e994e3d2cabf">
+                      <SHORT-NAME>RteModeToInPostRunModeIfMapping</SHORT-NAME>
+                      <OPERATION-MAPPINGS>
+                        <CLIENT-SERVER-OPERATION-MAPPING>
+                          <FIRST-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/GetMODR_b_InPostRunMode/GetMODR_b_InPostRunMode</FIRST-OPERATION-REF>
+                          <SECOND-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InPostRunMode</SECOND-OPERATION-REF>
+                        </CLIENT-SERVER-OPERATION-MAPPING>
+                      </OPERATION-MAPPINGS>
+                    </CLIENT-SERVER-INTERFACE-MAPPING>
+                  </PORT-INTERFACE-MAPPINGS>
+                </PORT-INTERFACE-MAPPING-SET>
+                <PORT-INTERFACE-MAPPING-SET UUID="8771252b-5b0a-4dc3-86e8-5a9273bfcb73">
+                  <SHORT-NAME>RteModeToInRunModeIfMap</SHORT-NAME>
+                  <PORT-INTERFACE-MAPPINGS>
+                    <CLIENT-SERVER-INTERFACE-MAPPING UUID="08acf436-faa3-4d8d-aebc-17943ad8243f">
+                      <SHORT-NAME>RteModeToInRunModeIfMapping</SHORT-NAME>
+                      <OPERATION-MAPPINGS>
+                        <CLIENT-SERVER-OPERATION-MAPPING>
+                          <FIRST-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/GetMODR_b_InRunMode/GetMODR_b_InRunMode</FIRST-OPERATION-REF>
+                          <SECOND-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InRunMode</SECOND-OPERATION-REF>
+                        </CLIENT-SERVER-OPERATION-MAPPING>
+                      </OPERATION-MAPPINGS>
+                    </CLIENT-SERVER-INTERFACE-MAPPING>
+                  </PORT-INTERFACE-MAPPINGS>
+                </PORT-INTERFACE-MAPPING-SET>
+                <PORT-INTERFACE-MAPPING-SET UUID="42a96325-a2a2-453b-a8a7-df1d92ba6808">
+                  <SHORT-NAME>RteModeToInShutDownModeIfMap</SHORT-NAME>
+                  <PORT-INTERFACE-MAPPINGS>
+                    <CLIENT-SERVER-INTERFACE-MAPPING UUID="9c077dcd-babd-4d5b-9461-6c575b446a0d">
+                      <SHORT-NAME>RteModeToInShutDownModeIfMapping</SHORT-NAME>
+                      <OPERATION-MAPPINGS>
+                        <CLIENT-SERVER-OPERATION-MAPPING>
+                          <FIRST-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/GetMODR_b_InShtDwnMode/GetMODR_b_InShtDwnMode</FIRST-OPERATION-REF>
+                          <SECOND-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InShtDwnMode</SECOND-OPERATION-REF>
+                        </CLIENT-SERVER-OPERATION-MAPPING>
+                      </OPERATION-MAPPINGS>
+                    </CLIENT-SERVER-INTERFACE-MAPPING>
+                  </PORT-INTERFACE-MAPPINGS>
+                </PORT-INTERFACE-MAPPING-SET>
+                <PORT-INTERFACE-MAPPING-SET UUID="5c238a20-fdb5-4ac7-b6ff-f19c8754dcd7">
+                  <SHORT-NAME>RteModeToInStartUpModeIfMap</SHORT-NAME>
+                  <PORT-INTERFACE-MAPPINGS>
+                    <CLIENT-SERVER-INTERFACE-MAPPING UUID="1a0fb7e1-f2ab-4c6e-bc8d-47b7c1344525">
+                      <SHORT-NAME>RteModeToInStartUpModeIfMapping</SHORT-NAME>
+                      <OPERATION-MAPPINGS>
+                        <CLIENT-SERVER-OPERATION-MAPPING>
+                          <FIRST-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/GetMODR_b_InStrtUpMode/GetMODR_b_InStrtUpMode</FIRST-OPERATION-REF>
+                          <SECOND-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InStrtUpMode</SECOND-OPERATION-REF>
+                        </CLIENT-SERVER-OPERATION-MAPPING>
+                      </OPERATION-MAPPINGS>
+                    </CLIENT-SERVER-INTERFACE-MAPPING>
+                  </PORT-INTERFACE-MAPPINGS>
+                </PORT-INTERFACE-MAPPING-SET>
+                <PORT-INTERFACE-MAPPING-SET UUID="de8111b1-358f-4a0a-807a-764d8b72504f">
+                  <SHORT-NAME>RteModeToInWakeUpModeIfMap</SHORT-NAME>
+                  <PORT-INTERFACE-MAPPINGS>
+                    <CLIENT-SERVER-INTERFACE-MAPPING UUID="990e1e76-a92b-4af1-b5ce-20d5a88ddcba">
+                      <SHORT-NAME>RteModeToInWakeUpModeIfMapping</SHORT-NAME>
+                      <OPERATION-MAPPINGS>
+                        <CLIENT-SERVER-OPERATION-MAPPING>
+                          <FIRST-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/GetMODR_b_InWakeUpMode/GetMODR_b_InWakeUpMode</FIRST-OPERATION-REF>
+                          <SECOND-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InWakeUpMode</SECOND-OPERATION-REF>
+                        </CLIENT-SERVER-OPERATION-MAPPING>
+                      </OPERATION-MAPPINGS>
+                    </CLIENT-SERVER-INTERFACE-MAPPING>
+                  </PORT-INTERFACE-MAPPINGS>
+                </PORT-INTERFACE-MAPPING-SET>
+                <SENDER-RECEIVER-INTERFACE UUID="ca4d8cfc-4aa0-4dc8-b3d4-f957da02491c">
+                  <SHORT-NAME>VeDIDR_Cnt_Mode4Rst</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="9b792c21-dcbf-465c-82b2-5bf20cfa1bc7">
+                      <SHORT-NAME>VeDIDR_Cnt_Mode4Rst</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE T="2018-01-16T06:46:00+05:30" UUID="35df13b4-7a84-4432-b4b9-81cdd40cc0f0">
+                  <SHORT-NAME>VeLLTR_t_EngOffTiMins</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">Environment SwitchClosure Time</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Total engine off time in minutes - Could include the engine off time from last key on.</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="4f3e2f32-3675-4097-af31-23be8633480c">
+                      <SHORT-NAME>VeLLTR_t_EngOffTiMins</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Total engine off time in minutes - Could include the engine off time from last key on.</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE T="2018-01-16T06:46:00+05:30" UUID="9cd8d5d2-59a6-46c7-81c9-c9ee6823e64a">
+                  <SHORT-NAME>VeLLTR_t_EngOffTiSec</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">Environment SwitchClosure Time</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Total engine off time in seconds - Could include the engine off time from last key on.</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="0d2ca3a3-898e-457f-a22d-8df10bd458e3">
+                      <SHORT-NAME>VeLLTR_t_EngOffTiSec</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Total engine off time in seconds - Could include the engine off time from last key on.</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE T="2018-01-16T06:41:39+05:30" UUID="1ca5a89f-2dae-44e9-bb63-0b44eb6c3859">
+                  <SHORT-NAME>VeLLTR_t_KeyOffToKeyOnMins</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">Keyoff ToKeyon Minute</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Time from ignition key off to key on in minutes</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE T="2018-01-15T13:47:57+05:30" UUID="f01aeb9f-3b09-4e80-ae77-b7cadb962fe7">
+                      <SHORT-NAME>VeLLTR_t_KeyOffToKeyOnMins</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Time from ignition key off to key on in minutes</L-2>
+                      </DESC>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>KeyoffToKeyonMinsValue</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeLLTR_t_KeyOffToKeyOnMins/VeLLTR_t_KeyOffToKeyOnMins</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5cb73ba3-631c-4d33-b37c-7c9f15a00e70">
+                  <SHORT-NAME>VeLLTR_t_KeyOffToKeyOnSec</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">Time from ignition key off to key on in seconds</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="743ad667-eb90-4616-879a-d96434afbab6">
+                      <SHORT-NAME>VeLLTR_t_KeyOffToKeyOnSec</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Time from ignition key off to key on in seconds</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a395261a-09aa-45f8-bd40-d52052e20f3e">
+                  <SHORT-NAME>VeLLTR_t_SysUpTmr</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">System timer in 1ms resolution counting since module is up.</L-2>
+                  </DESC>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="de67605e-74d0-4445-b4e7-f3d370f89f30">
+                      <SHORT-NAME>VeLLTR_t_SysUpTmr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">System timer in 1ms resolution counting since module is up.</L-2>
+                      </DESC>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE T="2018-01-16T06:45:18+05:30" UUID="529c7cfc-3c08-4087-86e7-694b0ba061cd">
+                  <SHORT-NAME>VeSPLR_b_PostRunRqrdSt</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="FOR-ALL">InValid</L-4>
+                  </LONG-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <SERVICE-KIND>ANY-STANDARDIZED</SERVICE-KIND>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE T="2018-01-15T13:44:54+05:30" UUID="73b34f22-6ac9-41f9-a07a-1f10f0ebab33">
+                      <SHORT-NAME>VeSPLR_b_PostRunRqrdSt</SHORT-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS />
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataDefinitions/ARPackage_0/ADTSPostRunRqrd</TYPE-TREF>
+                      <INIT-VALUE>
+                        <APPLICATION-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>StateValue</SHORT-LABEL>
+                          <SW-VALUE-CONT>
+                            <SW-VALUES-PHYS>
+                              <V>1</V>
+                            </SW-VALUES-PHYS>
+                          </SW-VALUE-CONT>
+                        </APPLICATION-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt/VeSPLR_b_PostRunRqrdSt</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>MSI_ShutDown</SHORT-NAME>
+      <ELEMENTS>
+        <DATA-TYPE-MAPPING-SET>
+          <SHORT-NAME>MG_Shutdown_Mapping</SHORT-NAME>
+          <MODE-REQUEST-TYPE-MAPS>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/MSI_ShutDown/MDG/MDG_ShutDown</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+          </MODE-REQUEST-TYPE-MAPS>
+        </DATA-TYPE-MAPPING-SET>
+        <MODE-SWITCH-INTERFACE>
+          <SHORT-NAME>MSI_ShutDown</SHORT-NAME>
+          <IS-SERVICE>true</IS-SERVICE>
+          <MODE-GROUP>
+            <SHORT-NAME>MDGP_MSI_ShutDown</SHORT-NAME>
+            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/MSI_ShutDown/MDG/MDG_ShutDown</TYPE-TREF>
+          </MODE-GROUP>
+        </MODE-SWITCH-INTERFACE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>MDG</SHORT-NAME>
+          <ELEMENTS>
+            <MODE-DECLARATION-GROUP>
+              <SHORT-NAME>MDG_ShutDown</SHORT-NAME>
+              <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+              <INITIAL-MODE-REF DEST="MODE-DECLARATION">/MSI_ShutDown/MDG/MDG_ShutDown/RUN</INITIAL-MODE-REF>
+              <MODE-DECLARATIONS>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>SHUT_DOWN</SHORT-NAME>
+                  <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                  <VALUE>0</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>RUN</SHORT-NAME>
+                  <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                  <VALUE>1</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin0_BEV_COMMON_RUN</SHORT-NAME>
+                  <VALUE>3</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin1_BEV_COMMON_RUN</SHORT-NAME>
+                  <VALUE>4</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin2_BEV_COMMON_RUN</SHORT-NAME>
+                  <VALUE>5</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin0_DT_REPB_RUN</SHORT-NAME>
+                  <VALUE>6</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin1_DT_REPB_RUN</SHORT-NAME>
+                  <VALUE>7</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin2_DT_REPB_RUN</SHORT-NAME>
+                  <VALUE>8</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin0_WS_REPB_RUN</SHORT-NAME>
+                  <VALUE>9</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin1_WS_REPB_RUN</SHORT-NAME>
+                  <VALUE>10</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>LIN_SCHEDULE_TABLE_Lin2_WS_REPB_RUN</SHORT-NAME>
+                  <VALUE>11</VALUE>
+                </MODE-DECLARATION>
+              </MODE-DECLARATIONS>
+              <ON-TRANSITION-VALUE>2</ON-TRANSITION-VALUE>
+            </MODE-DECLARATION-GROUP>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>ModeSwitchInterfaces</SHORT-NAME>
+      <ELEMENTS>
+        <MODE-DECLARATION-GROUP>
+          <SHORT-NAME>BswMEcuIntSts</SHORT-NAME>
+          <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+          <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeSwitchInterfaces/BswMEcuIntSts/St_INIT</INITIAL-MODE-REF>
+          <MODE-DECLARATIONS>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_PREP_SHUTDOWN</SHORT-NAME>
+              <VALUE>4</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_WAIT_FOR_NVM</SHORT-NAME>
+              <VALUE>5</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_NVM_CANCELED</SHORT-NAME>
+              <VALUE>6</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_INIT</SHORT-NAME>
+              <VALUE>0</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_WAKEUP</SHORT-NAME>
+              <VALUE>1</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_RUN</SHORT-NAME>
+              <VALUE>2</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_POSTRUN</SHORT-NAME>
+              <VALUE>3</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>St_SHUTDOWN</SHORT-NAME>
+              <VALUE>7</VALUE>
+            </MODE-DECLARATION>
+          </MODE-DECLARATIONS>
+          <ON-TRANSITION-VALUE>8</ON-TRANSITION-VALUE>
+        </MODE-DECLARATION-GROUP>
+        <MODE-DECLARATION-GROUP>
+          <SHORT-NAME>BswMEcuModes</SHORT-NAME>
+          <CATEGORY>ALPHABETIC_ORDER</CATEGORY>
+          <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeSwitchInterfaces/BswMEcuModes/STARTUP</INITIAL-MODE-REF>
+          <MODE-DECLARATIONS>
+            <MODE-DECLARATION>
+              <SHORT-NAME>RUN</SHORT-NAME>
+              <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>POSTRUN</SHORT-NAME>
+              <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>STARTUP</SHORT-NAME>
+              <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>SHUTDOWN</SHORT-NAME>
+              <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>WAKEUP</SHORT-NAME>
+              <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+            </MODE-DECLARATION>
+          </MODE-DECLARATIONS>
+        </MODE-DECLARATION-GROUP>
+        <MODE-DECLARATION-GROUP>
+          <SHORT-NAME>DemInitSts</SHORT-NAME>
+          <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+          <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeSwitchInterfaces/DemInitSts/DEM_NOT_INITIALIZED</INITIAL-MODE-REF>
+          <MODE-DECLARATIONS>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DEM_INITIALIZED</SHORT-NAME>
+              <VALUE>0</VALUE>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>DEM_NOT_INITIALIZED</SHORT-NAME>
+              <VALUE>1</VALUE>
+            </MODE-DECLARATION>
+          </MODE-DECLARATIONS>
+        </MODE-DECLARATION-GROUP>
+        <MODE-SWITCH-INTERFACE>
+          <SHORT-NAME>DemInit_Mode</SHORT-NAME>
+          <IS-SERVICE>true</IS-SERVICE>
+          <MODE-GROUP>
+            <SHORT-NAME>DemInitDclGroups</SHORT-NAME>
+            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/DemInitSts</TYPE-TREF>
+          </MODE-GROUP>
+        </MODE-SWITCH-INTERFACE>
+        <MODE-SWITCH-INTERFACE>
+          <SHORT-NAME>Ecu_InternalState</SHORT-NAME>
+          <IS-SERVICE>true</IS-SERVICE>
+          <MODE-GROUP>
+            <SHORT-NAME>BswMEcuStateDclGroups</SHORT-NAME>
+            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/BswMEcuIntSts</TYPE-TREF>
+          </MODE-GROUP>
+        </MODE-SWITCH-INTERFACE>
+        <MODE-SWITCH-INTERFACE>
+          <SHORT-NAME>Ecu_Mode</SHORT-NAME>
+          <IS-SERVICE>true</IS-SERVICE>
+          <MODE-GROUP>
+            <SHORT-NAME>BswMEcuModeDclGroups</SHORT-NAME>
+            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/BswMEcuModes</TYPE-TREF>
+          </MODE-GROUP>
+        </MODE-SWITCH-INTERFACE>
+        <MODE-DECLARATION-GROUP>
+          <SHORT-NAME>MDG_MdulInit</SHORT-NAME>
+          <CATEGORY>ALPHABETIC_ORDER</CATEGORY>
+          <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeSwitchInterfaces/MDG_MdulInit/MDUL_NOINIT</INITIAL-MODE-REF>
+          <MODE-DECLARATIONS>
+            <MODE-DECLARATION>
+              <SHORT-NAME>MDUL_INIT</SHORT-NAME>
+            </MODE-DECLARATION>
+            <MODE-DECLARATION>
+              <SHORT-NAME>MDUL_NOINIT</SHORT-NAME>
+            </MODE-DECLARATION>
+          </MODE-DECLARATIONS>
+        </MODE-DECLARATION-GROUP>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

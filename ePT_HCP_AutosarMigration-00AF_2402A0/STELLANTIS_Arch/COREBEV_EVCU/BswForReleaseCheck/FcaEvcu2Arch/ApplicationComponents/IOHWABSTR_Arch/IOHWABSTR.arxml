@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with SystemDesk 5.1.3.11821-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>IOHWABSTR</SHORT-NAME>
+      <ELEMENTS>
+        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+          <SHORT-NAME>IOHWABSTR</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="1a397248-153a-4868-ab24-0d2b7bbf49ae">
+              <SHORT-NAME>PPort_IOHW_IGNVtg</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/IOHWABSTR/Sender_Reciever_IF/SR_IOHW_APPMODE_IGN_Vtg</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="218ac682-ec62-42ca-a4d8-3cca705a5295">
+              <SHORT-NAME>PPort_WriteTestData</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/System/CSInterface_TestData</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR>
+              <SHORT-NAME>IB_IOHWABSTR</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/IOHWABSTR/Sender_Reciever_IF/SR_IO_HW_APPMODEIF_MappingSet</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <TIMING-EVENT UUID="1bf59541-8580-43fc-93f3-e1f6ca411238">
+                  <SHORT-NAME>TE_Iohwabstr_10ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/IOHWABSTR/IOHWABSTR/IB_IOHWABSTR/RE_Iohwabstr</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <INIT-EVENT UUID="c90ba88d-867d-4ed9-ba9b-55c03cb7156a">
+                  <SHORT-NAME>TE_Iohwabtr_Init</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/IOHWABSTR/IOHWABSTR/IB_IOHWABSTR/RE_Iohwabstr_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1395020b-6ae1-475a-9ee1-2c9571ccaec2">
+                  <SHORT-NAME>OIE_WriteTestData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/IOHWABSTR/IOHWABSTR/IB_IOHWABSTR/RE_WriteTestData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/IOHWABSTR/IOHWABSTR/PPort_WriteTestData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/System/CSInterface_TestData/WriteTestData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="054d5746-0097-46f9-854f-c240148caf9c">
+                  <SHORT-NAME>OIE_ReadTestData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/IOHWABSTR/IOHWABSTR/IB_IOHWABSTR/RE_ReadTestData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/IOHWABSTR/IOHWABSTR/PPort_WriteTestData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/System/CSInterface_TestData/ReadTestData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="b31790c7-4bf1-449d-897d-597cf04e4e97">
+                  <SHORT-NAME>RE_Iohwabstr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="c29730b5-d3af-4688-9505-dcb83253199a">
+                      <SHORT-NAME>DSP_IOHW_APPMODE_IGNVtg_VDP_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/IOHWABSTR/IOHWABSTR/PPort_IOHW_IGNVtg</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/IOHWABSTR/Sender_Reciever_IF/SR_IOHW_APPMODE_IGN_Vtg/IOHW_APPMODE_IGNVtg_VDP</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>Iohwabstr_Cyclic_10ms</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1b8bd11e-5b7d-4514-b607-cd4d7d9dfa2e">
+                  <SHORT-NAME>RE_Iohwabstr_Init</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <SYMBOL>Iohwabstr_Init</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7b015d50-8193-49f5-a891-9d8dca9d123c">
+                  <SHORT-NAME>RE_WriteTestData</SHORT-NAME>
+                  <SYMBOL>Write_TestData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="eba21672-404e-4443-a319-a8e6a2dd3ba6">
+                  <SHORT-NAME>RE_ReadTestData</SHORT-NAME>
+                  <SYMBOL>Read_TestData</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+        <COMPU-METHOD>
+          <SHORT-NAME>IOHW_CALIB_compu</SHORT-NAME>
+          <CATEGORY>LINEAR</CATEGORY>
+          <COMPU-PHYS-TO-INTERNAL>
+            <COMPU-SCALES>
+              <COMPU-SCALE>
+                <SHORT-LABEL>CompuScale</SHORT-LABEL>
+                <COMPU-RATIONAL-COEFFS>
+                  <COMPU-NUMERATOR>
+                    <V>0</V>
+                    <V>1</V>
+                  </COMPU-NUMERATOR>
+                  <COMPU-DENOMINATOR>
+                    <V>0.1</V>
+                  </COMPU-DENOMINATOR>
+                </COMPU-RATIONAL-COEFFS>
+              </COMPU-SCALE>
+            </COMPU-SCALES>
+          </COMPU-PHYS-TO-INTERNAL>
+        </COMPU-METHOD>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>Sender_Reciever_IF</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-PRIMITIVE-DATA-TYPE>
+              <SHORT-NAME>ApplicationPrimitiveDataType_IO_HW_APPMODE_IF_SR</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <SENDER-RECEIVER-INTERFACE>
+              <SHORT-NAME>SR_IOHW_APPMODE_IGN_Vtg</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE>
+                  <SHORT-NAME>IOHW_APPMODE_IGNVtg_VDP</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/IOHWABSTR/Sender_Reciever_IF/ApplicationPrimitiveDataType_IO_HW_APPMODE_IF_SR</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+            <DATA-TYPE-MAPPING-SET>
+              <SHORT-NAME>SR_IO_HW_APPMODEIF_MappingSet</SHORT-NAME>
+              <DATA-TYPE-MAPS>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/IOHWABSTR/Sender_Reciever_IF/ApplicationPrimitiveDataType_IO_HW_APPMODE_IF_SR</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+              </DATA-TYPE-MAPS>
+            </DATA-TYPE-MAPPING-SET>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

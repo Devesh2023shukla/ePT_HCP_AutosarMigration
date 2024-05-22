@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with SystemDesk 5.1.3.11821-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="7be7e4df-703c-4c5c-877d-15b638b73271">
+      <SHORT-NAME>FCASWCs</SHORT-NAME>
+      <ELEMENTS>
+        <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="fef524fa-8cc7-4dd1-8878-838adf323f5f">
+          <SHORT-NAME>AppModeIf</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="FOR-ALL">App Interface</L-4>
+          </LONG-NAME>
+          <ADMIN-DATA S="18d944e595feb0d7a007d0cb32af8d64">
+            <DOC-REVISIONS>
+              <DOC-REVISION>
+                <REVISION-LABEL>0.0.0</REVISION-LABEL>
+                <STATE>None</STATE>
+                <DATE>2018-10-01T23:31:17+05:30</DATE>
+              </DOC-REVISION>
+            </DOC-REVISIONS>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="e21d083d-1c15-4b0b-873b-f7a355e03f91">
+              <SHORT-NAME>MdulPwrMod</SHORT-NAME>
+              <ADMIN-DATA S="b0470f868c0a55f62fcb604b4a4364fd">
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>0.0.0</REVISION-LABEL>
+                    <STATE>None</STATE>
+                    <DATE>2018-10-01T23:31:09+05:30</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="cf2c33e4-5a53-4442-8758-1e59edc390be">
+              <SHORT-NAME>Switch_ESH_ModeSwitch</SHORT-NAME>
+              <ADMIN-DATA S="eb5e46e20a50ed01193f99f7b65c457e">
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>0.0.0</REVISION-LABEL>
+                    <STATE>None</STATE>
+                    <DATE>2018-10-01T23:31:13+05:30</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/ModeSwitchInterfaces/Ecu_Mode</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="63b120cd-4b2e-4c84-a1a6-cf8d039b4c5b">
+              <SHORT-NAME>AppModeNotification</SHORT-NAME>
+              <ADMIN-DATA S="a1c8e39bdf215a929ea7ac13fb3c94f4">
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>0.0.0</REVISION-LABEL>
+                    <STATE>None</STATE>
+                    <DATE>2018-10-01T23:31:07+05:30</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/ModeSwitchInterfaces/Ecu_Mode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="edb97fde-0cc0-4c25-a52b-e83331b53f8d">
+              <SHORT-NAME>EcuM_ShutdownTarget</SHORT-NAME>
+              <ADMIN-DATA S="92bbfd617da07e0399a599f27437c8a4">
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>0.0.0</REVISION-LABEL>
+                    <STATE>None</STATE>
+                    <DATE>2018-10-01T23:31:09+05:30</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_EcuM/PortInterfaces/EcuM_ShutdownTarget</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="4880547b-5b5d-4dcc-881d-6c2c9801eec9">
+              <SHORT-NAME>GetMODR_t_OS_PwrLtchTi</SHORT-NAME>
+              <ADMIN-DATA S="ca33603d5ef9aa16c5660a6c1591a665">
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>0.0.0</REVISION-LABEL>
+                    <STATE>None</STATE>
+                    <DATE>2018-10-01T23:31:09+05:30</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/GetMODR_t_OS_PwrLtchTi</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8c638227-8fa6-4bbc-b2a9-c1a3913f3fe5">
+              <SHORT-NAME>GetMODR_e_CurrRTE_Mode</SHORT-NAME>
+              <ADMIN-DATA S="8ebf600596c1f3b119dcd4070b8f25e9">
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>0.0.0</REVISION-LABEL>
+                    <STATE>None</STATE>
+                    <DATE>2018-10-01T23:31:09+05:30</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_e_CurrRTE_Mode</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InStrtUpMode</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InRunMode</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InPostRunMode</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InShtDwnMode</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InWakeUpMode</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="65740661-c6ff-48a4-8f24-8c0ce3d6a780">
+              <SHORT-NAME>RPort_APPMODE_IGNVTg</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/IOHWABSTR/Sender_Reciever_IF/SR_IOHW_APPMODE_IGN_Vtg</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="0e7591f1-892c-49f0-8a21-1699d9a9cb11">
+              <SHORT-NAME>VeSSDR_b_Core1_ReqPostRunSt</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="1522ebb9-fd1e-461f-a560-ad7a93f0b730">
+              <SHORT-NAME>VeSSDR_b_Core2_ReqPostRunSt</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="9272b969-3454-4bd4-a855-1c96dfe756e8">
+              <SHORT-NAME>VeSSDR_b_Core3_ReqPostRunSt</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="e5451e22-3344-4a83-97a9-40bf3b1be2f9">
+              <SHORT-NAME>VeSSDR_b_Core4_ReqPostRunSt</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="6300f654-6f40-4208-94d3-60eee87e1823">
+              <SHORT-NAME>VeSSDR_b_Core5_ReqPostRunSt</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAppModeIf_e_ModulPwrModeReq</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_AppmodeIf</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAppModeIf_e_ModulPwrModeStatus</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_AppmodeIf</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>CntrlrPwrHold</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/CntrlrPwrHold_SR</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_e_ModulPwrModeStatus</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_APMR</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_e_ModulPwrModeReq</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_APMR</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="3e2c8b14-0eaa-407e-bc98-4a65bf072770">
+              <SHORT-NAME>UR_ComMUser_LinPhysicalChannel_Lin1</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="3e2c8b14-0eaa-407e-bc98-4a65bf072770">
+              <SHORT-NAME>UR_ComMUser_LinPhysicalChannel_Lin2</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="e8d8a12a-7d38-46aa-ac39-d066c589a6aa">
+              <SHORT-NAME>UR_ComMUser_LinPhysicalChannel_Lin3</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="9987e327-53d5-41f0-98e5-594cd3e64da2">
+              <SHORT-NAME>PP_COMM_CurrentMode</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="e21652a7-39ac-4213-9f9c-bf45fcb6dc23">
+              <SHORT-NAME>UR_ComMUser_Can_Network_DEVCAN</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="5ad23dc2-d691-41e1-85b5-58db698216ea">
+              <SHORT-NAME>UR_ComMUser_Can_Network_CANFD_5_Channel</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="ce10a7f2-8389-4b74-8de9-fe91d0bb5757">
+              <SHORT-NAME>UR_ComMUser_Can_Network_CANFD_3_Channel</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="d18ebfeb-9101-478c-995d-093e99ca3634">
+              <SHORT-NAME>UR_ComMUser_Can_Network_CANFD_11_Channel</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="f7371483-a227-445e-83c2-0687e00d1f3b">
+              <SHORT-NAME>UR_ComMUser_Can_Network_CANFD_14_Channel</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="ab413766-151d-42de-88bd-61e1d693d982">
+              <SHORT-NAME>UR_ComMUser_Can_Network_CANFD_16_Channel</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_FD5</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_FD11</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_FD16</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_FD14</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_DCAN</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_LIN1</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_LIN2</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_LIN3</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>VeAPMR_b_RequestCommState_FD3</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>PS_NvM_MultiBlock_AppModeIF</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_NvM/PortInterfaces/NvMService</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>PP_NvM_Status</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/NVM_Write_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="353a88b1-5887-455a-b28f-698d9e32a2c6">
+              <SHORT-NAME>IBAppModeIf</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/BswMDataMappingSet/BswMMappingSet</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/MSI_ShutDown/MG_Shutdown_Mapping</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/IOHWABSTR/Sender_Reciever_IF/SR_IO_HW_APPMODEIF_MappingSet</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataDefinitions/ADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <INIT-EVENT UUID="b616b824-e66b-4c60-b8ec-ff3e262ef29b">
+                  <SHORT-NAME>InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/InitMode</START-ON-EVENT-REF>
+                </INIT-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="5aa297ba-0500-49df-9ce7-dda53adb4642">
+                  <SHORT-NAME>IsInPostRunMode</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/GetMODR_b_InPostRunMode</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/GetMODR_e_CurrRTE_Mode</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InPostRunMode</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="ab6a0889-7ef2-4977-9190-3eaf77912d5c">
+                  <SHORT-NAME>IsInRunMode</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/GetMODR_b_InRunMode</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/GetMODR_e_CurrRTE_Mode</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InRunMode</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="e4214539-197c-4748-b321-8893ecf3fa7e">
+                  <SHORT-NAME>IsInShutDownMode</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/GetMODR_b_InShtDwnMode</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/GetMODR_e_CurrRTE_Mode</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InShtDwnMode</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="85bce71f-fa72-4377-aebb-779447ee7b96">
+                  <SHORT-NAME>IsInStartUpMode</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/GetMODR_b_InStrtUpMode</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/GetMODR_e_CurrRTE_Mode</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InStrtUpMode</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="28d0e7fa-3605-48d9-a146-4b5c42ea31ac">
+                  <SHORT-NAME>IsInWakeUpMode</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/GetMODR_b_InWakeUpMode</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/GetMODR_e_CurrRTE_Mode</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFRteMode/GetMODR_b_InWakeUpMode</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <TIMING-EVENT UUID="fa47b65c-3eb9-4e30-a653-52eb71005a26">
+                  <SHORT-NAME>TimingEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/AppModeMgr</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="9c87e648-a704-43aa-8cc0-cb8175a2c02e">
+                  <SHORT-NAME>TE_Mode</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/RE_Mode</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_APMR_Mode</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/RE_APMR_Mode</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="601dbacc-e54e-4dc3-97d2-859d8bde6f82">
+                  <SHORT-NAME>TE_Comm_Status</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/RE_Comm_Status</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_NvMJobEndNotification</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/FCASWCs/AppModeIf/IBAppModeIf/RE_NvMJobEndNotification</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+              <PORT-API-OPTIONS>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/GetMODR_e_CurrRTE_Mode</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/MdulPwrMod</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/Switch_ESH_ModeSwitch</PORT-REF>
+                </PORT-API-OPTION>
+              </PORT-API-OPTIONS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="7d9c8ac3-7ed0-4172-8ecb-d210b850efb2">
+                  <SHORT-NAME>AppModeMgr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <DATA-RECEIVE-POINT-BY-VALUES>
+                    <VARIABLE-ACCESS UUID="1590daf2-7d17-43b7-b494-84b227bbf17f">
+                      <SHORT-NAME>DRPV_IOHW_APPMODE_IGNVtg_VDP_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/RPort_APPMODE_IGNVTg</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/IOHWABSTR/Sender_Reciever_IF/SR_IOHW_APPMODE_IGN_Vtg/IOHW_APPMODE_IGNVtg_VDP</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="0d72846c-066a-4abf-847d-df1b7c28f095">
+                      <SHORT-NAME>DRPV_VeSPLR_b_PostRunRqrdSt_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeSSDR_b_Core1_ReqPostRunSt</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt/VeSPLR_b_PostRunRqrdSt</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="59df3aed-605d-44f0-a635-bfde57a2ce88">
+                      <SHORT-NAME>DRPV_VeSPLR_b_PostRunRqrdSt_1</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeSSDR_b_Core2_ReqPostRunSt</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt/VeSPLR_b_PostRunRqrdSt</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="904010d3-a3a8-46f4-b29d-c5219ed3af96">
+                      <SHORT-NAME>DRPV_VeSPLR_b_PostRunRqrdSt_2</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeSSDR_b_Core3_ReqPostRunSt</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt/VeSPLR_b_PostRunRqrdSt</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DRPV_VeSPLR_b_PostRunRqrdSt_3</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeSSDR_b_Core4_ReqPostRunSt</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt/VeSPLR_b_PostRunRqrdSt</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DRPV_VeSPLR_b_PostRunRqrdSt_4</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeSSDR_b_Core5_ReqPostRunSt</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PostRunRqrdSt/VeSPLR_b_PostRunRqrdSt</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-VALUES>
+                  <MODE-ACCESS-POINTS>
+                    <MODE-ACCESS-POINT>
+                      <IDENT UUID="32b60d2f-d8ee-4581-b591-41f09e7c824a">
+                        <SHORT-NAME>MAP_AppModeSwitch_ModeGroup</SHORT-NAME>
+                      </IDENT>
+                      <MODE-GROUP-IREF>
+                        <P-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/MdulPwrMod</CONTEXT-P-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod/AppMode_MDGP_ESH_Mode</TARGET-MODE-GROUP-REF>
+                        </P-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                    <MODE-ACCESS-POINT>
+                      <IDENT UUID="d38dd244-8850-4139-90ea-44a1677c82d2">
+                        <SHORT-NAME>MAP_AppModeNotification_BswMEcuModeDclGroups</SHORT-NAME>
+                      </IDENT>
+                      <MODE-GROUP-IREF>
+                        <P-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/AppModeNotification</CONTEXT-P-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/ModeSwitchInterfaces/Ecu_Mode/BswMEcuModeDclGroups</TARGET-MODE-GROUP-REF>
+                        </P-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                    <MODE-ACCESS-POINT>
+                      <IDENT UUID="3185ce1f-3bdf-41f6-8b34-97996c8d0fed">
+                        <SHORT-NAME>MAP_Switch_ESH_ModeSwitch_BswMEcuModeDclGroups</SHORT-NAME>
+                      </IDENT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/Switch_ESH_ModeSwitch</CONTEXT-R-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/ModeSwitchInterfaces/Ecu_Mode/BswMEcuModeDclGroups</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                  </MODE-ACCESS-POINTS>
+                  <MODE-SWITCH-POINTS>
+                    <MODE-SWITCH-POINT UUID="8c5507bf-68bf-4cb4-92a9-c2bb60409742">
+                      <SHORT-NAME>MSP_AppModeSwitch_ModeGroup</SHORT-NAME>
+                      <MODE-GROUP-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/MdulPwrMod</CONTEXT-P-PORT-REF>
+                        <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod/AppMode_MDGP_ESH_Mode</TARGET-MODE-GROUP-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-SWITCH-POINT>
+                    <MODE-SWITCH-POINT UUID="0871e1db-a681-4b90-8381-426ed155e0ca">
+                      <SHORT-NAME>MSP_AppModeNotification_BswMEcuModeDclGroups</SHORT-NAME>
+                      <MODE-GROUP-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/AppModeNotification</CONTEXT-P-PORT-REF>
+                        <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/ModeSwitchInterfaces/Ecu_Mode/BswMEcuModeDclGroups</TARGET-MODE-GROUP-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-SWITCH-POINT>
+                  </MODE-SWITCH-POINTS>
+                  <PARAMETER-ACCESSS>
+                    <PARAMETER-ACCESS UUID="3b394bfe-843a-4e24-a003-f6900fc0b85b">
+                      <SHORT-NAME>SCPVA_KeMODR_t_OS_PwrDwnMaxTi</SHORT-NAME>
+                      <ACCESSED-PARAMETER />
+                    </PARAMETER-ACCESS>
+                    <PARAMETER-ACCESS UUID="24d9d638-be66-42bd-b219-2e1e41211244">
+                      <SHORT-NAME>SCPVA_KeMODR_t_OS_PwrDwnTrigTi</SHORT-NAME>
+                      <ACCESSED-PARAMETER />
+                    </PARAMETER-ACCESS>
+                  </PARAMETER-ACCESSS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="0b5caf1f-b3fe-4dac-a5e6-a91a33b48f6f">
+                      <SHORT-NAME>SSCP_EcuM_ShutdownTarget_GetLastShutdownTarget</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/EcuM_ShutdownTarget</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_EcuM/PortInterfaces/EcuM_ShutdownTarget/GetLastShutdownTarget</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0.0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="bc658948-4ced-4f97-9805-3c1bab77b412">
+                      <SHORT-NAME>SSCP_EcuM_ShutdownTarget_GetShutdownCause</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/EcuM_ShutdownTarget</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_EcuM/PortInterfaces/EcuM_ShutdownTarget/GetShutdownCause</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0.0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="9f251c25-b2df-448e-9497-6124c4dde37a">
+                      <SHORT-NAME>SSCP_EcuM_ShutdownTarget_GetShutdownTarget</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/EcuM_ShutdownTarget</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_EcuM/PortInterfaces/EcuM_ShutdownTarget/GetShutdownTarget</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0.0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="d8b62676-748c-4f35-a87f-56cd0196d3c0">
+                      <SHORT-NAME>SSCP_EcuM_ShutdownTarget_SelectShutdownCause</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/EcuM_ShutdownTarget</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_EcuM/PortInterfaces/EcuM_ShutdownTarget/SelectShutdownCause</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0.0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="e631cef6-0236-48e0-88d5-c2656b7df4bb">
+                      <SHORT-NAME>SSCP_EcuM_ShutdownTarget_SelectShutdownTarget</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/EcuM_ShutdownTarget</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_EcuM/PortInterfaces/EcuM_ShutdownTarget/SelectShutdownTarget</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0.0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>AppModeIf_AppModeMgr</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="b0df5dff-bfce-46e4-af41-fa231712cc25">
+                  <SHORT-NAME>InitMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <MODE-ACCESS-POINTS>
+                    <MODE-ACCESS-POINT>
+                      <IDENT UUID="dcdf5767-c3fb-4330-bfd5-796bde67e0b0">
+                        <SHORT-NAME>MAP_MdulPwrMod_AppMode_MDGP_ESH_Mode</SHORT-NAME>
+                      </IDENT>
+                      <MODE-GROUP-IREF>
+                        <P-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/MdulPwrMod</CONTEXT-P-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod/AppMode_MDGP_ESH_Mode</TARGET-MODE-GROUP-REF>
+                        </P-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                  </MODE-ACCESS-POINTS>
+                  <MODE-SWITCH-POINTS>
+                    <MODE-SWITCH-POINT UUID="16ae3236-0cab-4020-92fb-bd2e78c4ba73">
+                      <SHORT-NAME>MSP_MdulPwrMod_AppMode_MDGP_ESH_Mode</SHORT-NAME>
+                      <MODE-GROUP-IREF>
+                        <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/MdulPwrMod</CONTEXT-P-PORT-REF>
+                        <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMdulPwrMod/AppMode_MDGP_ESH_Mode</TARGET-MODE-GROUP-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-SWITCH-POINT>
+                  </MODE-SWITCH-POINTS>
+                  <SYMBOL>AppModeIf_InitMode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="a5f580a7-49ae-4746-9228-840945565f2f">
+                  <SHORT-NAME>GetMODR_b_InPostRunMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_GetMODR_b_InPostRunMode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="169aa6c0-4c3a-474e-8a0b-487a3dfb102f">
+                  <SHORT-NAME>GetMODR_b_InRunMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_GetMODR_b_InRunMode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7ab1bcfa-1901-462d-86d0-c756d6eb2160">
+                  <SHORT-NAME>GetMODR_b_InShtDwnMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_GetMODR_b_InShtDwnMode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="92c17c32-4ce4-455d-aa2e-6805352cd2e5">
+                  <SHORT-NAME>GetMODR_b_InStrtUpMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_GetMODR_b_InStrtUpMode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0be2fd2a-5a91-4f86-84b1-ab48d0fc1070">
+                  <SHORT-NAME>GetMODR_b_InWakeUpMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_GetMODR_b_InWakeUpMode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="65fc05fe-68d0-49f7-92ca-97c249ef2ef7">
+                  <SHORT-NAME>DcmExecute</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_DcmExecute</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6ae1826f-78eb-4502-ab2a-e832ef82e98f">
+                  <SHORT-NAME>DcmKeyOnOffReset</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_DcmKeyOnOffReset</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="e57be406-ed62-4d63-b3e6-aaaa9c53b1a5">
+                  <SHORT-NAME>DcmHardReset</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_DcmHardReset</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="48206753-e6c0-4a70-9bdb-e65a8c796331">
+                  <SHORT-NAME>GetMODR_t_PostRunTmr</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>AppModeIf_GetMODR_t_PostRunTmr</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>RE_Mode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.01</MINIMUM-START-INTERVAL>
+                  <DATA-RECEIVE-POINT-BY-VALUES>
+                    <VARIABLE-ACCESS UUID="ae6eec7c-cb18-42b3-b6d9-9e846cbd207a">
+                      <SHORT-NAME>DRPV_Mode_AppModeIf</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAppModeIf_e_ModulPwrModeStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_AppmodeIf/Mode</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-VALUES>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="d05e6e57-08e1-4de8-aa3a-2ee7bd44796c">
+                      <SHORT-NAME>DSP_Mode_AppModeIf</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAppModeIf_e_ModulPwrModeReq</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_AppmodeIf/Mode</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>RE_Mode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>RE_APMR_Mode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.01</MINIMUM-START-INTERVAL>
+                  <DATA-RECEIVE-POINT-BY-VALUES>
+                    <VARIABLE-ACCESS UUID="2e49a484-25d4-4050-95d6-3a4fd23884fd">
+                      <SHORT-NAME>DRPV_Mode_APMR</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_e_ModulPwrModeReq</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_APMR/Mode</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-VALUES>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="002cb4f9-d456-4f09-9205-e67aa0b8cbdf">
+                      <SHORT-NAME>DSP_Mode_APMR</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_e_ModulPwrModeStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/IFMode_APMR/Mode</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>RE_APMR_Mode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1e6718b9-7120-499f-89a6-f7575e5b6672">
+                  <SHORT-NAME>RE_Comm_Status</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-VALUES>
+                    <VARIABLE-ACCESS UUID="f851ad29-6108-48dd-b5b7-1168dc0db7f3">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_FD3_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_FD3</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_FD3</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="0e1e3df0-2b77-43d9-a5d7-b8155b9535e1">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_FD5_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_FD5</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_FD5</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="85aba414-41dd-4a14-9fa8-d5a8a9ea8bbe">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_FD11_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_FD11</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_FD11</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="1c487d27-6dd4-4d12-9426-1bbd7a2a43d8">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_FD14_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_FD14</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_FD14</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="4ddf6830-468e-4386-85a2-d12b24082017">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_FD16_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_FD16</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_FD16</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="363c6ac1-479f-406e-85f9-ae9a02d2b249">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_LIN1_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_LIN1</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_LIN1</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="3967a948-28c4-4d1f-aae6-15da9cf5e4d5">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_LIN2_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_LIN2</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_LIN2</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="167bc422-bf94-43f7-8f16-a70b79d34448">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_LIN3_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_LIN3</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_LIN3</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="36a4d5cf-b3c0-48ad-9c96-128e1dfbba83">
+                      <SHORT-NAME>DRPV_VeAPMR_b_RequestCommState_DCAN_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/VeAPMR_b_RequestCommState_DCAN</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeAPMR_b_RequestCommState/VeAPMR_b_RequestCommState_DCAN</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-VALUES>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="241dd920-fe2f-4af9-95e0-7e4773bf59f2">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_FD3_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_FD3</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="8b93068e-3761-4237-a71d-d545979605ff">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_FD5_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_FD5</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="97e28ebe-fdb3-49ed-ba12-8eccfecbdc23">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_FD11_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_FD11</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="b64fa1f7-0a4f-4fad-84d2-138c91adc2e0">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_FD14_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_FD14</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="42ed42c5-7368-4d88-b411-336925cdae58">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_FD16_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_FD16</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="c1f75587-54e3-43f9-a5b0-f2858599be9c">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_LIN1_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_LIN1</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="e5398bd5-32e1-4887-93ae-a8b5b364e7f6">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_LIN2_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_LIN2</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="c2e14ec0-5b3f-450c-842f-40fb45a037a4">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_LIN3_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_LIN3</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="4624a251-026a-468c-af72-31194c5313da">
+                      <SHORT-NAME>DSP_VeCANR_e_CommStatus_DCAN_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_COMM_CurrentMode</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/VeCANR_e_CommStatus/VeCANR_e_CommStatus_DCAN</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="04147c3f-d67d-4a96-88d6-68ca87e4b79e">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin2</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="4ae19714-d27e-45eb-b4f5-c1db200f940e">
+                      <SHORT-NAME>SynchronousServerCallPoint_1</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin2</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="46a12816-6f3c-4cb9-a7b4-8b607a86dfb2">
+                      <SHORT-NAME>SynchronousServerCallPoint_2</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin2</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="45f5ad56-a8f0-44b3-b106-c0782c486824">
+                      <SHORT-NAME>SynchronousServerCallPoint_3</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin2</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="4a16ca8c-b496-44be-9ae9-7afe812229b0">
+                      <SHORT-NAME>SynchronousServerCallPoint_4</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin2</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="762955ee-7ada-4900-80a1-4b3d96e363bd">
+                      <SHORT-NAME>SynchronousServerCallPoint_5</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_16_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="e85ed143-2a83-4b6e-affa-d4d50e0132d5">
+                      <SHORT-NAME>SynchronousServerCallPoint_6</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_16_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="82197b3a-83d2-4f06-a6ed-1d81bf4c9374">
+                      <SHORT-NAME>SynchronousServerCallPoint_7</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_16_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="330db513-dcfa-4680-a641-f9a689647cd1">
+                      <SHORT-NAME>SynchronousServerCallPoint_8</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_16_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="740bfa33-f844-4ce7-b0bc-4035cfe827a0">
+                      <SHORT-NAME>SynchronousServerCallPoint_9</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_16_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="61e8060e-fdbf-4c5a-bee5-56987534a411">
+                      <SHORT-NAME>SynchronousServerCallPoint_10</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_11_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="edb1f66d-183a-4364-939b-a750a6e470bb">
+                      <SHORT-NAME>SynchronousServerCallPoint_11</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_11_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="9a3d272c-7e56-4912-9c92-3a799f4d367c">
+                      <SHORT-NAME>SynchronousServerCallPoint_12</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_11_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="bf553502-ba05-4304-90b3-fdee81376519">
+                      <SHORT-NAME>SynchronousServerCallPoint_13</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_11_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="1a827d7d-0f68-43e9-8bbf-6007c9ec37bc">
+                      <SHORT-NAME>SynchronousServerCallPoint_14</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_11_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="5744c839-3262-4894-893b-b951d526bd02">
+                      <SHORT-NAME>SynchronousServerCallPoint_15</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_5_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="71e6ff26-bd51-45a4-99c2-edf22a9088c7">
+                      <SHORT-NAME>SynchronousServerCallPoint_16</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_5_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="acbeb046-a00d-4af3-9fc3-495f530d09ba">
+                      <SHORT-NAME>SynchronousServerCallPoint_17</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_5_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="6b6c2045-4f94-41fc-88cd-22767e22ce58">
+                      <SHORT-NAME>SynchronousServerCallPoint_18</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_5_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="62a9c483-d39f-49b5-9aef-91da0550c947">
+                      <SHORT-NAME>SynchronousServerCallPoint_19</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_5_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="fa28d6da-65de-4615-9165-ee4180c6d72c">
+                      <SHORT-NAME>SynchronousServerCallPoint_20</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin1</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="b3c5e433-898e-4035-b01a-214159e9a21a">
+                      <SHORT-NAME>SynchronousServerCallPoint_21</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin1</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="093d9e1c-b86e-49f1-84da-642a8ef752d4">
+                      <SHORT-NAME>SynchronousServerCallPoint_22</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin1</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="d9374362-dda6-44c7-bdc6-c912893c6499">
+                      <SHORT-NAME>SynchronousServerCallPoint_23</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin1</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="ecd47bbc-90a0-448b-b672-ae13a204c805">
+                      <SHORT-NAME>SynchronousServerCallPoint_24</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin1</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="57c74d55-9d7a-4439-925b-0130184fca9f">
+                      <SHORT-NAME>SynchronousServerCallPoint_25</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_14_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="d067fb64-0b60-4911-a7dd-b636656a9a2c">
+                      <SHORT-NAME>SynchronousServerCallPoint_26</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_14_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="574b579e-45ec-4166-811b-f9a5799db1bd">
+                      <SHORT-NAME>SynchronousServerCallPoint_27</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_14_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="9df03fa1-a2c9-499d-96d7-901445775786">
+                      <SHORT-NAME>SynchronousServerCallPoint_28</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_14_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="8a5c46b5-0fb6-4816-b113-9435f7dbcf63">
+                      <SHORT-NAME>SynchronousServerCallPoint_29</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_14_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="6e0f3368-2489-496a-a4ca-60f5f1ca8d99">
+                      <SHORT-NAME>SynchronousServerCallPoint_30</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin3</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="3a99a3c3-3797-4091-9e8a-b6c1451cd2cc">
+                      <SHORT-NAME>SynchronousServerCallPoint_31</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin3</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="fde054ce-9696-44e1-bbd7-962691e61f0c">
+                      <SHORT-NAME>SynchronousServerCallPoint_32</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin3</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="b3a37677-77a0-402d-b0a3-2818388be721">
+                      <SHORT-NAME>SynchronousServerCallPoint_33</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin3</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="65f81b18-43a5-43db-bef7-da37a0e36581">
+                      <SHORT-NAME>SynchronousServerCallPoint_34</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_LinPhysicalChannel_Lin3</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="c6765216-90f3-44ec-8a97-47b69b52dec3">
+                      <SHORT-NAME>SynchronousServerCallPoint_35</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_DEVCAN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="72a51140-7de9-44ba-b0ed-317675fcf7a4">
+                      <SHORT-NAME>SynchronousServerCallPoint_36</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_DEVCAN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="2c46f985-a5f7-4c1c-95cf-09ae599b4e7d">
+                      <SHORT-NAME>SynchronousServerCallPoint_37</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_DEVCAN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="a95d8842-03f8-469a-81bb-32099484aabd">
+                      <SHORT-NAME>SynchronousServerCallPoint_38</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_DEVCAN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="66dbb6b6-3491-4a64-a4d7-87c47130486e">
+                      <SHORT-NAME>SynchronousServerCallPoint_39</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_DEVCAN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="b5669565-9705-4824-b52f-97780784263a">
+                      <SHORT-NAME>SynchronousServerCallPoint_40</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_3_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="0e6da0b4-b195-4f3c-bfff-1dc966b373f6">
+                      <SHORT-NAME>SynchronousServerCallPoint_41</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_3_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetCurrentPNCComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="3b88aa6a-ae7e-46f7-b2df-3cd851b2982c">
+                      <SHORT-NAME>SynchronousServerCallPoint_42</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_3_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetMaxComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="1d2923e3-064d-42cf-902f-c9352c4cab6e">
+                      <SHORT-NAME>SynchronousServerCallPoint_43</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_3_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="412c7ecb-5b68-48e8-abf6-14f97ab37f7c">
+                      <SHORT-NAME>SynchronousServerCallPoint_44</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/UR_ComMUser_Can_Network_CANFD_3_Channel</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_ComM/PortInterfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_Comm_Status</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>RE_NvMJobEndNotification</SHORT-NAME>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="2b84f2f9-6a7e-4b71-b35c-bb140d31daf0">
+                      <SHORT-NAME>DSP_NVM_Multiblock_WriteStatus_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PP_NvM_Status</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/NVM_Write_Status/NVM_Multiblock_WriteStatus</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="16fa984a-df29-41c2-ad9a-c10ac9aedf84">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/FCASWCs/AppModeIf/PS_NvM_MultiBlock_AppModeIF</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/GetErrorStatus</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_NvMJobEndNotification</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SHARED-PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE>
+                  <SHORT-NAME>KeMODR_t_OS_PwrDwnMaxTi</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>KeMODR_t_OS_PwrDwnMaxTi</SHORT-LABEL>
+                      <VALUE>30</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </PARAMETER-DATA-PROTOTYPE>
+              </SHARED-PARAMETERS>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>PortInterfaces</SHORT-NAME>
+      <ELEMENTS>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>NVM_Write_Status</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>NVM_Multiblock_WriteStatus</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_NvM/ImplementationDataTypes/NvM_RequestResultType</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

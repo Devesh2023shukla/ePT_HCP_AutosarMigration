@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with SystemDesk 5.1.3.11821-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="7be7e4df-703c-4c5c-877d-15b638b73271">
+      <SHORT-NAME>STLASWCs</SHORT-NAME>
+      <ELEMENTS>
+        <COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="ea044655-a6db-4841-ad2a-8db078dff414">
+          <SHORT-NAME>ApplCanComAb_FD14</SHORT-NAME>
+          <DESC>
+            <L-2 L="FOR-ALL">Application CAN Communication Abstraction Component - is responsible with receiving and sending CAN data from/to the lower BSW COM layers</L-2>
+          </DESC>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="42f9475d-5914-4eb2-b474-706762aa721e">
+              <SHORT-NAME>CanCom_FD14TxSignalsSR</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASWCs/ComSwCpts/ComPrivateInterfaces/CanCom_FD14TxSignalsSR/COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/STLASWCs/ComSwCpts/ComDataDefinition/ComConstSpec/COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14_Init</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASWCs/ComSwCpts/ComPrivateInterfaces/CanCom_FD14TxSignalsSR/COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/STLASWCs/ComSwCpts/ComDataDefinition/ComConstSpec/COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14_Init</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASWCs/ComSwCpts/ComPrivateInterfaces/CanCom_FD14TxSignalsSR</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_ORC_FD_3_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_3_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_3_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_3_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_ORC_FD_1_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_1_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_1_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_1_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_IMPACT_INFO_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_IMPACT_INFO_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_IMPACT_INFO_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_IMPACT_INFO_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts/E2ECheckSts</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts/OpRetVal</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="fa1b5fe7-9598-49bb-9f66-0b84e234ef6d">
+              <SHORT-NAME>SendCANR_Motor1_RPM</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor1_RPM/SendCANR_Motor1_RPM</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>SendCANR_Motor1_RPMValue</SHORT-LABEL>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor1_RPM</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="b352d331-817b-419f-8318-1b71aac04eee">
+              <SHORT-NAME>SendCANR_Motor1_RPM_Vld</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor1_RPM_Vld/SendCANR_Motor1_RPM_Vld</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>SendCANR_Motor1_RPM_VldValue</SHORT-LABEL>
+                      <VALUE>1</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor1_RPM_Vld</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="384c5bc8-d9e1-41a9-b2f0-46faef9cad20">
+              <SHORT-NAME>SendCANR_Motor2_RPM</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor2_RPM/SendCANR_Motor2_RPM</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>SendCANR_Motor2_RPMValue</SHORT-LABEL>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor2_RPM</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="d18da28f-16b0-4d11-916f-64444565a4a2">
+              <SHORT-NAME>SendCANR_Motor2_RPM_Vld</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor2_RPM_Vld/SendCANR_Motor2_RPM_Vld</DATA-ELEMENT-REF>
+                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>SendCANR_Motor2_RPM_VldValue</SHORT-LABEL>
+                      <VALUE>1</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor2_RPM_Vld</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="ed23c05f-48cd-4c0e-bba5-7bb113195a40">
+              <SHORT-NAME>IBApplCanComAb_FD14</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/STLAAppDataDefinition/AdtToIdtMapping/ADTtoIDTMapping</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <INIT-EVENT UUID="953bf12c-0fe2-4517-87fb-2e45b159b1ba">
+                  <SHORT-NAME>IninEve</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/ApplCanComAb_FD14Inin</START-ON-EVENT-REF>
+                </INIT-EVENT>
+                <DATA-RECEIVED-EVENT UUID="70a7981a-898a-4b36-bb3a-b723a5baacc5">
+                  <SHORT-NAME>DRESendCANR_Motor1_RPM</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/SendCANR_Motor1_RPM</START-ON-EVENT-REF>
+                  <DATA-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/SendCANR_Motor1_RPM</CONTEXT-R-PORT-REF>
+                    <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor1_RPM/SendCANR_Motor1_RPM</TARGET-DATA-ELEMENT-REF>
+                  </DATA-IREF>
+                </DATA-RECEIVED-EVENT>
+                <DATA-RECEIVED-EVENT UUID="3b622400-be07-4ded-8841-d02f2502777e">
+                  <SHORT-NAME>DRESendCANR_Motor2_RPM</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/SendCANR_Motor2_RPM</START-ON-EVENT-REF>
+                  <DATA-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/SendCANR_Motor2_RPM</CONTEXT-R-PORT-REF>
+                    <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor2_RPM/SendCANR_Motor2_RPM</TARGET-DATA-ELEMENT-REF>
+                  </DATA-IREF>
+                </DATA-RECEIVED-EVENT>
+              </EVENTS>
+              <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="8344d863-d7a3-4e3a-8559-fe96e4b0f37a">
+                  <SHORT-NAME>ApplCanComAb_FD14Inin</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="FOR-ALL">CAN SWC initialization runnable</L-2>
+                  </DESC>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                <DATA-SEND-POINTS>                  
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ORC_FD_3_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ORC_FD_3_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_3_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ORC_FD_3_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ORC_FD_3_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_3_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ORC_FD_1_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ORC_FD_1_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_1_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ORC_FD_1_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ORC_FD_1_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ORC_FD_1_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_IMPACT_INFO_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_IMPACT_INFO_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_IMPACT_INFO_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_IMPACT_INFO_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_IMPACT_INFO_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_IMPACT_INFO_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_7_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_6_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_5_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_4_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_3_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_2_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_BRAKE_FD_1_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_INFO_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts_E2ECheckSts</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts/E2ECheckSts</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts_OpRetVal</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/VeRxPDU_ADAS_FD_HMI_FD14_E2E_Sts/OpRetVal</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                  </VARIABLE-ACCESS>
+                </DATA-SEND-POINTS>
+                  <PARAMETER-ACCESSS>
+                    <PARAMETER-ACCESS UUID="d473d36e-d2ab-493b-898b-8f536203fb96">
+                      <SHORT-NAME>SCPVA_KeCANR_b_ComTxMsg_AXLE_TORQUE_FD_1_FD14_Enbld</SHORT-NAME>
+                      <ACCESSED-PARAMETER>
+                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE" INDEX="0">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/KeCANR_b_ComTxMsg_AXLE_TORQUE_FD_1_FD14_Enbld</LOCAL-PARAMETER-REF>
+                      </ACCESSED-PARAMETER>
+                    </PARAMETER-ACCESS>
+                    <PARAMETER-ACCESS UUID="53ce176d-64fb-4a73-a493-f57dd5f0ea6d">
+                      <SHORT-NAME>SCPVA_KeCANR_b_ComTxMsg_BATTERY_HV_STATUS1_FD14_Enbld</SHORT-NAME>
+                      <ACCESSED-PARAMETER>
+                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE" INDEX="1">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/KeCANR_b_ComTxMsg_BATTERY_HV_STATUS1_FD14_Enbld</LOCAL-PARAMETER-REF>
+                      </ACCESSED-PARAMETER>
+                    </PARAMETER-ACCESS>
+                    <PARAMETER-ACCESS UUID="30301c42-8924-4995-a254-18ba49fa790f">
+                      <SHORT-NAME>SCPVA_KeCANR_b_ComTxMsg_HYBRID_POWERTRAIN6_FD14_Enbld</SHORT-NAME>
+                      <ACCESSED-PARAMETER>
+                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE" INDEX="2">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/KeCANR_b_ComTxMsg_HYBRID_POWERTRAIN6_FD14_Enbld</LOCAL-PARAMETER-REF>
+                      </ACCESSED-PARAMETER>
+                    </PARAMETER-ACCESS>
+                    <PARAMETER-ACCESS UUID="706aee36-edb9-40ac-899f-a76ebf6066e7">
+                      <SHORT-NAME>SCPVA_KeCANR_b_ComTxMsg_PT_SYSTEM_FD_1_FD14_Enbld</SHORT-NAME>
+                      <ACCESSED-PARAMETER>
+                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE" INDEX="3">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/KeCANR_b_ComTxMsg_PT_SYSTEM_FD_1_FD14_Enbld</LOCAL-PARAMETER-REF>
+                      </ACCESSED-PARAMETER>
+                    </PARAMETER-ACCESS>
+                    <PARAMETER-ACCESS UUID="f424ee07-1a32-45f3-aa2a-52d15ba0e82a">
+                      <SHORT-NAME>SCPVA_KeCANR_b_ComTxMsg_PT_TORQUE_FD_1_FD14_Enbld</SHORT-NAME>
+                      <ACCESSED-PARAMETER>
+                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE" INDEX="4">/STLASWCs/ApplCanComAb_FD14/IBApplCanComAb_FD14/KeCANR_b_ComTxMsg_PT_TORQUE_FD_1_FD14_Enbld</LOCAL-PARAMETER-REF>
+                      </ACCESSED-PARAMETER>
+                    </PARAMETER-ACCESS>
+                  </PARAMETER-ACCESSS>
+                  <SYMBOL>ApplCanComAb_FD14_ApplCanComAb_FD14Inin</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="d0569f81-4492-4c96-88be-cf5203f209af">
+                  <SHORT-NAME>SendCANR_Motor1_RPM</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="AA">Transmit</L-4>
+                  </LONG-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="4e66ea15-e0c8-4388-8d53-6f590aa48b98">
+                      <SHORT-NAME>DRP_SendCANR_Motor1_RPM_SendCANR_Motor1_RPM</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/SendCANR_Motor1_RPM</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor1_RPM/SendCANR_Motor1_RPM</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="6b9181d8-a37d-4c58-8e9f-79b7dd505a83">
+                      <SHORT-NAME>DRP_SendCANR_Motor1_RPM_Vld_SendCANR_Motor1_RPM_Vld</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/SendCANR_Motor1_RPM_Vld</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor1_RPM_Vld/SendCANR_Motor1_RPM_Vld</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="80abfc65-5960-42f7-8a32-621ca60498b7">
+                      <SHORT-NAME>DSP_CanCom_FD14TxSignalsSR_COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/CanCom_FD14TxSignalsSR</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASWCs/ComSwCpts/ComPrivateInterfaces/CanCom_FD14TxSignalsSR/COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>ApplCanComAb_FD14_SendCANR_Motor1_RPM</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="21e607fa-d752-470b-a306-1255badc57c5">
+                  <SHORT-NAME>SendCANR_Motor2_RPM</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="AA">Transmit</L-4>
+                  </LONG-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="77d4b3f3-7e6c-4402-9cf4-b1c85e1b4129">
+                      <SHORT-NAME>DRP_SendCANR_Motor2_RPM_SendCANR_Motor2_RPM</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/SendCANR_Motor2_RPM</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor2_RPM/SendCANR_Motor2_RPM</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="0f3439cd-9d9e-4a11-ab77-ee3ca667d3e9">
+                      <SHORT-NAME>DRP_SendCANR_Motor2_RPM_Vld_SendCANR_Motor2_RPM_Vld</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/SendCANR_Motor2_RPM_Vld</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASharedInterfaces/IFCOEs/IFPlatform_Can/SendCANR_Motor2_RPM_Vld/SendCANR_Motor2_RPM_Vld</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="6b66ca9f-678c-45c9-8372-4472dc745e82">
+                      <SHORT-NAME>DSP_CanCom_FD14TxSignalsSR_COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/STLASWCs/ApplCanComAb_FD14/CanCom_FD14TxSignalsSR</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASWCs/ComSwCpts/ComPrivateInterfaces/CanCom_FD14TxSignalsSR/COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>ApplCanComAb_FD14_SendCANR_Motor2_RPM</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SHARED-PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="9e05c597-d3d8-4e68-a494-b666c8c1464c">
+                  <SHORT-NAME>KeCANR_b_ComTxMsg_AXLE_TORQUE_FD_1_FD14_Enbld</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>1</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE UUID="753c6d8e-65cb-42b7-9cc8-1a6f83d0ea15">
+                  <SHORT-NAME>KeCANR_b_ComTxMsg_BATTERY_HV_STATUS1_FD14_Enbld</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>1</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE UUID="177e1f2b-71eb-4869-8ced-b8c0a762134f">
+                  <SHORT-NAME>KeCANR_b_ComTxMsg_HYBRID_POWERTRAIN6_FD14_Enbld</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>1</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE UUID="e2456a9d-a9dd-4f2e-863e-411415d28c0a">
+                  <SHORT-NAME>KeCANR_b_ComTxMsg_PT_SYSTEM_FD_1_FD14_Enbld</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>1</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </PARAMETER-DATA-PROTOTYPE>
+                <PARAMETER-DATA-PROTOTYPE UUID="e63b50a2-855e-4516-b55a-19d10d16e90a">
+                  <SHORT-NAME>KeCANR_b_ComTxMsg_PT_TORQUE_FD_1_FD14_Enbld</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/STLAAppDataDefinition/AppDatatypes/ADTSBoolean</TYPE-TREF>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <SHORT-LABEL>Value</SHORT-LABEL>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <UNIT-REF DEST="UNIT">/STLAAppDataDefinition/Units/NoUnit</UNIT-REF>
+                        <SW-VALUES-PHYS>
+                          <V>1</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </PARAMETER-DATA-PROTOTYPE>
+              </SHARED-PARAMETERS>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="4c750dda-3321-487c-9959-f668b53bd0c1">
+          <SHORT-NAME>ComSwCpts</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="a2b56fd0-0923-4cc0-9693-d46d43d30292">
+              <SHORT-NAME>ComDataDefinition</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="d4430569-45eb-4278-a907-96a11a490247">
+                  <SHORT-NAME>ComConstSpec</SHORT-NAME>
+                  <ELEMENTS>
+                    <CONSTANT-SPECIFICATION UUID="93e8ef4c-8cde-46dc-90cd-0ca84074975e">
+                      <SHORT-NAME>COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14_Init</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>32768</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                    <CONSTANT-SPECIFICATION UUID="053ab5b3-d733-4d2a-8260-b31df4783490">
+                      <SHORT-NAME>COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14_Init</SHORT-NAME>
+                      <VALUE-SPEC>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <VALUE>32768</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE-SPEC>
+                    </CONSTANT-SPECIFICATION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE UUID="cf5d2cfa-36b0-4a9a-ab4c-05669dfffc94">
+                  <SHORT-NAME>ComImpDataType</SHORT-NAME>
+                  <ELEMENTS>
+                    <IMPLEMENTATION-DATA-TYPE UUID="f2419e7b-ecc9-42d3-ad01-36b05af3e96a">
+                      <SHORT-NAME>IDTSMotor1_RPM_HYBRID_POWERTRAIN6_FD14</SHORT-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE UUID="dd454dac-e9b0-4e23-863c-2658421e8de9">
+                      <SHORT-NAME>IDTSMotor2_RPM_HYBRID_POWERTRAIN6_FD14</SHORT-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </IMPLEMENTATION-DATA-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="3a7d7d8b-cbb8-40c5-8bea-de107f3523c7">
+              <SHORT-NAME>ComPrivateInterfaces</SHORT-NAME>
+              <ELEMENTS>
+                <SENDER-RECEIVER-INTERFACE UUID="3a79ebb5-306f-4c3a-8955-beb3907a06d2">
+                  <SHORT-NAME>CanCom_FD14TxSignalsSR</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="d83932e9-3bb7-4cc6-a148-9ac80d46cddc">
+                      <SHORT-NAME>COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="AA">Raw signal data to be transmitted over the CAN bus for the Signal Motor1_RPM</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STLASWCs/ComSwCpts/ComDataDefinition/ComImpDataType/IDTSMotor1_RPM_HYBRID_POWERTRAIN6_FD14</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14Value</SHORT-LABEL>
+                          <VALUE>32768</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE UUID="ec645af9-efd7-4727-a155-cf20cfba00bd">
+                      <SHORT-NAME>COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="AA">Raw signal data to be transmitted over the CAN bus for the Signal Motor2_RPM</L-2>
+                      </DESC>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/STLASWCs/ComSwCpts/ComDataDefinition/ComImpDataType/IDTSMotor2_RPM_HYBRID_POWERTRAIN6_FD14</TYPE-TREF>
+                      <INIT-VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14Value</SHORT-LABEL>
+                          <VALUE>32768</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </INIT-VALUE>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                  <INVALIDATION-POLICYS>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASWCs/ComSwCpts/ComPrivateInterfaces/CanCom_FD14TxSignalsSR/COMTX_Motor1_RPM_HYBRID_POWERTRAIN6_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                    <INVALIDATION-POLICY>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/STLASWCs/ComSwCpts/ComPrivateInterfaces/CanCom_FD14TxSignalsSR/COMTX_Motor2_RPM_HYBRID_POWERTRAIN6_FD14</DATA-ELEMENT-REF>
+                      <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                    </INVALIDATION-POLICY>
+                  </INVALIDATION-POLICYS>
+                </SENDER-RECEIVER-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

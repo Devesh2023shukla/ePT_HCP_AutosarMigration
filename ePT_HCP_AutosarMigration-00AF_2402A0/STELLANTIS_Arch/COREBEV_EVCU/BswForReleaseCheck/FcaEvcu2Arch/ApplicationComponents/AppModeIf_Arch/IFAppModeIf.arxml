@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 5.1.4.11964-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="19943149-9dcc-4d52-b9a2-ac13f979d7c0">
+      <SHORT-NAME>FCASharedInterfaces</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="06b36975-5f4c-4fbd-9f5c-2ba417ac60c9">
+          <SHORT-NAME>IFSWCs</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="02b176f2-bdae-4a25-b9e3-8205db4ff087">
+              <SHORT-NAME>IFAppModeIf</SHORT-NAME>
+              <ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>AppModeIf_ModeType</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/FCASharedInterfaces/IFSWCs/IFAppModeIf/Compu_Mode</COMPU-METHOD-REF>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <COMPU-METHOD>
+                  <SHORT-NAME>Compu_Mode</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>WAKEUP</SHORT-LABEL>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">4</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>WAKEUP</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>POSTRUN</SHORT-LABEL>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>POSTRUN</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>RUN</SHORT-LABEL>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>RUN</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>SHUTDOWN</SHORT-LABEL>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>SHUTDOWN</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <SHORT-LABEL>STARTUP</SHORT-LABEL>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>STARTUP</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <MODE-DECLARATION-GROUP UUID="7a22c769-d885-4059-9f92-87b54eb9a848">
+                  <SHORT-NAME>EngMtnMods</SHORT-NAME>
+                  <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                  <INITIAL-MODE-REF DEST="MODE-DECLARATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/EngMtnMods/EngStopd</INITIAL-MODE-REF>
+                  <MODE-DECLARATIONS>
+                    <MODE-DECLARATION UUID="f823de77-17d9-45c2-a352-0531eae93f67">
+                      <SHORT-NAME>EngStopd</SHORT-NAME>
+                      <VALUE>1</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="32613d3f-906e-441f-ab16-bbc7e4416f5e">
+                      <SHORT-NAME>EngMovg</SHORT-NAME>
+                      <VALUE>0</VALUE>
+                    </MODE-DECLARATION>
+                  </MODE-DECLARATIONS>
+                  <ON-TRANSITION-VALUE>2</ON-TRANSITION-VALUE>
+                </MODE-DECLARATION-GROUP>
+                <MODE-DECLARATION-GROUP UUID="f9a5d656-2222-4897-b089-1e1457529a2f">
+                  <SHORT-NAME>EngSpdMods</SHORT-NAME>
+                  <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                  <INITIAL-MODE-REF DEST="MODE-DECLARATION">/FCASharedInterfaces/IFSWCs/IFAppModeIf/EngSpdMods/LoSpd</INITIAL-MODE-REF>
+                  <MODE-DECLARATIONS>
+                    <MODE-DECLARATION UUID="6cb0eb9e-96bf-439e-b2bf-d138e327d9d2">
+                      <SHORT-NAME>LoSpd</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Engine synchronous events are enabled, and occurring at a rate slower than 1 EPP / 10ms</L-2>
+                      </DESC>
+                      <VALUE>1</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="3303e940-f553-40cb-af93-20b8fed736ac">
+                      <SHORT-NAME>MidSpd</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Engine synchronous events are enabled, and occurring at a rate that exceeds 1 EPP / 10ms, but is less than 1 EPP / 5ms</L-2>
+                      </DESC>
+                      <VALUE>2</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="d4e5ee8d-4074-4edc-8b51-53656c3478e9">
+                      <SHORT-NAME>HiSpd</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Engine synchronous events are enabled, and occurring at a rate that exceeds 1 EPP / 5ms</L-2>
+                      </DESC>
+                      <VALUE>3</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="ed7aa3f1-f866-4894-9ee9-f32f68f84b55">
+                      <SHORT-NAME>NoEves</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="FOR-ALL">Engine synchronous events are disabled.</L-2>
+                      </DESC>
+                      <VALUE>0</VALUE>
+                    </MODE-DECLARATION>
+                  </MODE-DECLARATIONS>
+                  <ON-TRANSITION-VALUE>4</ON-TRANSITION-VALUE>
+                </MODE-DECLARATION-GROUP>
+                <CLIENT-SERVER-INTERFACE UUID="dcb668d9-1343-456d-8f10-43c7ab41c843">
+                  <SHORT-NAME>GetMODR_t_OS_PwrLtchTi</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="5ef82ad9-b2af-4c94-9328-9b5ac3813610">
+                      <SHORT-NAME>GetMODR_t_OS_PwrLtchTi</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="a0625569-90fc-4b05-aa0a-6f082581088c">
+                          <SHORT-NAME>OsPwrLtchTi</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <MODE-SWITCH-INTERFACE UUID="6b91a10b-f57c-43df-8c0b-f41af34779e9">
+                  <SHORT-NAME>IFEngMtnMod</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <MODE-GROUP UUID="a2333220-fbff-4026-bcda-6e1136288263">
+                    <SHORT-NAME>EngMtnMod</SHORT-NAME>
+                    <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/FCASharedInterfaces/IFSWCs/IFAppModeIf/EngMtnMods</TYPE-TREF>
+                  </MODE-GROUP>
+                </MODE-SWITCH-INTERFACE>
+                <MODE-SWITCH-INTERFACE UUID="0a2e1b55-9606-4a2b-95e9-398875ae8253">
+                  <SHORT-NAME>IFEngSpdMod</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <MODE-GROUP UUID="6f1cc7f3-9350-4c26-9e31-97618ff8c23d">
+                    <SHORT-NAME>EngSpdMod</SHORT-NAME>
+                    <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/FCASharedInterfaces/IFSWCs/IFAppModeIf/EngSpdMods</TYPE-TREF>
+                  </MODE-GROUP>
+                </MODE-SWITCH-INTERFACE>
+                <MODE-SWITCH-INTERFACE UUID="fad0795f-4991-43bb-ada4-a5a434cb9dfd">
+                  <SHORT-NAME>IFMdulPwrMod</SHORT-NAME>
+                  <IS-SERVICE>true</IS-SERVICE>
+                  <MODE-GROUP UUID="a795a812-85f5-488f-9e9d-96e005992e35">
+                    <SHORT-NAME>AppMode_MDGP_ESH_Mode</SHORT-NAME>
+                    <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/ModeSwitchInterfaces/BswMEcuModes</TYPE-TREF>
+                  </MODE-GROUP>
+                </MODE-SWITCH-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>IFMode_APMR</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>Mode</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL />
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/AppModeIf_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>IFMode_AppmodeIf</SHORT-NAME>
+                  <IS-SERVICE>true</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>Mode</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL />
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/FCASharedInterfaces/IFSWCs/IFAppModeIf/AppModeIf_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="35a02c4d-ae67-4f12-a6c6-8623a208d170">
+                  <SHORT-NAME>IFRteMode</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <OPERATIONS>
+                    <CLIENT-SERVER-OPERATION UUID="12b46c7b-5ae7-44bc-94e6-2cf2b19c7fda">
+                      <SHORT-NAME>GetMODR_e_CurrRTE_Mode</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="24b774f3-99d9-4041-9873-1f84971c2d7d">
+                          <SHORT-NAME>CurrentMode</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/ARPackage_0/BswM_Rte_Mode</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION UUID="9e43f547-313e-4b3b-b3a8-fa1d24e77b21">
+                      <SHORT-NAME>GetMODR_b_InStrtUpMode</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="b2eeb6f3-1c7e-4340-a5ce-052f45b58a8d">
+                          <SHORT-NAME>InStartUp</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION UUID="a3d32cf6-b37e-443d-bcac-677b02b6ccdd">
+                      <SHORT-NAME>GetMODR_b_InRunMode</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="94e3ecc2-4fda-4b80-8860-af27ce99d221">
+                          <SHORT-NAME>InRun</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION UUID="6a4f693d-1e84-4df2-b14d-942ccf849307">
+                      <SHORT-NAME>GetMODR_b_InPostRunMode</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="864abe32-7e02-4732-bca0-ea8ba968bc27">
+                          <SHORT-NAME>InPostRun</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION UUID="ee18e394-541d-4270-89e7-5b990b39f209">
+                      <SHORT-NAME>GetMODR_b_InShtDwnMode</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="93a7c202-dd7a-4ebd-8d51-9d552cdb398d">
+                          <SHORT-NAME>InShutDown</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                    <CLIENT-SERVER-OPERATION UUID="c8954cc3-d55d-4737-a73d-032d6a3455e1">
+                      <SHORT-NAME>GetMODR_b_InWakeUpMode</SHORT-NAME>
+                      <ARGUMENTS>
+                        <ARGUMENT-DATA-PROTOTYPE UUID="e8afab02-d616-4ba3-8444-16227d4a52fb">
+                          <SHORT-NAME>InWakeUp</SHORT-NAME>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                          <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                          <DIRECTION>OUT</DIRECTION>
+                          <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                        </ARGUMENT-DATA-PROTOTYPE>
+                      </ARGUMENTS>
+                    </CLIENT-SERVER-OPERATION>
+                  </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <MODE-SWITCH-INTERFACE UUID="58879f32-62ad-487e-8012-1eb55e74286b">
+                  <SHORT-NAME>IFSrvEngMtnMod</SHORT-NAME>
+                  <IS-SERVICE>true</IS-SERVICE>
+                  <SERVICE-KIND>DIAGNOSTIC-COMMUNICATION-MANAGER</SERVICE-KIND>
+                  <MODE-GROUP UUID="dbd3c1d1-ba2b-44b3-a57b-badd6a5b99bd">
+                    <SHORT-NAME>SrvEngMtnMod</SHORT-NAME>
+                    <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/FCASharedInterfaces/IFSWCs/IFAppModeIf/EngMtnMods</TYPE-TREF>
+                  </MODE-GROUP>
+                </MODE-SWITCH-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>VeAPMR_b_RequestCommState</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_FD3</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_FD5</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_FD11</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_FD14</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_FD16</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_LIN1</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_LIN2</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_LIN3</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeAPMR_b_RequestCommState_DCAN</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>VeCANR_e_CommStatus</SHORT-NAME>
+                  <IS-SERVICE>false</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_FD3</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_FD5</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_FD11</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_FD14</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_FD16</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_LIN1</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_LIN2</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_LIN3</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>VeCANR_e_CommStatus_DCAN</SHORT-NAME>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_ComM/ImplementationDataTypes/ComM_ModeType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
